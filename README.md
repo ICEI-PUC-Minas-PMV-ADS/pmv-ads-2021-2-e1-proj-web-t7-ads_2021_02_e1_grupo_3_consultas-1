@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# AUTOMATIZAÇÃO DE CONSULTAS MÉDICAS
 
 `Análise e Desenvolvimento de Sistemas`
 
@@ -6,14 +6,18 @@
 
 `1° SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Com o objetivo de intermediar o agendamento de consultas médicas entre pacientes e clínicas, este projeto propõe a criação de uma plataforma para a web em que seja possível encontrar médicos, verificar suas agendas e, finalmente, realizar um agendamento.
+
+Da parte das clínicas, esta mesma plataforma proporcionará o acesso a um dashboard de gerenciamento de seus médicos e respectivas agendas, bem como a possibilidade de integrar pacientes tradicionais (aqueles que não utilizam a plataforma) à agenda virtual.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Brunna Alves Lage Silva
+* Davison Cavalcante Barros
+* Mateus Cunha Melo
+* Paulo Henrique Rodrigues
+* Pedro Thiago Rodrigues Santos
+* Renato Gonçalves Costa
 
 ## Orientador
 
