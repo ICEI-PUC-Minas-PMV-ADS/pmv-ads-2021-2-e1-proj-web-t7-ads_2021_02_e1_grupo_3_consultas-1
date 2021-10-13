@@ -1,0 +1,40 @@
+/* Gerais */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* NavBar */
+#header{
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+    transition: background ease-out 0.2s;
+}
+
+#header .navbar-collapse{
+    width: auto;
+}
+
+#nav-buttom1{
+    color: var(--primary);
+    background-color: transparent;
+    border: solid 1px;
+    border-radius: 8px;
+    width: 96px;
+    height: 40px;
+    text-transform: uppercase;
+}
+
+#nav-buttom1:hover{
+    background-color: var(--secundary);
+    border: transparent;
+}
+
+
+#nav-buttom2{
+    background-color: var(--primary);
+    border: transparent;
+    border-radius: 8px;
+    width: 96px;
+    height: 40px;
+    text-transform: uppercase;
+}
