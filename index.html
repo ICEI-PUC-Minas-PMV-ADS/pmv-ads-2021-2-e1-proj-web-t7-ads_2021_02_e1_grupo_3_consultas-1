@@ -16,7 +16,7 @@
   <body>
   <!-- Navbar -->
   <header id="header">
-    <div class="container-fluid">
+    <div class="container">
       <nav class="navbar navbar-expand-md navbar-light">
         <a class="navbar-brand" href="#">
           <img src="assets/img/logo.svg" height="36">
@@ -30,13 +30,13 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-link">
-              <a id="help-buttom" class="nav-link active " aria-current="page" href="#">AJUDA</a>
+              <a class="btn-link active " aria-current="page" href="#">AJUDA</a>
             </li>
             <li class="nav-link">
-              <button class="btn-sm btn-outline-primary" id="btn-secondary" type="button">Button</button>
+              <button class="btn-sm btn-secondary" type="button">Button</button>
             </li>
             <li class="nav-link">
-              <button class="btn-sm btn-primary" id="btn-primary" type="button">Button</button>
+              <button class="btn-sm btn-primary" type="button">Button</button>
             </li>
           </ul>
         </div>
@@ -49,58 +49,53 @@
   <main>
     <!-- Slider -->
     <div id="slider-image" class="bg-white p-5 rounded-lg">
-      <div class="row">
-        <div id="text-slider" class="col-3 mb-1 text-white">
-          <h1>Marque Sua</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-auto header-slider mb-1 text-white">
+            <h1>Marque Sua</h1>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div id="text-slider-responsive" class="col-3 mb-1 text-white">
-          <h1>Marque Sua Consulta</h1>
+        <div class="row">
+          <div class="col-auto header-slider mb-4 text-white">
+            <h1>Consulta</h1>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div id="text-slider-bottom" class="col-2 mb-4 text-white">
-          <h1>Consulta</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div id="fields-search-container" class="p-5 rounded-lg">
-          <form class="form-inline" role="form">
-            <div class="row">
-              <div class="form-group col-sm-4">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="QUAL A ESPECIALIDADE?"
-                         aria-label="especialidade" aria-describedby="button-addon2">
-                  <button id="in-buttom-spc" class="btn" type="button" id="button-addon2"></button>
+        <div class="row">
+          <div id="fields-search-container" class="p-5 rounded-lg">
+            <form class="form-inline" role="form">
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="QUAL A ESPECIALIDADE?"
+                           aria-label="especialidade" aria-describedby="button-addon2">
+                    <button class="btn in-button-spc" type="button"></button>
+                  </div>
+                </div>
+                <div class="form-group col-md-4">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="ONDE?" aria-label="localização"
+                           aria-describedby="button-addon2">
+                    <button class="btn in-button-loc" type="button"></button>
+                  </div>
+                </div>
+                <div class="form-group col-md-4">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="QUANDO?" aria-label="dia"
+                           aria-describedby="button-addon2">
+                    <button class="btn in-button-dat" type="button"></button>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="d-flex justify-content-end">
+                    <button class="btn-sm btn-primary" id="btn-primary" type="button">Procurar</button>
+                  </div>
                 </div>
               </div>
-              <div class="form-group col-sm-4">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="ONDE?" aria-label="localização"
-                         aria-describedby="button-addon2">
-                  <button id="in-buttom-loc" class="btn" type="button" id="button-addon2"></button>
-                </div>
-              </div>
-              <div class="form-group col-sm-4">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="QUANDO?" aria-label="dia"
-                         aria-describedby="button-addon2">
-                  <button id="in-buttom-dat" class="btn" type="button" id="button-addon2"></button>
-                </div>
-              </div>
-              <div class="container">
-                <div class="d-flex justify-content-end">
-                  <button class="btn-sm btn-primary" id="btn-primary" type="button">Procurar</button>
-                </div>
-              </div>
-            </div>
-
-        </div>
-
+            </form>
+          </div>
       </div>
     </div>
-    </div>
+  </div>
     <!-- //Slider -->
 
   </main>
@@ -179,7 +174,7 @@
       <div class="row align-items-top">
 
         <div class="col-md-5 col-lg-8 text-secondary">
-          <p id="copyrigth">©2021 Appoint Todos os direitos reservados:
+          <p id="copyright">©2021 Appoint Todos os direitos reservados:
             <a href="#">
               <strong class="text-info"></strong></a>
           </p>
