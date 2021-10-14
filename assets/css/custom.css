@@ -1,40 +1,106 @@
 /* Gerais */
-body{
+body {
     font-family: 'Montserrat', sans-serif;
+}
+
+a, .btn-link {
+    text-decoration: none;
+}
+
+a:hover, .btn-link:hover {
+    color: inherit;
 }
 
 /* NavBar */
-#header{
-    font-family: 'Montserrat', sans-serif;
+#header {
     background-color: transparent;
-    transition: background ease-out 0.2s;
 }
 
-#header .navbar-collapse{
+#header .navbar-collapse {
     width: auto;
 }
 
-#nav-buttom1{
+.nav-link .btn-link {
+    font-size: 12px;
+    color: var(--primary);
+    line-height: 40px;
+}
+
+/* Botões superiores */
+
+.btn-secondary {
     color: var(--primary);
     background-color: transparent;
     border: solid 1px;
     border-radius: 8px;
-    width: 96px;
     height: 40px;
     text-transform: uppercase;
 }
 
-#nav-buttom1:hover{
-    background-color: var(--secundary);
-    border: transparent;
-}
-
-
-#nav-buttom2{
+.btn-primary {
     background-color: var(--primary);
     border: transparent;
     border-radius: 8px;
-    width: 96px;
     height: 40px;
     text-transform: uppercase;
+}
+
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: var(--secondary);
+}
+
+/* Slider */
+
+main #slider-image {
+    height: 631px;
+    background-image: url(../img/doctor.png);
+    background-size: cover;
+    background-position: center;
+}
+main .header-slider {
+    padding-top: 8px;
+    background-color: var(--primary);
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+#slider-image .row:nth-child(1) .header-slider > h1 {
+    margin-right: 10rem;
+}
+#slider-image .row:nth-child(2) .header-slider > h1 {
+    margin-right: 5rem;
+}
+main #fields-search-container {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    background-color: rgba(153, 153, 153, 0.25);
+    border-radius: 16px;
+}
+
+.in-button-spc, .in-button-loc, .in-button-dat {
+    background-color: white;
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.in-button-spc {
+    background-image: url(../img/search.svg);
+}
+
+.in-button-loc {
+    background-image: url(../img/loc.svg);
+}
+
+.in-button-dat {
+    background-image: url(../img/dat.svg);
+}
+
+/* Footer */
+
+footer h5 {
+    color: var(--primary);
+}
+
+#copyright {
+    font-size: 12px;
+    text-decoration: none;
 }
