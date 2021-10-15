@@ -7,6 +7,10 @@ a, .btn-link {
     text-decoration: none;
 }
 
+.link {
+    color: var(--link);
+}
+
 a:hover, .btn-link:hover {
     color: inherit;
 }
@@ -20,7 +24,7 @@ a:hover, .btn-link:hover {
     width: auto;
 }
 
-.nav-link .btn-link {
+.nav-link .btn-link, h4 {
     font-size: 12px;
     color: var(--primary);
     line-height: 40px;
@@ -103,4 +107,55 @@ footer h5 {
 #copyright {
     font-size: 12px;
     text-decoration: none;
+}
+
+/* Cadastro */
+
+.presentation {
+    background-color: var(--secondary);
+    min-height: 360px;
+}
+
+.form-header .link {
+    line-height: 40px;
+    font-size: 12px;
+}
+
+.form-floating {
+    font-weight: 100;
+}
+
+.form-floating input {
+    border-color: #EAEFEE;
+    background: #EAEFEE;
+}
+
+.form-floating label {
+    font-size: 16px;
+    color: #808080;
+}
+
+.form-separator {
+    color: #C4C4C4;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.form-separator:before,
+.form-separator:after {
+    background-color: #C4C4C4;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: calc(50% - 1em);
+}
+
+.form-separator:before {
+    right: 0.5em;
+}
+
+.form-separator:after {
+    left: 0.5em;
 }
