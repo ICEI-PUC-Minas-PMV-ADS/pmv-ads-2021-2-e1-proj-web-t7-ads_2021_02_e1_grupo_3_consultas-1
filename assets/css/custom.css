@@ -26,6 +26,17 @@ a:hover, .btn-link:hover {
     line-height: 40px;
 }
 
+.nav-collapse-button{
+    background-color: var(--primary);
+}
+
+.nav-collapse-button>p{
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+    letter-spacing: 0.04em;
+}
+
 /* Botões superiores */
 
 .btn-secondary {
@@ -132,40 +143,97 @@ main #fields-search-container {
 /* Pré Footer */
 
 .container-p-footer{
+    background-color: var(--secondary)
+}
+
+.container-card-botton{
+    position: relative; 
     background-color: var(--secondary);
 }
 
-.img-p-footer{
-    
-    border-radius:8px;
+.img-card-botton{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
-.btn-botton{
+.btn-card-botton{
+    position: absolute;
+    top: 73%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     background-color: var(--tertiary);
-    border: transparent;
-    border-radius: 8px;
-    text-transform: uppercase;
     color: white;
-}
-
-.text-1{
-
-    background-color: var(--primary);
-    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
+    width: 30%;
+    height: 10%;
+    border: none;
+    border-radius: 8px;  
+}
+.btn-card-botton>p{
+    margin: 0px;
+    text-align: left;
+    padding-left: 4%;
+}
+.text-1{
+    position: absolute;
+    top: 27%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: var(--primary);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    width: 30%;
+    height: 10%;
+    border: none;
+    border-radius: 8px; 
+}
+.text-1>h3{
+    padding-top: 1%;
+    font-weight: bold;
 }
 
 .text-2{
-    background-color: rgba(153, 153, 153, 0.25);
-    border-radius: 8px;
-    font-style: normal;
-    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 21%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgba(153, 153, 153, 0.25);;
+    color: white;
     font-size: 16px;
-    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    width: 30%;
+    height: auto;
+    border: none;
+    border-radius: 8px; 
 }
-
+.text-2>p{
+    padding-top: 5%;
+}
 /* Footer */
 
+.text-secondary{
+    text-decoration: none;
+}
+
+.btn-footer,.copyright-footer{
+    font-size: 12px;
+}
+
+.copyright-footer{
+    padding-top: 0.2%;
+}
 footer h5 {
     color: var(--primary);
 }
