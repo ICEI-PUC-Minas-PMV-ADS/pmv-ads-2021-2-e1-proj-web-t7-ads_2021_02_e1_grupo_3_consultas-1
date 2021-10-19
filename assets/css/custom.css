@@ -146,18 +146,18 @@ main #fields-search-container {
     background-color: var(--secondary)
 }
 
-.container-card-botton{
+.container-card-bottom{
     position: relative; 
     background-color: var(--secondary);
 }
 
-.img-card-botton{
+.img-card-bottom{
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-.btn-card-botton{
+.btn-card-bottom{
     position: absolute;
     top: 73%;
     left: 21%;
@@ -174,7 +174,7 @@ main #fields-search-container {
     border: none;
     border-radius: 8px;  
 }
-.btn-card-botton>p{
+.btn-card-bottom>p{
     margin: 0px;
     text-align: left;
     padding-left: 4%;
