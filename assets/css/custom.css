@@ -112,7 +112,11 @@ main #fields-search-container {
     margin-bottom: -40px;
   }
 
-  #cards a.destaque{
+.text-card{
+    color:var(--tertiary);
+}
+
+#cards a.destaque{
     display: block;
     background: var(--light);
     border-radius: 5px;
@@ -121,24 +125,24 @@ main #fields-search-container {
     color: #000;
     text-decoration: none;
     transition: all ease-out 0.2s;
-  }
-  #cards a.destaque:hover{
+}
+#cards a.destaque:hover{
     background: #fff;
     box-shadow:  0px 0px 10px 0px #B6E7D6;
     transform: scale(1.05);
-  }
-  #cards p {
+}
+#cards p {
     color: #479082;
-  }
-  #cards a.destaque .img-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-   height: 200px;
-  }
-  #cards a.destaque .img-container img {
+}
+#cards a.destaque .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+#cards a.destaque .img-container img {
     max-height: 160px;
-  }
+}
 
 /* Pré Footer */
 
