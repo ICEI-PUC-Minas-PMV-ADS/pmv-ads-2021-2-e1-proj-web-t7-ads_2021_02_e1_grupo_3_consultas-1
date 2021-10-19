@@ -144,6 +144,14 @@ main #fields-search-container {
     max-height: 160px;
 }
 
+.paragrafo-card{
+    text-align: justify;
+}
+
+.img-card{
+    border-radius: 16px;
+}
+
 /* Pré Footer */
 
 .container-p-footer{
