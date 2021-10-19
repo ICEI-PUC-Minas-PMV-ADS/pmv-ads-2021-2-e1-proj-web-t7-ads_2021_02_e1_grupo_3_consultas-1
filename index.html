@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/main.css">
     <!-- Fonts -->
@@ -26,15 +27,15 @@
             <img src="assets/img/logo.svg" height="36">
           </a>
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
+          <button class="navbar-toggler nav-collapse-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <p>Menu</p>
           </button>
 
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-link">
-                <a class="btn-link active " aria-current="page" href="#">AJUDA</a>
+              <li class="nav-link text-center">
+                <a class="btn-link active btn-help" aria-current="page" href="#">AJUDA</a>
               </li>
               <li class="nav-link">
                 <button class="btn-sm btn-secondary" type="button">Sign in</button>
@@ -114,7 +115,7 @@
                 <div class="img-container mb-3">
                   <img src="assets/img/CARD 1.svg" class="fluid">
                 </div>
-                <h6 class="text-uppercase"> Especialidades Médicas</h6>
+                <h6 class="text-uppercase text-card"> Especialidades Médicas</h6>
                 <p class="mb-0">Landing page em Construção</p>
               </a>
             </div>
@@ -123,7 +124,7 @@
                 <div class="img-container mb-3">
                   <img src="assets/img/CARD 2.svg" class="fluid">
                 </div>
-                <h6 class="text-uppercase">Aonde você estiver</h6>
+                <h6 class="text-uppercase text-card">Aonde você estiver</h6>
                 <p class="mb-0">Landing page em Construção</p>
               </a>
             </div>
@@ -132,7 +133,7 @@
                 <div class="img-container mb-3">
                   <img src="assets/img/CARD 3.svg" class="fluid">
                 </div>
-                <h6 class="text-uppercase">Na data que você quiser</h6>
+                <h6 class="text-uppercase text-card">Na data que você quiser</h6>
                 <p class="mb-0">Landing page em Construção</p>
               </a>
             </div>
@@ -142,17 +143,25 @@
       <!-- //Cards Centrais -->
 
       <!-- Pré footer -->
-      <div class="container-fluid container-p-footer">
-        <div class="container p-5">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <a href="#"><img src="assets/img/Card-bottom.png" class="d-block w-100 img-p-footer" alt="..."></a>
+      <div class="container-fluid container-p-footer pt-5 pb-5">
+        <div class="container pt-5 pb-5 container-card-bottom">
+          <div class="row">
+            <div class="col-sm-12 col-md-4 ms-sm-0 ms-md-3">
+              <div class="text-1 mb-2 p-2">
+                <h3>cadastre sua clínica</h3>
               </div>
+              <div class="text-2 mb-2 p-2">
+                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et
+                  dolore magna aliqua.</p>
+              </div>
+              <button class="btn-card-bottom p-2" type="button">
+                <p>Conheça nossos planos</p>
+              </button>
+
             </div>
           </div>
         </div>
-
       </div>
       <!-- //Pré footer -->
 
@@ -161,50 +170,52 @@
     <!-- //Meio -->
 
     <!-- Footer -->
-    <footer class="bg-white text-white pt-5 pb-4">
+    <footer class="bg-white text-white pt-4 pb-4">
 
       <div class="container text-center text-md-left">
-    
+
         <div class="row text-center text-md-left">
-          
+
           <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning"><img src="assets/img/logo.svg" class="img-fluid" /></h5>
-          <p><a class="text-secondary" style="text-decoration: none">Marque consultas com segurança, de onde estiver e quando quiser com os melhores profissionais de saúde do mercado.</a></p>
+            <h5 class="text-uppercase mb-4 font-weight-bold text-warning"><img src="assets/img/logo.svg"
+                class="img-fluid" /></h5>
+            <p><a class="text-secondary">Marque consultas com segurança, de onde estiver e
+                quando quiser com os melhores profissionais de saúde do mercado.</a></p>
           </div>
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-    
-                <h5 class="clinica" class="text-capitalize mb-4 font-weight-bold">Clínicas</h5>
-          <p>
-            <a href="#" class="text-secondary" style="text-decoration: none;">Login</a>
-          </p>
-          <p>
-            <a href="#" class="text-secondary" style="text-decoration: none;">Registro</a>
-          </p>
-          <p>
-            <a href="#" class="text-secondary" style="text-decoration: none;">Planos</a>
-          </p>
-          <p>
-            <a href="#" class="text-secondary" style="text-decoration: none;">FAQ</a>
-          </p>
-    
+
+            <h5 class="clinica" class="text-capitalize mb-4 font-weight-bold">Clínicas</h5>
+            <p>
+              <a href="#" class="text-secondary">Login</a>
+            </p>
+            <p>
+              <a href="#" class="text-secondary">Registro</a>
+            </p>
+            <p>
+              <a href="#" class="text-secondary">Planos</a>
+            </p>
+            <p>
+              <a href="#" class="text-secondary" style=>FAQ</a>
+            </p>
+
           </div>
-    
+
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h5 class="pacientes" class="text-capitalize mb-4 font-weight-bold text-info">Pacientes</h5>
-          <p>
-            <a href="#" class="text-secondary" style="text-decoration: none;">Login</a>
-          </p>
-          <p>
-            <a href="#" class="text-secondary" style="text-decoration: none;">Registro</a>
-          </p>
-          <p>
-            <a href="#" class="text-secondary" style="text-decoration: none;">Marcar consulta</a>
-          </p>
-          <p>
-            <a href="#" class="text-secondary" style="text-decoration: none;">FAQ</a>
-          </p>
+            <p>
+              <a href="#" class="text-secondary">Login</a>
+            </p>
+            <p>
+              <a href="#" class="text-secondary">Registro</a>
+            </p>
+            <p>
+              <a href="#" class="text-secondary">Marcar consulta</a>
+            </p>
+            <p>
+              <a href="#" class="text-secondary">FAQ</a>
+            </p>
           </div>
-    
+
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 class="contatos" class="text-capitalize mb-4 font-weight-bold text-info">Contatos</h5>
             <p>
@@ -216,36 +227,39 @@
             <p>
               <i class="fas fa-phone mr-3 text-secondary"></i><a class="text-secondary">E-mail</a>
             </p>
-            
+
           </div>
-          
+
         </div>
-        <div class="border-linha" ></div>
+        <div class="border-linha"></div>
         <hr class="mb-4">
-    
+
         <div class="row align-items-top">
-    
-          <div class="col-md-5 col-lg-8 text-secondary">
-            <p  style="font-size: 12px">©2021 appoint Todos os direitos reservados.
-            <a href="#" style="text-decoration: none;">
-            <strong class="text-info"></strong></a></p>
-            
+
+          <div class="col-md-5 col-lg-8 text-secondary copyright-footer">
+            <p>©2021 appoint Todos os direitos reservados.
+              <a href="#">
+                <strong class="text-info"></strong></a>
+            </p>
+
           </div>
-    
+
           <div class="col-md-5 col-lg-4">
             <div class="text-center text-md-right">
-    
+
               <ul class="list-unstyled list-inline">
                 <li class="list-inline-item">
-                  <p style="font-size: 12px"><a href="#" class="text-secondary" style="text-decoration: none;">Termos e condições</a></p>
+                  <p style="font-size: 12px"><a href="#" class="text-secondary btn-footer">Termos e
+                      condições</a></p>
                 </li>
                 <li class="list-inline-item">
-                  <p style="font-size: 12px"><a href="#" class="text-secondary" style="text-decoration: none;">Política de privacidade</a></p>
+                  <p><a href="#" class="text-secondary btn-footer">Política
+                      de privacidade</a></p>
                 </li>
-                </ul>
-              </div>
-              </div>
-            </footer>
+              </ul>
+            </div>
+          </div>
+    </footer>
 
     <!-- //Footer -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
