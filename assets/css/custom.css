@@ -111,7 +111,7 @@ main #fields-search-container {
     border-bottom: 0.4px #B6E7D6 solid;
     margin-bottom: -40px;
   }
-  
+
   #cards a.destaque{
     display: block;
     background: var(--light);
@@ -147,8 +147,9 @@ main #fields-search-container {
 }
 
 .container-card-bottom{
-    position: relative; 
-    background-color: var(--secondary);
+    border-radius: 16px;
+    background: url(../img/Card-bottom.png);
+    background-size: cover;
 }
 
 .img-card-bottom{
@@ -158,69 +159,45 @@ main #fields-search-container {
 }
 
 .btn-card-bottom{
-    position: absolute;
-    top: 73%;
-    left: 21%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     background-color: var(--tertiary);
     color: white;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    width: 30%;
-    height: 10%;
     border: none;
-    border-radius: 8px;  
+    border-radius: 8px;
 }
 .btn-card-bottom>p{
     margin: 0px;
-    text-align: left;
-    padding-left: 4%;
 }
 .text-1{
-    position: absolute;
-    top: 27%;
-    left: 21%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     background-color: var(--primary);
     color: white;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    width: 30%;
-    height: 10%;
     border: none;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
+
 .text-1>h3{
-    padding-top: 1%;
+    margin-bottom: 0px;
     font-weight: bold;
 }
 
 .text-2{
-    position: absolute;
-    top: 50%;
-    left: 21%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     background-color: rgba(153, 153, 153, 0.25);;
     color: white;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    width: 30%;
-    height: auto;
     border: none;
-    border-radius: 8px; 
+    border-radius: 8px;
 }
-.text-2>p{
-    padding-top: 5%;
-}
+
 /* Footer */
 
 .text-secondary{

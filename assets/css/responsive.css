@@ -15,10 +15,13 @@
   .btn-help{
     padding-left: 45%;
   }
- 
+
 }
-@media(min-width: 768px){
+@media(max-width: 768px){
   .btn-help{
     padding-left: 0;
+  }
+  .container-card-bottom{
+    background: transparent;
   }
 }
