@@ -8,7 +8,7 @@ a, .btn-link {
 }
 
 .link {
-    color: var(--link);
+    color: var(--tertiary);
 }
 
 a:hover, .btn-link:hover {
