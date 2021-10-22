@@ -29,6 +29,7 @@
     background: transparent;
   }
 }
+
 @media(max-width:576px){
   .paragrafo-card{
     display: none;

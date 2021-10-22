@@ -11,6 +11,13 @@ a:hover, .btn-link:hover {
     color: inherit;
 }
 
+.img-logo{
+    height: 48px;
+}
+.img-logo-footer{
+    height: 48px;
+    
+}
 /* NavBar */
 #header {
     background-color: transparent;
