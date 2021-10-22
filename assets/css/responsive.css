@@ -18,10 +18,22 @@
 
 }
 @media(max-width: 768px){
+  .paragrafo-card{
+    max-width: 50%;
+    margin-left: 25%;
+  }
   .btn-help{
     padding-left: 0;
   }
   .container-card-bottom{
     background: transparent;
+  }
+}
+@media(max-width:576px){
+  .paragrafo-card{
+    display: none;
+  }
+  .text-center-title{
+    display: block;
   }
 }

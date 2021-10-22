@@ -107,6 +107,11 @@ main #fields-search-container {
 }
 
 /* Cards Centrais */
+
+.text-center-title{
+    display:none
+}
+
 #border {
     border-bottom: 0.4px #B6E7D6 solid;
     margin-bottom: -40px;
