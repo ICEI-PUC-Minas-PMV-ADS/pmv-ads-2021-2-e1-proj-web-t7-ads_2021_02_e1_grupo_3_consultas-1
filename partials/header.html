@@ -22,10 +22,54 @@
                         <button class="btn-sm btn-secondary" type="button">Sign in</button>
                     </li>
                     <li class="nav-link">
-                        <button class="btn-sm btn-primary" type="button">log in</button>
+                        <button class="btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal" type="button">log in</button>
                     </li>
                 </ul>
             </div>
         </nav>
+    </div>
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
+            <div class="modal-content">
+                <div class="modal-header d-block d-md-none">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-2 p-md-5">
+                    <div class="container">
+                        <form id="user-login">
+                            <div class="form-floating mb-3">
+                                <input name="email" type="text" class="form-control" id="floatingInputEmail" placeholder="E-mail">
+                                <label for="floatingInputEmail">E-mail</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+                                <label for="floatingPassword">Senha</label>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-7">
+                                    <a class="btn btn-link text-muted" aria-current="page" href="#">Esqueceu sua senha?</a>
+                                </div>
+                                <div class="col-5">
+                                    <div class="d-flex flex-row-reverse">
+                                        <button class="btn btn-primary">Entrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <span class="text-muted text-center mb-2">Não tem cadastro?</span>
+                                <div class="col-12 d-flex justify-content-center">
+                                    <a href="./cadastro-paciente.html">
+                                        <button class="btn btn-secondary" type="button">Cadastre-se</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row my-4">
+                                <div class="form-separator">ou</div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </header>
