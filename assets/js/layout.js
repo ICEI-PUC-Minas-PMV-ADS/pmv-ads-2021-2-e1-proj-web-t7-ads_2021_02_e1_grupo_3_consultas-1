@@ -5,7 +5,7 @@ const handleLayout = async () => {
         urls.push({
             url: `./partials/${partial.getAttribute('data-partial')}.html`,
             node: partial,
-        })
+        });
     });
     await Promise.all(urls.map(async ({url, node}) => {
         const res = await fetch(url);
