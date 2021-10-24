@@ -1,6 +1,11 @@
 /* Gerais */
 body {
     font-family: 'Montserrat', sans-serif;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
 }
 
 a, .btn-link {
@@ -13,6 +18,58 @@ a:hover, .btn-link:hover {
 
 .img-logo{
     height: 48px;
+}
+
+/* fonts */
+
+h1,h2,h3,b,.btn-sm,pre{
+    font-style: normal;
+    font-weight: bold;
+    font-weight: 700;
+}
+
+h4,i,small{
+    font-style: normal;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 4rem;
+    line-height: 4.875rem;
+}
+
+h2{
+    font-size: 2.5rem;
+    line-height: 3.063rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+
+h4{
+    font-size: 1.5rem;
+    line-height: 1.813rem;
+    letter-spacing: -0.02em;
+}
+
+
+i{ 
+    font-style: italic;
+}
+
+small{
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+
+pre{
+    font-size: 12px;
+    line-height: 15px;    
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
 }
 
 /* NavBar */
@@ -220,6 +277,15 @@ main #fields-search-container {
 }
 
 /* Footer */
+
+footer ul>li{
+    display: list-item;
+    list-style-type: disc !important;
+}
+
+.text-footer,.text-footer:hover{
+    color: var(--text-footer);
+}
 
 .text-secondary{
     text-decoration: none;
