@@ -11,6 +11,10 @@ a:hover, .btn-link:hover {
     color: inherit;
 }
 
+.img-logo{
+    height: 48px;
+}
+
 /* NavBar */
 #header {
     background-color: transparent;
@@ -107,6 +111,11 @@ main #fields-search-container {
 }
 
 /* Cards Centrais */
+
+.text-center-title{
+    display:none
+}
+
 #border {
     border-bottom: 0.4px #B6E7D6 solid;
     margin-bottom: -40px;
@@ -142,6 +151,14 @@ main #fields-search-container {
 }
 #cards a.destaque .img-container img {
     max-height: 160px;
+}
+
+.paragrafo-card{
+    text-align: justify;
+}
+
+.img-card{
+    border-radius: 16px;
 }
 
 /* Pré Footer */
