@@ -20,37 +20,7 @@
 
   <body>
     <!-- Navbar -->
-    <header id="header">
-      <div class="container">
-        <nav class="navbar navbar-expand-md navbar-light">
-          <a class="navbar-brand" href="#">
-            <img src="assets/img/logo.svg" class = 'img-logo'>
-          </a>
-
-          <button class="navbar-toggler nav-collapse-button" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class='nav-link text-center d-none' id='id_especialista_paciente'>
-                <a class='btn-link active btn-help'>ENCONTRE ESPECIALISTA</a>
-              </li>
-              <li class="nav-link text-center">
-                <a class="btn-link active btn-help" aria-current="page" href="#">AJUDA</a>
-              </li>
-              <li class="nav-link">
-                <button class="btn-sm btn-secondary" type="button">Sign in</button>
-              </li>
-              <li class="nav-link">
-                <button class="btn-sm btn-primary" type="button">log in</button>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+    <div data-partial="header"></div>
     <!-- //Navbar -->
 
     <!-- Meio -->
@@ -186,102 +156,14 @@
     <!-- //Meio -->
 
     <!-- Footer -->
-    <footer class="bg-white text-white pt-4 pb-4">
-
-      <div class="container text-center text-md-left">
-
-        <div class="row text-center text-md-left">
-
-          <div class="col-md-3 col-lg-3 col-xl-3 col-md-12 mx-auto mt-3">
-            <h5 class="text-uppercase mb-4 font-weight-bold text-warning text-lg-start"><img src="assets/img/logo.svg"
-                class="img-logo"></h5>
-            <p class = 'text-start'><a class="text-secondary">Marque consultas com segurança, de onde estiver e
-                quando quiser com os melhores profissionais de saúde do mercado.</a></p>
-          </div>
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-
-            <h5 class="clinica" class="text-capitalize mb-4 font-weight-bold">Clínicas</h5>
-            <p>
-              <a href="#" class="text-secondary">Login</a>
-            </p>
-            <p>
-              <a href="#" class="text-secondary">Registro</a>
-            </p>
-            <p>
-              <a href="#" class="text-secondary">Planos</a>
-            </p>
-            <p>
-              <a href="#" class="text-secondary" style=>FAQ</a>
-            </p>
-
-          </div>
-
-          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h5 class="pacientes" class="text-capitalize mb-4 font-weight-bold text-info">Pacientes</h5>
-            <p>
-              <a href="#" class="text-secondary">Login</a>
-            </p>
-            <p>
-              <a href="#" class="text-secondary">Registro</a>
-            </p>
-            <p>
-              <a href="#" class="text-secondary">Marcar consulta</a>
-            </p>
-            <p>
-              <a href="#" class="text-secondary">FAQ</a>
-            </p>
-          </div>
-
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h5 class="contatos" class="text-capitalize mb-4 font-weight-bold text-info">Contatos</h5>
-            <p>
-              <i class="fas fa-map-marker mr-3 text-se text-secondary"></i><a class="text-secondary">Endereço</a>
-            </p>
-            <p>
-              <i class="fas fa-envelope mr-3 text-secondary"></i><a class="text-secondary">(00) 0000-0000</a>
-            </p>
-            <p>
-              <i class="fas fa-phone mr-3 text-secondary"></i><a class="text-secondary">E-mail</a>
-            </p>
-
-          </div>
-
-        </div>
-        <div class="border-linha"></div>
-        <hr class="mb-4">
-
-        <div class="row align-items-top">
-
-          <div class="col-md-5 col-lg-8 text-secondary copyright-footer">
-            <p>©2021 appoint Todos os direitos reservados.
-              <a href="#">
-                <strong class="text-info"></strong></a>
-            </p>
-
-          </div>
-
-          <div class="col-md-5 col-lg-4">
-            <div class="text-center text-md-right">
-
-              <ul class="list-unstyled list-inline">
-                <li class="list-inline-item">
-                  <p style="font-size: 12px"><a href="#" class="text-secondary btn-footer">Termos e
-                      condições</a></p>
-                </li>
-                <li class="list-inline-item">
-                  <p><a href="#" class="text-secondary btn-footer">Política
-                      de privacidade</a></p>
-                </li>
-              </ul>
-            </div>
-          </div>
-    </footer>
+    <div data-partial="footer"></div>
 
     <!-- //Footer -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
       crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/layout.js"></script>
   </body>
 
 </html>
