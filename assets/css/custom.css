@@ -34,23 +34,19 @@ h4,i,small{
 }
 
 h1{
-    font-size: 4rem;
-    line-height: 4.875rem;
+    font-size: 4em;
 }
 
 h2{
     font-size: 2.5rem;
-    line-height: 3.063rem;
 }
 
 h3{
     font-size: 1.5rem;
-    line-height: 1.5rem;
 }
 
 h4{
     font-size: 1.5rem;
-    line-height: 1.813rem;
     letter-spacing: -0.02em;
 }
 
@@ -61,13 +57,11 @@ i{
 
 small{
     font-size: 0.75rem;
-    line-height: 1rem;
 }
 
 
 pre{
-    font-size: 12px;
-    line-height: 15px;    
+    font-size: 12px;  
     letter-spacing: 0.04em;
     text-transform: uppercase;
 }
