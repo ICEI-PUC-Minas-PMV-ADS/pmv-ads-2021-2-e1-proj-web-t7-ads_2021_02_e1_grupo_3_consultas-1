@@ -307,9 +307,18 @@ footer h5 {
 
 /* Cadastro */
 
-.presentation {
-    background-color: var(--secondary);
+.presentation-paciente {
+    background-image: url(../img/cad-paciente.png);
     min-height: 360px;
+    margin-top: 10%;
+    margin-right: 5%;
+}
+
+.presentation-clinica{
+    background-image: url(../img/cad-clinica.png);
+    min-height: 360px;
+    margin-top: 10%;
+    margin-right: 5%;
 }
 
 .form-header .link {
@@ -355,3 +364,4 @@ footer h5 {
 .form-separator:after {
     left: 0.5em;
 }
+
