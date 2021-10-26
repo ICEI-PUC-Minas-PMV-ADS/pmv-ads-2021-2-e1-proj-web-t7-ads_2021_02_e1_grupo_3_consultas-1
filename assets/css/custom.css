@@ -367,7 +367,9 @@ footer h5 {
 .btn-facebook, .btn-google {
     position: relative;
     border-radius: 8px;
-    padding-left: 36px;
+    padding-left: 40px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
 .btn-facebook {
