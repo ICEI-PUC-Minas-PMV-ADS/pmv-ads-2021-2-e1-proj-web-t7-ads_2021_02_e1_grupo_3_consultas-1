@@ -1,7 +1,6 @@
 /* Gerais */
 body {
     font-family: 'Montserrat', sans-serif;
-    font-family: Montserrat;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -55,7 +54,7 @@ h4{
 }
 
 
-i{ 
+i{
     font-style: italic;
 }
 
@@ -65,7 +64,7 @@ small{
 
 
 pre{
-    font-size: 12px;  
+    font-size: 12px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 }
@@ -354,4 +353,38 @@ footer h5 {
 
 .form-separator:after {
     left: 0.5em;
+}
+
+.btn-facebook, .btn-google {
+    position: relative;
+    border-radius: 8px;
+    padding-left: 36px;
+}
+
+.btn-facebook {
+    color: #ffffff;
+    background: #3A559F;
+}
+
+.btn-facebook:before, .btn-google:before {
+    width: 32px;
+    height: 32px;
+    left: 4px;
+    top: 8px;
+    content: '';
+    position: absolute;
+}
+
+.btn-google {
+    color: #808080;
+    background: #DFDFDF;
+}
+
+.btn-facebook:before {
+    background: #ffffff url(../img/facebook.svg);
+}
+
+.btn-google:before {
+    left: 8px;
+    background: url(../img/google.svg);
 }
