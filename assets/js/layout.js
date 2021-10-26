@@ -9,7 +9,8 @@ const handleLayout = async () => {
         if (loggedUser && 'role' in loggedUser) {
             switch (loggedUser.role) {
                 case 'patient':
-                    partialName = partial.getAttribute('data-patient') ?? partialName;
+                case 'clinic':
+                    partialName = partial.getAttribute(`data-${loggedUser.role}`) ?? partialName;
                     break;
             }
         }

@@ -6,7 +6,7 @@ document.querySelectorAll('[data-username]').forEach((node) => {
     node.textContent = user.name;
 });
 
-document.getElementById('logoutBtn').addEventListener('click', (e) => {
+document.querySelector('[data-logout]').addEventListener('click', (e) => {
     e.preventDefault();
     auth.signOut();
     document.location.reload(true);
