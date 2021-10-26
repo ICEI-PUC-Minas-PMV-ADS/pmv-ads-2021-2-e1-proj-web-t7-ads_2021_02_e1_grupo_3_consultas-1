@@ -1,7 +1,8 @@
 /* Cores */
 :root{
-    --primary:#489082;
-    --secondary:#B6E6D6;
+    --primary: #489082;
+    --secondary: #B6E6D6;
     --tertiary: #FF6340;
     --primary-dark: #B6E7D6;
+    --text-footer:#808080;
 }

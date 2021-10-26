@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+          rel="stylesheet">
+    <title>Appoint | Cadastro de clínicas</title>
+</head>
+<body>
+<!-- Navbar -->
+<div data-partial="header"></div>
+<!-- //Navbar -->
+
+<!-- Meio -->
+<main>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-7 d-none d-lg-block">
+                <div class="presentation"></div>
+            </div>
+            <div class="col-12 col-lg-5">
+                <div class="row form-header">
+                    <div class="col-6"><h4 class="text-uppercase">Sou uma clínica / consultório</h4></div>
+                    <div class="col-6 text-end"><a class="link" href="./cadastro-paciente.html">Não é uma clínica?</a></div>
+                </div>
+                <form data-register="clinic">
+                    <div class="form-floating mb-3">
+                        <input name="name" type="text" class="form-control" id="floatingInputName" placeholder="Nome">
+                        <label for="floatingInputName">Nome</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input name="document" type="text" class="form-control" id="floatingInputDocument" placeholder="CNPJ">
+                        <label for="floatingInputDocument">CNPJ</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input name="phone" type="text" class="form-control" id="floatingInputPhone" placeholder="Celular">
+                        <label for="floatingInputPhone">Celular</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input name="email" type="text" class="form-control" id="floatingInputEmail" placeholder="E-mail">
+                        <label for="floatingInputEmail">E-mail</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+                        <label for="floatingPassword">Senha</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input name="password-confirm" type="password" class="form-control" id="floatingPasswordConfirmation" placeholder="Senha">
+                        <label for="floatingPasswordConfirmation">Confirme sua senha</label>
+                    </div>
+                    <div class="d-flex flex-row-reverse">
+                        <button class="btn btn-primary">Cadastrar</button>
+                    </div>
+                    <div class="row my-4">
+                        <div class="form-separator">ou</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<!-- //Meio -->
+
+<!-- Footer -->
+<div data-partial="footer"></div>
+<!-- //Footer -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/imask"></script>
+<script type="module" src="assets/js/layout.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="module" src="assets/js/forms/register.js"></script>
+</body>
+</html>

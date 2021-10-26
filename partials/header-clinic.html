@@ -1,0 +1,50 @@
+<header id="header">
+  <div class="container">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.svg" class='img-logo'>
+      </a>
+
+      <button class="navbar-toggler nav-collapse-button" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class='nav-link text-center d-none' id='id_especialista_paciente'>
+            <a class='btn-link active btn-help'>ENCONTRE ESPECIALISTA</a>
+          </li>
+          <li class="nav-link text-center">
+            <a class="btn-link active btn-help mb-0" aria-current="page" href="#">AJUDA</a>
+          </li>
+          <li class="nav-link">
+            <a class="btn-link active btn-notification ms-3 d-none d-md-block d-lg-block d-xl-block"
+               aria-current="page" href="#"><img src="assets/img/notificacao.svg" alt=""></a>
+          </li>
+          <li class="nav-link dropdown">
+            <a class="btn-link active btn-user ms-3 d-none d-md-block d-lg-block d-xl-block" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false"
+               href="#"><img src="./assets/img/icone-paciente.svg" alt=""></a>
+            <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+              <li class="dropdown-item-text" data-username></li>
+              <li data-logout><a class="dropdown-item" href="#">Sair</a></li>
+            </ul>
+          </li>
+          <li class="nav-link text-center">
+            <a class="btn-link active user-colapse d-md-none d-lg-none d-xl-none d-sm-block mt-0"
+               aria-current="page" href="#">
+              <p class='text-uppercase'>Configurações</p>
+            </a>
+          </li>
+          <li class="nav-link text-center">
+            <a class="btn-link active notification-colapse d-md-none d-lg-none d-xl-none d-sm-block mt-0"
+               aria-current="page" href="#">
+              <p class='text-uppercase'>Notificações</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <script type="module" src="./assets/js/logged.js"></script>
+</header>
