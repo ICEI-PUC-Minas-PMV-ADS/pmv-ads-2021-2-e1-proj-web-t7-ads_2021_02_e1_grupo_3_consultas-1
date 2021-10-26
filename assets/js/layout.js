@@ -1,18 +1,20 @@
-let registeredUsers = localStorage.getItem("registeredUsers");
-
-if (!registeredUsers) {
-    registeredUsers = [];
-    localStorage.setItem("registeredUsers", JSON.stringify(registeredUsers));
-} else {
-    registeredUsers = JSON.parse(registeredUsers);
-}
+import auth from './db/auth.js';
 
 const handleLayout = async () => {
+    let loggedUser = auth.getUser();
     const partials = document.querySelectorAll('[data-partial]');
     let urls = [];
     partials.forEach((partial) => {
+        let partialName = partial.getAttribute('data-partial');
+        if (loggedUser && 'role' in loggedUser) {
+            switch (loggedUser.role) {
+                case 'patient':
+                    partialName = partial.getAttribute('data-patient') ?? partialName;
+                    break;
+            }
+        }
         urls.push({
-            url: `./partials/${partial.getAttribute('data-partial')}.html`,
+            url: `./partials/${partialName}.html`,
             node: partial,
         });
     });

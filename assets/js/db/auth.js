@@ -20,11 +20,12 @@ const auth = {
     getUser: (id = null) => {
         id = id ?? db.get('loggedUser');
         if (!id) {
-            return [];
+            return null;
         }
-        return auth.registeredUsers().filter((user) => {
+        let user = auth.registeredUsers().filter((user) => {
             return user.id === Number(id);
         });
+        return user.length ? user[0] : null;
     },
     validateUser: (email, password) => {
         let checkUser = auth.registeredUsers().filter((user) => {
