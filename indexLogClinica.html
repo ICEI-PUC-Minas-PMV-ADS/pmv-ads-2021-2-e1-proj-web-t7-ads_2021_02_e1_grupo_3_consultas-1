@@ -20,7 +20,51 @@
 
   <body>
     <!-- Navbar -->
-    <div data-partial="header"></div>
+    <header id="header">
+      <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <a class="navbar-brand" href="#">
+            <img src="assets/img/logo.svg" class='img-logo'>
+          </a>
+
+          <button class="navbar-toggler nav-collapse-button" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class='nav-link text-center d-none' id='id_especialista_paciente'>
+                <a class='btn-link active btn-help'>ENCONTRE ESPECIALISTA</a>
+              </li>
+              <li class="nav-link text-center">
+                <a class="btn-link active btn-help mb-0" aria-current="page" href="#">AJUDA</a>
+              </li>
+              <li class="nav-link">
+                <a class="btn-link active btn-notification ms-3 d-none d-md-block d-lg-block d-xl-block"
+                  aria-current="page" href="#"><img src="assets/img/notificacao.svg" alt=""></a>
+              </li>
+              <li class="nav-link">
+                <a class="btn-link active btn-user ms-3 d-none d-md-block d-lg-block d-xl-block" aria-current="page"
+                  href="#"><img src="assets/img/icone-clinica.svg" alt=""></a>
+              </li>
+              <li class="nav-link text-center">
+                <a class="btn-link active user-colapse d-md-none d-lg-none d-xl-none d-sm-block mt-0"
+                  aria-current="page" href="#">
+                  <p class='text-uppercase'>Configurações</p>
+                </a>
+              </li>
+              <li class="nav-link text-center">
+                <a class="btn-link active notification-colapse d-md-none d-lg-none d-xl-none d-sm-block mt-0"
+                  aria-current="page" href="#">
+                  <p class='text-uppercase'>Notificações</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
     <!-- //Navbar -->
 
     <!-- Meio -->
@@ -137,7 +181,8 @@
             </div>
             <div class="w-100"></div>
             <div class="text-2 mb-2 ms-lg-4 col-lg-4 col-md-7 ms-md-5 p-2">
-              <p class="mb-0 text-monospace">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              <p class="mb-0 text-monospace">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                tempor
                 incididunt ut labore
                 et
                 dolore magna aliqua.</p>
@@ -171,31 +216,34 @@
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
 
             <h3 class="text-start clinica" class="text-capitalize mb-4 font-weight-bold">Para Clínicas</h3>
-            <ul class = 'p-0'>
-              <li class = 'mb-2 text-start'><a class = 'text-footer' href="#">Login</a></li>
-              <li class = 'mb-2 text-start'><a class = 'text-footer' href="#">Registro</a></li>
-              <li class = 'mb-2 text-start'><a class = 'text-footer' href="#">Planos</a></li>
-              <li class = 'mb-2 text-start'><a class = 'text-footer' href="#">FAQ</a></li>
+            <ul class='p-0'>
+              <li class='mb-2 text-start'><a class='text-footer' href="#">Login</a></li>
+              <li class='mb-2 text-start'><a class='text-footer' href="#">Registro</a></li>
+              <li class='mb-2 text-start'><a class='text-footer' href="#">Planos</a></li>
+              <li class='mb-2 text-start'><a class='text-footer' href="#">FAQ</a></li>
             </ul>
           </div>
 
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h3 class="text-start pacientes" class="text-capitalize mb-4 font-weight-bold text-info">Para Pacientes</h3>
-            <ul class = 'p-0'>
-              <li class = 'mb-2 text-start'><a class = 'text-footer' href="#">Login</a></li>
-              <li class = 'mb-2 text-start'><a class = 'text-footer' href="#">Registro</a></li>
-              <li class = 'mb-2 text-start'><a class = 'text-footer' href="#">Planos</a></li>
-              <li class = 'mb-2 text-start'><a class = 'text-footer' href="#">FAQ</a></li>
+            <ul class='p-0'>
+              <li class='mb-2 text-start'><a class='text-footer' href="#">Login</a></li>
+              <li class='mb-2 text-start'><a class='text-footer' href="#">Registro</a></li>
+              <li class='mb-2 text-start'><a class='text-footer' href="#">Planos</a></li>
+              <li class='mb-2 text-start'><a class='text-footer' href="#">FAQ</a></li>
             </ul>
           </div>
 
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
 
             <h3 class="text-start contatos" class="text-capitalize mb-4 font-weight-bold text-info">Contatos</h3>
-            <ul class = 'p-0'>
-              <li class = 'mb-2 text-start'><a class = 'text-footer' href="#"><img class = 'me-4' src = 'assets/img/end_vetor.svg'>Endereço</a></li>
-              <li class = 'mb-2 text-start'><a class = 'text-footer' href="#"><img class = 'me-3' src = 'assets/img/tel_vetor.svg'>00 0000-0000</a></a></li>
-              <li class = 'mb-2 text-start'><a class = 'text-footer' href="#"><img class = 'me-3' src = 'assets/img/email_vetor.svg'>endereçodeemail@email.com</a></a></li>
+            <ul class='p-0'>
+              <li class='mb-2 text-start'><a class='text-footer' href="#"><img class='me-4'
+                    src='assets/img/end_vetor.svg'>Endereço</a></li>
+              <li class='mb-2 text-start'><a class='text-footer' href="#"><img class='me-3'
+                    src='assets/img/tel_vetor.svg'>00 0000-0000</a></a></li>
+              <li class='mb-2 text-start'><a class='text-footer' href="#"><img class='me-3'
+                    src='assets/img/email_vetor.svg'>endereçodeemail@email.com</a></a></li>
             </ul>
           </div>
 
@@ -206,7 +254,7 @@
         <div class="row align-items-top">
 
           <div class="col-md-5 col-lg-8 text-secondary copyright-footer">
-            <p class = 'text-start'>©2021 appoint Todos os direitos reservados.
+            <p class='text-start'>©2021 appoint Todos os direitos reservados.
               <a href="#">
                 <strong class="text-info"></strong></a>
             </p>
