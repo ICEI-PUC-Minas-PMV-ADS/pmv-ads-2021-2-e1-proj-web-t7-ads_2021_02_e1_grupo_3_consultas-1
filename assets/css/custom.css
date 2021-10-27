@@ -402,3 +402,37 @@ footer h5 {
     left: 8px;
     background: url(../img/google.svg);
 }
+
+/* Telas de usuário */
+
+.fig-padrao{
+    width: 6rem;
+}
+
+.text-user-1{
+    color: var(--text);
+}
+.text-user-2{
+    color: var(--text-footer);
+}
+
+.btn-indicador{
+    width: 8rem;
+    height: 3rem;
+    background-color: var(--primary);
+    border-radius: 8px;
+    border-style: none;
+}
+
+.btn-indicador:hover{
+    background-color: var(--secondary)
+}
+
+.btn-indicador>h3{
+    font-size: 24px;
+    color:#ffffff;
+    letter-spacing: -0.01em;
+    align-items: center;
+    text-align: center;
+    font-size: 1.1rem;
+}
