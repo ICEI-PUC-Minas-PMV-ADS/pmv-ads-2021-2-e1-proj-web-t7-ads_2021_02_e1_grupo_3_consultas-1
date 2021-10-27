@@ -5,8 +5,11 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
+    color: var(--primary)
 }
-
+hr{
+    color: var(--primary);
+}
 a, .btn-link {
     text-decoration: none;
 }
