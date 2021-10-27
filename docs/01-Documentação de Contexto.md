@@ -1,6 +1,6 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+ Em um cenário mundial cada vez mais veloz e dinâmico, automatizar a prestação de serviços por meio de instrumentos tecnológicos, capazes de agilizar, viabilizar e otimizar o nosso dia a dia, é sempre bem-vindo. Nesse sentido e de acordo com Baltzan e Phillips (2012), com o advento da internet, nas últimas décadas, diversas funcionalidades passaram a ser realizadas remotamente, isto é, sem sair do local onde estamos. 
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
