@@ -23,12 +23,11 @@ Conforme observado, o problema consiste na limitação de infraestrutura na comu
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+O objetivo geral deste trabalho é de intermediar o agendamento de consultas entre paciente e clínica, por meio de um website que otimize e traga mais comodidade a esse processo.
+Como objetivos específicos, podemos ressaltar:
+-	Criar um site responsivo que possibilite o paciente fazer um agendamento em clínica médica de onde estiver e quando quiser.
+-	Possibilitar que clínicas médicas tenham uma agenda virtual que integre pacientes da plataforma e seus pacientes tradicionais.
+-	Possibilitar que médicos sejam buscados por sua especialidade, proximidade ao paciente, cobertura a planos de saúde, dentre outros filtros inteligentes.
 
 ## Justificativa
 
