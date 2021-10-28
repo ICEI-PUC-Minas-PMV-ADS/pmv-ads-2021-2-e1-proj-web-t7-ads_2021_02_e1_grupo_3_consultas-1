@@ -19,16 +19,7 @@ Isso também proporciona uma redução do tempo no telefone dos funcionários re
 Outro aspecto, é a possibilidade de envio de alertas com a função de lembretes e confirmação de presença, e em caso de cancelamentos a liberação automática do horário, possibilitando a rápida realocação de novos pacientes. Dessa forma, tanto o profissional de saúde quanto seus funcionários podem focar em atividades que demandem maior atenção, assim como os pacientes podem adaptar às suas mais diversas rotinas um agendamento mais facilitado e com mais opções à disposição. 
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Conforme observado, o problema consiste na limitação de infraestrutura na comunicação do agendamento de consultas médicas, que pode gerar grandes frustrações, e mesmo empecilhos, para ambas as partes deste processo.
 
 ## Objetivos
 
