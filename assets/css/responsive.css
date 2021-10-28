@@ -15,18 +15,19 @@
   .btn-help{
     padding-left: 45%;
   }
-
+  .card-p-footer{
+    width: 100%!important;
+  }
 }
 @media(max-width: 768px){
-  .paragrafo-card{
-    max-width: 50%;
-    margin-left: 25%;
-  }
   .btn-help{
     padding-left: 0;
   }
   .container-card-bottom{
     background: transparent;
+  }
+  .img-card{
+    width: 100%;
   }
 }
 
@@ -37,7 +38,7 @@
   .text-center-title{
     display: block;
   }
-  h1{
+  h1,.header-slider>h2{
     font-size: 2rem;
   }
 }
