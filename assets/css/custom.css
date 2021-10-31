@@ -412,6 +412,12 @@ footer h5 {
     background-color: var(--primary);
     padding: 32px 0;
     color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.page-header.header-search {
+    background-image: url(../img/header-bg.png);
 }
 
 .input-search {
