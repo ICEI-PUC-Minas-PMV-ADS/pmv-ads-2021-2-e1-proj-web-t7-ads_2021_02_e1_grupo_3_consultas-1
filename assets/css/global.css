@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: 0;
   }
-  
+
   /*button-Header*/
   .button {
     text-transform: lowercase;
@@ -13,26 +13,26 @@
     padding-left: 1.4rem;
     padding-right: 1.4rem;
   }
-  
+
   .button-primary {
     background-color: var(--primary);
     border-color: var(--primary);
   }
-  
+
   .button-primary:hover {
-    background-color: var(--primary-dark);
-    border-color: var(--primary-dark);
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
   }
-  
+
   .button-primary-outline {
     border-color: var(--primary);
     color: var(--primary);
-    
+
   }
-  
+
   .button-primary-outline:hover {
-    background-color: var(--primary-dark);
-    border-color: var(--primary-dark);
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
   }
   .border-linha {
     border-bottom: 0.4px #B6E7D6 solid;
@@ -51,12 +51,33 @@
     max-width: 100%;
     height: auto;
   }
-  
+
   /*Inicio Cards*/
-  
+
   a{
     color: var(--primary);
   }
   a:hover{
-    color: var(--primary-dark);
+    color: var(--primary-light);
+  }
+
+  .rounded-5 {
+    border-radius: .5rem !important;
+  }
+
+  .rounded-10 {
+    border-radius: 1rem !important;
+  }
+
+  .form-check-input:checked {
+    background-color: var(--primary);
+    border-color: var(--primary);
+  }
+
+  .btn-link {
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    color: var(--primary);
   }
