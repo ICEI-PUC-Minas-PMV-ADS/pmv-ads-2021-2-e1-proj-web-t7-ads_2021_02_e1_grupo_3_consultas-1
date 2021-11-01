@@ -207,29 +207,18 @@ main #fields-search-container {
     min-height: 36rem;
 }
 
-.container-card-center{
-    margin-left: 10%;
-}
-
 .card-box {
     min-height: 18.75rem;
     position: relative;
     padding: 30px 30px 20px;
     margin-bottom: 20px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    position: relative;
     cursor: pointer;
+    border-radius: 16px;
+    border: solid transparent 1px;
 }
 
 .card-box:hover {
     border: solid var(--primary) 1px;
-    border-radius: 16px;
 }
 
 .card-box:after {
@@ -246,11 +235,6 @@ main #fields-search-container {
     color: var(--tertiary);
     font-weight: 500;
 }
-
-.card-title>p{
-    max-width: 17em;
-}
-
 
 /* Pré Footer */
 
