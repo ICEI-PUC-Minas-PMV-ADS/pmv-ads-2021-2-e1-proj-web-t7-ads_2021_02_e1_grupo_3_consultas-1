@@ -97,9 +97,29 @@ pre{
 }
 
 /* Botões */
+.text-center{
+    margin-top: 5px;
+    padding-right: 0!important;
+}
+
+.text-center-header{
+    margin-top: 0;
+}
+
+.img-notification{
+    padding-top: 12px;
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+
+.btn-help-header,.btn-help-clinic{
+    font-weight: 700!important;
+    margin-top: 0;
+}
 
 .btn-help,.btn-notification,.btn-user,.btn-especialista{
     margin-left: 0.5rem;
+    font-weight: 700;
 }
 
 .btn-secondary {
@@ -186,6 +206,11 @@ main #fields-search-container {
     margin-top: 7.5em ;
     min-height: 36rem;
 }
+
+.container-card-center{
+    margin-left: 10%;
+}
+
 .card-box {
     min-height: 18.75rem;
     position: relative;
@@ -288,6 +313,15 @@ main #fields-search-container {
 
 /* Footer */
 
+.img-logo-footer{
+    height: 48px;
+    position: static;
+    left: 0%;
+    right: 29.11%;
+    top: 0%;
+    bottom: 70%;
+}
+
 .footer-container{
     padding: 0;
 }
@@ -325,7 +359,11 @@ footer h5 {
 }
 
 .text-propaganda{
+    position: static;
     width: 16rem;
+    height: 6rem;
+    left: 0px;
+    top: 4rem;
 }
 
 /* Cadastro */
@@ -438,4 +476,5 @@ footer h5 {
     border-radius:8px;
     box-shadow:none;
     min-width: 200px;
+    transform: translate3d(-50%, 0px, 0px) !important;
 }
