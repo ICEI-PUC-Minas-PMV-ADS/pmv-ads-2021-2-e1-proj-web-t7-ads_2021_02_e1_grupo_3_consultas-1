@@ -438,10 +438,15 @@ footer a:hover {
 
 .page-header {
     background-color: var(--primary);
-    padding: 32px 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     color: #ffffff;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.faq h3 {
+    margin-bottom: 2rem;
 }
 
 .page-header.header-search {
@@ -482,4 +487,14 @@ footer a:hover {
 
 .card:hover {
     border-color: var(--primary);
+}
+
+.faq .btn-light {
+    min-height: 3rem;
+}
+
+.faq .list-group-item {
+    color: var(--primary);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }

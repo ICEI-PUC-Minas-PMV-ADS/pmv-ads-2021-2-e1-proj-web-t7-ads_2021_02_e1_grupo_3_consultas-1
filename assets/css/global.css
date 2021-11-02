@@ -39,3 +39,27 @@ a:hover{
 nav.navbar {
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
 }
+
+.btn {
+  border-radius: .5rem;
+}
+
+input:not(.form-floating input, .form-check-input) {
+  text-transform: uppercase;
+  height: 3rem;
+  border-radius: .5rem;
+}
+
+.btn-light {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.btn-light:hover {
+  color: var(--text);
+}
+
+.list-group {
+  border-radius: .5rem;
+}
