@@ -11,8 +11,8 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap"
-            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
 
         <title>Appoint | Marque a sua consulta</title>
@@ -29,154 +29,126 @@
         <!-- //Breadcrumb -->
 
         <main>
-
-            <div class="container pg-schedule">
+            <div class="container mt-3">
                 <div class="row">
-
-                    <div class="col-3">
-                        <div class="row">
-                            <!-- Usuário -->
-                            <div class="col-12 mt-4 mb-2">
-                                <div class="card card-user">
-                                    <div class="row">
-                                        <div class="col-4 fig-padrao"><img
-                                                src="assets/img/img-agendamentos/user-img.svg" alt=""></div>
-                                        <div class="col-8 text-user">
-                                            <b>Nome do Usuário</b>
-                                            <pre class='m-0 text-user-2'>CIDADE - UF</pre>
-                                            <pre class='m-0 text-user-2'>00.000.000/0000-00</pre>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //Usuário -->
-                            <!-- Sidebar -->
-                            <div class="col-12">
-                                <div class="btn-group-vertical">
-                                    <button type="button" id='btn-perfil'
-                                        class="btn btn-menu-bar text-uppercase">perfil</button>
-                                    <button type="button" id='btn-agenda'
-                                        class="btn btn-menu-bar text-uppercase text-left">agenda</button>
-                                    <button type="button" id='btn-notificacao'
-                                        class="btn btn-menu-bar text-uppercase text-left">notificações</button>
-                                    <button type="button" id='btn-agendamento'
-                                        class="btn btn-menu-bar btn-menu-bar-disabled text-uppercase text-left disabled">agendamentos</button>
-                                    <button type="button" id='btn-especialista'
-                                        class="btn btn-menu-bar text-uppercase text-left">especialistas</button>
-                                    <button type="button" id='btn-planos'
-                                        class="btn btn-menu-bar text-uppercase text-left">gerenciar
-                                        planos</button>
-                                </div>
-                            </div>
-                            <!-- //Sidebar -->
-                        </div>
+                    <div class="d-none d-md-block col-12 col-md-4 col-lg-3">
+                        <!-- Sidebar -->
+                        <div data-partial="sidebar-clinic"></div>
+                        <!-- //Sidebar -->
                     </div>
-                    <div class="col-lg-9 col-md-12 card-schedule-container">
-                        <div class="row">
+                    <div class="col-12 col-md-8 col-lg-9">
+                        <div class="row gx-3">
                             <!-- Cartões de agendamento -->
-                            <div class="col-6">
-                                <div class="card card-schedule">
-                                    <div class="row">
-                                        <div class="col-3 pe-0">
-                                            <img src="assets/img/img-usuário-padrao.svg" alt="">
-                                        </div>
-                                        <div class="col-9">
-                                            <h3 class='ms-1 mt-2' id='nome-paciente-card-agendamento'>Nome do paciente
-                                            </h3>
-                                            <div class="btn-toolbar" role="toolbar"
-                                                aria-label="Toolbar with button groups">
-                                                <div class="btn-group btn-card-paciente me-2" role="group"
-                                                    aria-label="First group">
-                                                    <button type="button" id='observar-btn'
-                                                        class="btn btn-confimacoes-visualizar"></button>
-                                                </div>
-                                                <div class="btn-group btn-card-paciente me-2 " role="group"
-                                                    aria-label="Second group">
-                                                    <button type="button" id='confirmar-btn'
-                                                        class="btn btn-confimacoes-confirmar"></button>
-                                                </div>
-                                                <div class="btn-group btn-card-paciente" role="group"
-                                                    aria-label="Third group">
-                                                    <button type="button" id='cancelar-btn'
-                                                        class="btn btn-confimacoes-cancelar"></button>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <div class="card rounded-10 card-patient">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img class="img-fluid rounded-5" src="./media/profile/default.png" alt="">
+                                            </div>
+                                            <div class="col-9 d-flex flex-column justify-content-center">
+                                                <h3 class="text-primary">Nome do paciente</h3>
+                                                <div>
+                                                    <button type="button" class="btn btn-tool"><span class="material-icons-outlined">visibility</span></button>
+                                                    <button type="button" class="btn btn-tool success"><span class="material-icons-outlined">check_circle</span></button>
+                                                    <button type="button" class="btn btn-tool danger"><span class="material-icons-outlined">cancel</span></button>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12 mt-2">
-                                            <img class='img-card-agendamento' src="assets/img/clock_vector.svg" alt="">
-                                            <small id='card-hora-agendamento' class='ms-1'>00 out 2021, 10:00 am</small>
-                                            <br>
-                                            <img class='mt-2 img-card-agendamento' src="assets/img/end_vetor.svg"
-                                                alt="">
-                                            <small id='card-endereco-agendamento' class='ms-1'>Endereçodopaciente, 00,
-                                                Bairro, Cidade - UF</small>
-                                            <br>
-                                            <img class='mt-2 img-card-agendamento' src="assets/img/email_vetor.svg"
-                                                alt="">
-                                            <small id='card-email-agendamento'
-                                                class='ms-1'>emaildopaciente@email.com</small>
-                                            <br>
-                                            <img class='mt-2 img-card-agendamento' src="assets/img/tel_vetor.svg"
-                                                alt="">
-                                            <small id='card-telefone-agendamento' class='ms-1'>(00) 0 0000-0000</small>
+                                            <div class="col-12 mt-3">
+                                                <div class="d-grid gap-1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="material-icons-outlined md-18 me-2">schedule</span><small>00 out 2021, 10:00 am</small>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="material-icons-outlined md-18 me-2">location_on</span><small>Endereço do paciente, 00, Bairro, Cidade - UF</small>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="material-icons-outlined md-18 me-2">mail</span><small>emaildopaciente@email.com</small>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="material-icons-outlined md-18 me-2">phone</span><small>(00) 0 0000-0000</small>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="card card-schedule">
-                                    <div class="row">
-                                        <div class="col-3 pe-0">
-                                            <img src="assets/img/img-usuário-padrao.svg" alt="">
-                                        </div>
-                                        <div class="col-9">
-                                            <h3 class='ms-1 mt-2' id='nome-paciente-card-agendamento'>Nome do paciente
-                                            </h3>
-                                            <div class="btn-toolbar" role="toolbar"
-                                                aria-label="Toolbar with button groups">
-                                                <div class="btn-group btn-card-paciente me-2" role="group"
-                                                    aria-label="First group">
-                                                    <button type="button" id='observar-btn'
-                                                        class="btn btn-confimacoes-visualizar"></button>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <div class="card rounded-10 card-patient">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img class="img-fluid rounded-5" src="./media/profile/default.png" alt="">
+                                            </div>
+                                            <div class="col-9 d-flex flex-column justify-content-center">
+                                                <h3 class="text-primary">Nome do paciente</h3>
+                                                <div>
+                                                    <button type="button" class="btn btn-tool"><span class="material-icons-outlined">visibility</span></button>
+                                                    <button type="button" class="btn btn-tool success"><span class="material-icons-outlined">check_circle</span></button>
+                                                    <button type="button" class="btn btn-tool danger"><span class="material-icons-outlined">cancel</span></button>
                                                 </div>
-                                                <div class="btn-group btn-card-paciente me-2 " role="group"
-                                                    aria-label="Second group">
-                                                    <button type="button" id='confirmar-btn'
-                                                        class="btn btn-confimacoes-confirmar"></button>
-                                                </div>
-                                                <div class="btn-group btn-card-paciente" role="group"
-                                                    aria-label="Third group">
-                                                    <button type="button" id='cancelar-btn'
-                                                        class="btn btn-confimacoes-cancelar"></button>
+                                            </div>
+                                            <div class="col-12 mt-3">
+                                                <div class="d-grid gap-1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="material-icons-outlined md-18 me-2">schedule</span><small>00 out 2021, 10:00 am</small>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="material-icons-outlined md-18 me-2">location_on</span><small>Endereço do paciente, 00, Bairro, Cidade - UF</small>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="material-icons-outlined md-18 me-2">mail</span><small>emaildopaciente@email.com</small>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="material-icons-outlined md-18 me-2">phone</span><small>(00) 0 0000-0000</small>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 mt-2">
-                                            <img class='img-card-agendamento' src="assets/img/clock_vector.svg" alt="">
-                                            <small id='card-hora-agendamento' class='ms-1'>00 out 2021, 10:00 am</small>
-                                            <br>
-                                            <img class='mt-2 img-card-agendamento' src="assets/img/end_vetor.svg"
-                                                alt="">
-                                            <small id='card-endereco-agendamento' class='ms-1'>Endereçodopaciente, 00,
-                                                Bairro, Cidade - UF</small>
-                                            <br>
-                                            <img class='mt-2 img-card-agendamento' src="assets/img/email_vetor.svg"
-                                                alt="">
-                                            <small id='card-email-agendamento'
-                                                class='ms-1'>emaildopaciente@email.com</small>
-                                            <br>
-                                            <img class='mt-2 img-card-agendamento' src="assets/img/tel_vetor.svg"
-                                                alt="">
-                                            <small id='card-telefone-agendamento' class='ms-1'>(00) 0 0000-0000</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <div class="card rounded-10 card-patient">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img class="img-fluid rounded-5" src="./media/profile/default.png" alt="">
+                                            </div>
+                                            <div class="col-9 d-flex flex-column justify-content-center">
+                                                <h3 class="text-primary">Nome do paciente</h3>
+                                                <div>
+                                                    <button type="button" class="btn btn-tool"><span class="material-icons-outlined">visibility</span></button>
+                                                    <button type="button" class="btn btn-tool success"><span class="material-icons-outlined">check_circle</span></button>
+                                                    <button type="button" class="btn btn-tool danger"><span class="material-icons-outlined">cancel</span></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-3">
+                                                <div class="d-grid gap-1">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="material-icons-outlined md-18 me-2">schedule</span><small>00 out 2021, 10:00 am</small>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="material-icons-outlined md-18 me-2">location_on</span><small>Endereço do paciente, 00, Bairro, Cidade - UF</small>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="material-icons-outlined md-18 me-2">mail</span><small>emaildopaciente@email.com</small>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="material-icons-outlined md-18 me-2">phone</span><small>(00) 0 0000-0000</small>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- //Cartões de agendamento -->
-
                         </div>
-
-
+                    </div>
+                </div>
+            </div>
         </main>
         <!-- //Miolo -->
 

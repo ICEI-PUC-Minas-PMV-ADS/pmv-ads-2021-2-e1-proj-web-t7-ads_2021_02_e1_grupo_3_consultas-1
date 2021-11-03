@@ -477,135 +477,28 @@ footer a:hover {
 
 /* Telas de usuário */
 
-.pg-schedule{
-    height: 55.25rem;
-}
-
-.card-user{
-    width: 16rem;
-    height: 6rem;
-    border-radius: 8px;
-    border-color: #000;
-}
-
-.fig-padrao{
-    padding-left: 10%;
-    padding-top: 5%;
-}
-
-.text-user{
-    padding-top: 8%;
-}
-
-.text-user>pre{
-    color: var(--text)
-}
-
-.btn-menu-bar{
-    width: 16rem!important;
-    border-radius: 8px!important;
-    text-align: left;
+.btn-sidebar {
+    border-radius: .5rem;
+    border-color: var(--text);
     color: var(--text);
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    border-color: var(--text)!important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
-.btn-menu-bar:hover{
-    background-color: var(--secondary);
-    color: #fff;
-}
-
-.btn-menu-bar:active{
+.btn-sidebar.active {
+    border-color: var(--primary);
     background-color: var(--primary);
+    color: #ffffff;
 }
 
-.btn-menu-bar-disabled{
-    background-color: var(--primary);
-    color: #fff;
+.btn-sidebar:not(.active):hover {
+    border-color: var(--primary);
+    color: var(--primary);
 }
 
-#btn-perfil,#btn-agenda,#btn-notificacao,#btn-agendamento,#btn-especialista,#btn-planos{
-    background-repeat: no-repeat;
-    background-position: 96%;
-}
-#btn-perfil{
-    background-image: url(../img/img-agendamentos/perfil-vector.svg);
-}
-#btn-agenda{
-    background-image: url(../img/img-agendamentos/agenda-vector.svg);
-}
-#btn-notificacao{
-    background-image: url(../img/img-agendamentos/not-vector.svg);
-}
-#btn-agendamento{
-    background-image: url(../img/img-agendamentos/agendamentos-vector.svg);
-}
-#btn-especialista{
-    background-image: url(../img/img-agendamentos/espec-vector.svg);
-}
-#btn-planos{
-    background-image: url(../img/img-agendamentos/pla-vector.svg);
-}
-
-
-/*Card de agendamento*/
-.card-schedule-container{
-    margin-top: 7.8rem;
-    padding-left: 2.8rem;
-
-}
-.card-schedule{
-    width: 22rem;
-    height: 14rem;
+.card-patient {
     border: solid transparent;
-}
-
-.btn-confimacoes-visualizar,.btn-confimacoes-confirmar,.btn-confimacoes-cancelar{
-    width: 2rem!important;
-    height: 2rem!important;
-    background-color: var(--hover-btnUser);
-}
-.btn-confimacoes-visualizar{
-    background-image: url(../img/img-agendamentos/card-user/olho-n-ativo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.btn-confimacoes-confirmar{
-    background-image: url(../img/img-agendamentos/card-user/confima-n-ativo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.btn-confimacoes-cancelar{
-    background-image: url(../img/img-agendamentos/card-user/cancela-n-ativo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.btn-confimacoes-visualizar:hover{
-    background-color: #2B5EAB;
-    background-image: url(../img/img-agendamentos/card-user/olho-ativo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.btn-confimacoes-confirmar:hover{
-    background-color: #57BD90;
-    background-image: url(../img/img-agendamentos/card-user/confima-ativo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.btn-confimacoes-cancelar:hover{
-    background-color: #E63C3C;
-    background-image: url(../img/img-agendamentos/card-user/cancela-ativo.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#card-hora-agendamento,#card-endereco-agendamento,#card-email-agendamento,#card-telefone-agendamento{
-    color:var(--text)
-}
-
-.img-card-agendamento{
-    max-height: 16px;
-    max-width: 16px;
 }
