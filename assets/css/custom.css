@@ -161,7 +161,10 @@ pre{
     text-transform: uppercase;   
     width: 200px;
     height: 40px;
+    color: #ffffff;
 }
+
+
    
 
 /* Slider */
@@ -246,6 +249,7 @@ main #fields-search-container {
     margin: 0px;
     text-align: left;
 }
+
 .text-1{
     background-color: var(--primary);
     color: white;
@@ -392,6 +396,26 @@ footer a:hover {
 .form-separator:after {
     left: 0.5em;
 }
+.form-selection{
+    background-color:#EAEFEE;
+    color:#808080; 
+    object-fit: cover;
+    max-width: 420px;
+    border-radius: 8px;
+    height: 3em;
+    border-color:#ffffff;
+
+
+}
+.form-update {
+    background-color:#EAEFEE;
+    color:#808080; 
+    object-fit: cover;
+    max-width: 420px;
+    border-radius: 8px;
+
+    
+    
 
 .btn-facebook, .btn-google {
     position: relative;

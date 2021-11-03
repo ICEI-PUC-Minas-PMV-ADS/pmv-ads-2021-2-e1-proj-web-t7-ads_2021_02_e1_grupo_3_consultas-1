@@ -82,24 +82,59 @@
 
 <body>
 
-    <div class="container">
+    <section class="container">
         <div class="row">
             <div class="col-3">
                 menu lateral
             </div>
             <div class="col">
-                <h2>Adicionar Especialista</h2>
-                <img class="rounded float-start me-4"  src="assets/img/Default profile.svg">
-                <button class="btn-sm btn-upload" id="btn-primary" type="button">Foto de perfil <img
+                <h2 class="mb-5 mt-5 me-5 ms-0">Adicionar Especialista</h2>
+                <img class="rounded float-start me-4" src="assets/img/Default profile.svg">
+                <button class="btn-sm btn-upload " id="btn-primary" type="button">Foto de perfil <img
                         src="assets/img/Upload_icon.svg"></button>
-                <p class="small">O tamanho de imagem <br> recomendado é de 100 x 100px</p>
-
+                <p class="small mt-2 mb-5">O tamanho de imagem <br> recomendado é de 100 x 100px</p>
+                <form data-register="doctor">
+                    <div class="form-floating float-start form-update col-6 mt-3 me-1">
+                        <input name="name" type="text" class="form-control" id="floatingInputName" placeholder="Nome">
+                        <label for="floatingInputName">Nome</label>
+                    </div>
+                    <div class="form-floating float-end form-update col-6 mt-3">
+                        <input name="register" type="text" class="form-control" id="floatingInputName"
+                            placeholder="CRM">
+                        <label for="floatingInputName">CRM</label>
+                    </div>
+                    <div class="form-floating float-start form-update col-6 mt-3 ">
+                        <input name="expertise" type="text" class="form-control" id="floatingInputName"
+                            placeholder="Especialidade">
+                        <label for="floatingInputName">Especialidade</label>
+                    </div>
+                    <div class="form-floating float-end form-update col-6 mt-3 me-0">
+                        <input name="phone-number" type="number" class="form-control" id="floatingInputName"
+                            placeholder="Telefone">
+                        <label for="floatingInputName">Telefone</label>
+                    </div>
+                    <div class="form-floating float-start form-update col-6 mt-3 ">
+                        <input name="address" type="text" class="form-control" id="floatingInputName"
+                            placeholder="Endereço">
+                        <label for="floatingInputName">Endereço</label>
+                    </div>
+                    <div class="form-floating float-end form-update col-6 mt-3 me-0">
+                        <input name="location" type="text" class="form-control" id="floatingInputName"
+                            placeholder="Cidade/Estado">
+                        <label for="floatingInputName">Cidade/Estado</label>
+                    </div>
+                    <select class="form-select-lg form-selection col-6 mb-3 mt-3" aria-label=".form-select-lg example">
+                        <option selected>Plano de Saúde</option>
+                        <option value="1">Plano 1</option>
+                        <option value="2">Plano 2</option>
+                        <option value="3">Plano 3</option>
+                    </select>
+                    <button class="btn-sm btn-upload float-end mt-5" id="btn-primary" type="button">Salvar
+                        alterações</button>
             </div>
         </div>
-    </div>
-
-
-
+        </div>
+    </section>
 
 
 </body>
