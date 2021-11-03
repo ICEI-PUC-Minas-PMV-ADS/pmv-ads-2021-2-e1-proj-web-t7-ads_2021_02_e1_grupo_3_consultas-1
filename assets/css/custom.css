@@ -408,20 +408,17 @@ footer h5 {
 
 /* Select */
 
+
 #floatingSelectGrid {
     border-color: #808080;
 }
-
-.material-icons{
-    background-color: aquamarine;
-}
+/*Perfil-paciente*/
 
 .incluir_foto_perfil{
     display: flex;
     flex-direction: column;
     margin-left: 8px;
-    max-width: 196px;
-
+    max-width: 224px;
 }
 
 .container_foto_perfil{
@@ -434,4 +431,11 @@ footer h5 {
     place-content: center flex-end;
     align-items: start;
     width: 100%;
+}
+#paddigTopSenha{
+    padding-top: 128px;
+}
+
+.inputMetadeTela{
+    max-width: 546px;
 }
