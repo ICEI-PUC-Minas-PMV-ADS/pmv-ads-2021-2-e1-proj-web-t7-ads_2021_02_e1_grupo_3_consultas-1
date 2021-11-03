@@ -278,6 +278,11 @@ main #fields-search-container {
 
 /* Footer */
 
+footer{
+    bottom:0;
+    position: relative;
+}
+
 footer ul>li{
     display: list-item;
     list-style-type: disc !important;
@@ -477,12 +482,11 @@ footer h5 {
 }
 
 
-
-
-
 /*Card de agendamento*/
 .card-schedule-container{
     margin-top: 7.8rem;
+    padding-left: 2.8rem;
+    
 }
 .card-schedule{
     width: 22rem;
@@ -534,3 +538,7 @@ footer h5 {
     color:var(--text-footer)
 }
 
+.img-card-agendamento{
+    max-height: 16px;
+    max-width: 16px;
+}
