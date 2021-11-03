@@ -63,3 +63,52 @@ input:not(.form-floating input, .form-check-input) {
 .list-group {
   border-radius: .5rem;
 }
+
+.material-icons-outlined.md-18 {
+  font-size: 18px;
+}
+
+.material-icons-outlined.md-24 {
+  font-size: 24px;
+}
+
+.material-icons-outlined.md-36 {
+  font-size: 36px;
+}
+
+.material-icons-outlined.md-48 {
+  font-size: 48px;
+}
+
+.btn-tool {
+  line-height: 0;
+  padding: .5rem;
+  border-color: var(--light-gray);
+  background-color: var(--light-gray);
+  color: #2B5EAB;
+}
+
+.btn-tool:hover {
+  background-color: #2B5EAB;
+}
+
+.btn-tool.success {
+  color: #57BD90;
+}
+
+.btn-tool.success:hover {
+  background-color: #57BD90;
+}
+
+.btn-tool.danger {
+  color: #E63C3C;
+}
+
+.btn-tool.danger:hover {
+  background-color: #E63C3C;
+}
+
+
+.btn-tool:hover {
+  color: #ffffff;
+}
