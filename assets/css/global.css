@@ -27,6 +27,11 @@ a:hover{
   border-color: var(--primary);
 }
 
+.btn {
+  border-radius: .5rem;
+  text-transform: uppercase;
+}
+
 .btn-link {
   font-weight: bold;
   text-align: center;
@@ -108,7 +113,36 @@ input:not(.form-floating input, .form-check-input) {
   background-color: #E63C3C;
 }
 
-
 .btn-tool:hover {
   color: #ffffff;
+}
+
+.input-group input {
+  border-radius: .5rem 0 0 .5rem;
+  height: 4rem;
+}
+
+.input-group input:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.input-group .input-group-text {
+  background-color: #ffffff;
+  border-radius: 0 .5rem .5rem 0;
+  color: var(--text);
+}
+
+.input-group input, .input-group .input-group-text {
+  border-width: 0;
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  border-color: var(--primary);
+  background-color: var(--primary);
 }
