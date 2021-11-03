@@ -154,6 +154,16 @@ pre{
     background-color: var(--secondary);
 }
 
+.btn-upload{
+    background-color: var(--primary);
+    border: transparent;
+    border-radius: 8px;  
+    text-transform: uppercase;   
+    width: 200px;
+    height: 40px;
+}
+   
+
 /* Slider */
 
 main #slider-image {
