@@ -93,7 +93,6 @@ pre{
 .nav-link .btn-link {
     font-size: 12px;
     color: var(--primary);
-    line-height: 40px;
 }
 
 .nav-collapse-button{
@@ -108,10 +107,6 @@ pre{
 }
 
 /* Botões */
-.text-center{
-    margin-top: 5px;
-    padding-right: 0!important;
-}
 
 .text-center-header{
     margin-top: 0;
@@ -183,25 +178,6 @@ main #fields-search-container {
 
 #fields-search-container input {
     border: none;
-}
-
-.in-button-spc, .in-button-loc, .in-button-dat {
-    background-color: white;
-    background-size: 16px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.in-button-spc {
-    background-image: url(../img/search.svg);
-}
-
-.in-button-loc {
-    background-image: url(../img/pin.svg);
-}
-
-.in-button-dat {
-    background-image: url(../img/dat.svg);
 }
 
 /* Pré Footer */
@@ -443,23 +419,11 @@ footer a:hover {
     margin-bottom: 2rem;
 }
 
-.input-search input {
-    border-radius: .5rem 0 0 .5rem;
-    height: 4rem;
-}
-
 .input-search input:focus {
-    border: none;
-    box-shadow: none;
     background: #F2F2F2;
 }
 
-.input-search .input-group-text {
-    border-radius: 0 .5rem .5rem 0;
-}
-
-.input-search input, .input-group-text {
-    border-width: 0;
+.input-search input, .input-search .input-group-text {
     background: #F2F2F2;
 }
 
