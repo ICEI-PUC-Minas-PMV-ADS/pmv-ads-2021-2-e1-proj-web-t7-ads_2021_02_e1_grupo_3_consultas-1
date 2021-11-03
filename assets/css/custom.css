@@ -168,6 +168,11 @@ pre{
     color: #ffffff;
 }
 
+.btn-management {
+    border-radius: 8;
+    border-color: #ffffff;
+}
+
 
    
 
@@ -520,4 +525,10 @@ footer a:hover {
 
 .card:hover {
     border-color: var(--primary);
+}
+
+/* tables */
+
+.table-doctor{
+    color:red;
 }
