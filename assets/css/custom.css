@@ -208,7 +208,8 @@ main #fields-search-container {
 }
 
 .paragrafo-card{
-    text-align: justify;
+    text-align: left;
+    padding-left: 8px;
 }
 
 .img-card{
@@ -252,7 +253,7 @@ main #fields-search-container {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
+    text-transform:uppercase;
     border: none;
     border-radius: 8px;
 }
@@ -268,7 +269,7 @@ main #fields-search-container {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
+    text-transform: none;
     border: none;
     border-radius: 8px;
 }
@@ -332,6 +333,10 @@ footer h5 {
 .form-floating input {
     border-color: #EAEFEE;
     background: #EAEFEE;
+}
+.form-floating input  {
+    border-color: #808080;
+    background:#f2f2f2
 }
 
 .form-floating label {
@@ -398,4 +403,35 @@ footer h5 {
 .btn-google:before {
     left: 8px;
     background: url(../img/google.svg);
+}
+
+
+/* Select */
+
+#floatingSelectGrid {
+    border-color: #808080;
+}
+
+.material-icons{
+    background-color: aquamarine;
+}
+
+.incluir_foto_perfil{
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+    max-width: 196px;
+
+}
+
+.container_foto_perfil{
+    display: flex;
+}
+.icone_lapis{
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    place-content: center flex-end;
+    align-items: start;
+    width: 100%;
 }
