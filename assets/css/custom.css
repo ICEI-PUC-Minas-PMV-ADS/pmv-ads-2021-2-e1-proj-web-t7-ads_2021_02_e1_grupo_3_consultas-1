@@ -234,7 +234,6 @@ main #fields-search-container {
 }
 .btn-card-bottom>p{
     margin: 0px;
-    text-align: left;
 }
 .text-1{
     background-color: var(--primary);
@@ -313,14 +312,6 @@ footer a:hover {
 #copyright {
     font-size: 12px;
     text-decoration: none;
-}
-
-.text-propaganda{
-    position: static;
-    width: 16rem;
-    height: 6rem;
-    left: 0px;
-    top: 4rem;
 }
 
 /* Cadastro */
@@ -482,4 +473,32 @@ footer a:hover {
 
 .card:hover {
     border-color: var(--primary);
+}
+
+/* Telas de usuário */
+
+.btn-sidebar {
+    border-radius: .5rem;
+    border-color: var(--text);
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-sidebar.active {
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+.btn-sidebar:not(.active):hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.card-patient {
+    border: solid transparent;
 }
