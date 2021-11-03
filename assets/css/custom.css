@@ -81,6 +81,10 @@ pre{
     text-transform: uppercase;
 }
 
+.h2-color-especial{
+    color:#479082;
+}
+
 /* NavBar */
 #header {
     background-color: transparent;
