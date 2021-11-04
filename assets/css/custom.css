@@ -502,3 +502,13 @@ footer a:hover {
 .card-patient {
     border: solid transparent;
 }
+
+/* Perfil publico médico */
+.btn-perfil-medico{
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-align: center;
+}
+.title-perfil{
+    color: var(--primary);
+}
