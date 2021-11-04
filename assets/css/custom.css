@@ -467,21 +467,3 @@ footer a:hover {
 .card-patient {
     border: solid transparent;
 }
-
-/* tables */
-
-.table-doctor-title {
-    color:#479082;
-    border-color: #DFDFDF;
-}
-
-.table-doctor-contrast {
-    color:#479082;
-    border-color: #DFDFDF;
-}
-.table-doctor {
-    color:#808080;
-    border-color: #DFDFDF;
-    font-weight: bold;
-}
-
