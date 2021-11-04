@@ -81,10 +81,6 @@ pre{
     text-transform: uppercase;
 }
 
-.h2-color-especial{
-    color:#479082;
-}
-
 /* NavBar */
 #header {
     background-color: transparent;
@@ -97,7 +93,6 @@ pre{
 .nav-link .btn-link {
     font-size: 12px;
     color: var(--primary);
-    line-height: 40px;
 }
 
 .nav-collapse-button{
@@ -112,10 +107,6 @@ pre{
 }
 
 /* Botões */
-.text-center{
-    margin-top: 5px;
-    padding-right: 0!important;
-}
 
 .text-center-header{
     margin-top: 0;
@@ -158,24 +149,6 @@ pre{
     background-color: var(--secondary);
 }
 
-.btn-upload{
-    background-color: var(--primary);
-    border: transparent;
-    border-radius: 8px;  
-    text-transform: uppercase;   
-    width: 200px;
-    height: 40px;
-    color: #ffffff;
-}
-
-.btn-management {
-    border-radius: 8;
-    border-color: #ffffff;
-}
-
-
-   
-
 /* Slider */
 
 main #slider-image {
@@ -205,25 +178,6 @@ main #fields-search-container {
 
 #fields-search-container input {
     border: none;
-}
-
-.in-button-spc, .in-button-loc, .in-button-dat {
-    background-color: white;
-    background-size: 16px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.in-button-spc {
-    background-image: url(../img/search.svg);
-}
-
-.in-button-loc {
-    background-image: url(../img/pin.svg);
-}
-
-.in-button-dat {
-    background-image: url(../img/dat.svg);
 }
 
 /* Pré Footer */
@@ -256,7 +210,6 @@ main #fields-search-container {
 }
 .btn-card-bottom>p{
     margin: 0px;
-    text-align: left;
 }
 
 .text-1{
@@ -338,14 +291,6 @@ footer a:hover {
     text-decoration: none;
 }
 
-.text-propaganda{
-    position: static;
-    width: 16rem;
-    height: 6rem;
-    left: 0px;
-    top: 4rem;
-}
-
 /* Cadastro */
 .presentation-paciente, .presentation-clinica {
     width: 100%;
@@ -371,7 +316,7 @@ footer a:hover {
     font-weight: 100;
 }
 
-.form-floating input {
+.form-floating input, .form-floating select {
     border-color: #EAEFEE;
     background: #EAEFEE;
 }
@@ -405,26 +350,6 @@ footer a:hover {
 .form-separator:after {
     left: 0.5em;
 }
-.form-selection{
-    background-color:#EAEFEE;
-    color:#808080; 
-    object-fit: cover;
-    max-width: 420px;
-    border-radius: 8px;
-    height: 3em;
-    border-color:#ffffff;
-
-
-}
-.form-update {
-    background-color:#EAEFEE;
-    color:#808080; 
-    object-fit: cover;
-    max-width: 420px;
-    border-radius: 8px;
-}
-    
-    
 
 .btn-facebook, .btn-google {
     position: relative;
@@ -495,23 +420,11 @@ footer a:hover {
     margin-bottom: 2rem;
 }
 
-.input-search input {
-    border-radius: .5rem 0 0 .5rem;
-    height: 4rem;
-}
-
 .input-search input:focus {
-    border: none;
-    box-shadow: none;
     background: #F2F2F2;
 }
 
-.input-search .input-group-text {
-    border-radius: 0 .5rem .5rem 0;
-}
-
-.input-search input, .input-group-text {
-    border-width: 0;
+.input-search input, .input-search .input-group-text {
     background: #F2F2F2;
 }
 
@@ -525,6 +438,34 @@ footer a:hover {
 
 .card:hover {
     border-color: var(--primary);
+}
+
+/* Telas de usuário */
+
+.btn-sidebar {
+    border-radius: .5rem;
+    border-color: var(--text);
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-sidebar.active {
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+.btn-sidebar:not(.active):hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.card-patient {
+    border: solid transparent;
 }
 
 /* tables */
