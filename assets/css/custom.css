@@ -211,6 +211,7 @@ main #fields-search-container {
 .btn-card-bottom>p{
     margin: 0px;
 }
+
 .text-1{
     background-color: var(--primary);
     color: white;
@@ -315,7 +316,7 @@ footer a:hover {
     font-weight: 100;
 }
 
-.form-floating input {
+.form-floating input, .form-floating select {
     border-color: #EAEFEE;
     background: #EAEFEE;
 }
