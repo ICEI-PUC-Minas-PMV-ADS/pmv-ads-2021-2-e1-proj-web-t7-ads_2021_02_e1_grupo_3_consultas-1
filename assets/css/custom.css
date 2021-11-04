@@ -211,6 +211,7 @@ main #fields-search-container {
 .btn-card-bottom>p{
     margin: 0px;
 }
+
 .text-1{
     background-color: var(--primary);
     color: white;
@@ -315,7 +316,7 @@ footer a:hover {
     font-weight: 100;
 }
 
-.form-floating input {
+.form-floating input, .form-floating select {
     border-color: #EAEFEE;
     background: #EAEFEE;
 }
@@ -405,13 +406,18 @@ footer a:hover {
 
 .page-header {
     background-color: var(--primary);
-    padding: 32px 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     color: #ffffff;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: center;
 }
 
-.page-header.header-search {
+.faq h3 {
+    margin-bottom: 2rem;
+}
+
+.page-header.header-bg {
     background-image: url(../img/header-bg.png);
 }
 
@@ -465,4 +471,14 @@ footer a:hover {
 
 .card-patient {
     border: solid transparent;
+}
+
+.faq .btn-light {
+    min-height: 3rem;
+}
+
+.faq .list-group-item {
+    color: var(--primary);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
