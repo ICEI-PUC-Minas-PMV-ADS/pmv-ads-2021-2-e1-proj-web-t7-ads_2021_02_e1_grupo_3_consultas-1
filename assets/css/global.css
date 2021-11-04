@@ -142,3 +142,16 @@ nav.navbar {
 .table tbody {
   color: var(--text);
 }
+
+.pagination .page-link {
+  padding: 1rem;
+}
+
+.page-link:not(.disabled) {
+  color: var(--primary);
+}
+
+.page-item.active .page-link {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
