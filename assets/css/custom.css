@@ -315,7 +315,7 @@ footer a:hover {
     font-weight: 100;
 }
 
-.form-floating input {
+.form-floating input, .form-floating select {
     border-color: #EAEFEE;
     background: #EAEFEE;
 }
@@ -465,62 +465,4 @@ footer a:hover {
 
 .card-patient {
     border: solid transparent;
-}
-
-
-/* Select */
-
-
-#floatingSelectGrid {
-    border-color: #808080;
-}
-/*Perfil-paciente*/
-
-.incluir_foto_perfil{
-    display: flex;
-    flex-direction: column;
-    margin-left: 8px;
-    max-width: 224px;
-}
-
-.container_foto_perfil{
-    display: flex;
-}
-.icone_lapis{
-    flex-direction: row;
-    box-sizing: border-box;
-    display: flex;
-    place-content: center flex-end;
-    align-items: start;
-    width: 100%;
-}
-#paddigTopSenha{
-    padding-top: 128px;
-}
-
-.inputMetadeTela{
-    max-width: 546px;
-}
-/* Telas de usuário */
-
-.btn-sidebar {
-    border-radius: .5rem;
-    border-color: var(--text);
-    color: var(--text);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-.btn-sidebar.active {
-    border-color: var(--primary);
-    background-color: var(--primary);
-    color: #ffffff;
-}
-
-.btn-sidebar:not(.active):hover {
-    border-color: var(--primary);
-    color: var(--primary);
 }

@@ -15,10 +15,7 @@
       <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
-
-      <title>Perfil </title>
-
-        <title>Perfil Paciente</title>
+      <title>Appoint | Perfil</title>
     </head>
 
     <body>
@@ -34,7 +31,6 @@
 
          <!-- Meio -->
          <main>
-
               <div class="container mt-3">
 
                 <div class="row">
@@ -46,130 +42,101 @@
                   </div>
 
                   <div class="col-12 col-md-8 col-lg-9">
-  
-                    <div>
 
-                      <div class="container_foto_perfil img-container mb-3">
-
-                          <img src="assets/img/usuario-quadrado.svg" class="fluid img-card">
-
-                          <div class="incluir_foto_perfil">
-                              <button class="btn-sm btn-primary" id="btn-com-icone" type="button">FOTO DE PERFIL <img class="ms-1" src="assets/img/icone nuvem.svg"></button>
-                              <small class="text-secondary mt-1">Tamanho de imagem recomendado é de 100 x 100px</small>
-                          </div>
-
-                          <div class="icone_lapis">
-                              <img src="assets/img/icone-lapis.svg">
-                          </div>
-                      </div>
-              
-                      <div>
-                            <div class="row">
-                              <div class="col-md">
-                                <div class="form-floating mb-3">
-                                  <input name="name" type="text" class="form-control" id="floatingInputName" placeholder="Nome">
-                                  <label for="floatingInputName">Nome de usuário</label>
-                                </div>
-                              </div>
-
-                              <div class="col-md">
-                                <div class="form-floating mb-3">
-                                  <input name="email" type="email" class="form-control" id="floatingInputName" placeholder="Nome">
-                                  <label for="floatingInputName">E-mail</label>
-                                </div>
+                    <div class="row mb-3">
+                        <div class="col-12 col-lg-6 d-flex">
+                            <img width="128" src="./media/profile/default.png" class="img-fluid rounded-5 me-3">
+                            <div class="d-flex flex-column w-100 justify-content-center justify-content-lg-start">
+                                <button class="btn-sm btn-primary mb-2 d-flex justify-content-center align-items-center" type="button">Foto de perfil <span class="material-icons-outlined ms-2">cloud_upload</span></button>
+                                <small class="text-center text-md-start">Tamanho de imagem recomendado é de 100 x 100px</small>
                             </div>
-                          </div>
-            
-                          <div class="row">
-                            <div class="col-md">
-                              <div class="form-floating mb-3">
-                                <input name="name" type="text" class="form-control" id="floatingInputName" placeholder="Nome">
-                                <label for="floatingInputName">Primeiro nome</label>
-                              </div>
-                            </div>
-
-                            <div class="col-md">
-                              <div class="form-floating mb-3">
-                                <input name="name" type="text" class="form-control" id="floatingInputName" placeholder="Nome">
-                                <label for="floatingInputName">Último nome</label>
-                              </div>
-                          </div>
                         </div>
-
-                        <div class="row">
-                          <div class="col-md">
-                            <div class="form-floating mb-3">
-                              <input name="phone" type="text" class="form-control" id="floatingInputPhone" placeholder="Celular">
-                              <label for="floatingInputPhone">Celular</label>
-                            </div>
-                          </div>
-
-                          <div class="col-md">
-                            <div class="form-floating mb-3">
-                              <input name="Endereço" type="text" class="form-control" id="floatingInputName" placeholder="Nome">
-                              <label for="floatingInputName">Endereço</label>
-                            </div>
-                          </div>
-                        </div>
-
-                
-                        <div class="row">
-                          <div class="col-md">
-                            <div class="form-floating mb-3">
-                              <input name="Data de nascimento"  type="date" class="form-control" id="floatingInputName" placeholder="Nome">
-                              <label for="floatingInputName">Data de nascimento</label>
-                            </div>
-                          </div>
-
-                          <div class="col-md">
-                            <div class="form-floating mb-3">
-                              <select class="form-select" id="floatingSelectGrid" aria-label="Selecione o gênero">
-                                <option selected>Selecione seu gênero</option>
-                                <option value="1">Feminino</option>
-                                <option value="2">Masculino</option>
-                                <option value="3">LGBTQIA+</option>
-                              </select>
-                              <label for="floatingInputName">Gênero</label>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div>
-                          <div id="paddigTopSenha">
-                            <h2 class="text-start clinica">Senha</h2>
-                            <h3>Alterar Senha</h3>
-                          </div>
-                              <div class="row">
-                                <div class="col-md">
-                                    <div data-register="clinic">
-                                      <div class="form-floating mb-3">
-                                        <input name="senha atual" type="password" class="form-control" id="floatingInputName" placeholder="Nome">
-                                        <label for="floatingInputName">Senha atual</label>
-                                      </div>
-                                      <div class="form-floating mb-3">
-                                        <input name="nova senha" type="text" class="form-control" id="floatingInputDocument" placeholder="CNPJ">
-                                        <label for="floatingInputDocument">Nova senha</label>
-                                      </div>
-                                      <div class="form-floating mb-3">
-                                        <input name="nova senha" type="text" class="form-control" id="floatingInputDocument" placeholder="CNPJ">
-                                        <label for="floatingInputDocument">Confirmar nova senha</label>
-                                      </div>
-                                    </div>
-                                </div>
-                                <div class="col-md"></div>
-                              </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                  </div>
+
+                    <div class="row mb-3">
+                        <div class="col-12 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input name="name" type="text" class="form-control" id="floatingInputName" placeholder="Nome">
+                                <label for="floatingInputName">Nome</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input name="email" type="email" class="form-control" id="floatingInputEmail" placeholder="E-mail">
+                                <label for="floatingInputEmail">E-mail</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input name="phone" type="text" class="form-control" id="floatingInputPhone" placeholder="Celular">
+                                <label for="floatingInputPhone">Celular</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input name="Endereço" type="text" class="form-control" id="floatingInputAddress" placeholder="Nome">
+                                <label for="floatingInputAddress">Endereço</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-floating mb-3">
+                                <input name="Data de nascimento"  type="date" class="form-control" id="floatingInputBirthDate" placeholder="Nome">
+                                <label for="floatingInputBirthDate">Data de nascimento</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-floating mb-3">
+                                <select class="form-select" id="floatingSelectGender" aria-label="Selecione o gênero">
+                                    <option selected>Selecione seu gênero</option>
+                                    <option value="1">Feminino</option>
+                                    <option value="2">Masculino</option>
+                                    <option value="3">LGBTQIA+</option>
+                                </select>
+                                <label for="floatingSelectGender">Gênero</label>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-row-reverse">
+                            <button class="btn btn-primary">Salvar</button>
+                        </div>
+                    </div>
+
+                      <div class="row mb-3">
+                          <h3 class="text-primary">Alterar Senha</h3>
+                          <div class="col-md">
+                              <div data-register="clinic">
+                                  <div class="form-floating mb-3">
+                                      <input name="oldpass" type="password" class="form-control" id="floatingInputOldPass" placeholder="Senha atual">
+                                      <label for="floatingInputOldPass">Senha atual</label>
+                                  </div>
+                                  <div class="form-floating mb-3">
+                                      <input name="newpass" type="password" class="form-control" id="floatingInputNewPass" placeholder="Nova senha">
+                                      <label for="floatingInputNewPass">Nova senha</label>
+                                  </div>
+                                  <div class="form-floating mb-3">
+                                      <input name="newpass_confirm" type="text" class="form-control" id="floatingInputConfirmPass" placeholder="Confirmar nova senha">
+                                      <label for="floatingInputConfirmPass">Confirmar nova senha</label>
+                                  </div>
+                              </div>
+                              <div class="d-flex flex-row-reverse">
+                                  <button class="btn btn-primary">Alterar</button>
+                              </div>
+                          </div>
+                      </div>
+
+                    </div>
                 </div>
               </div>
          </main>
 
      <!-- //Footer -->
       <div data-partial="footer"></div>
-      
+
       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
               integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
               crossorigin="anonymous"></script>
