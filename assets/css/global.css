@@ -89,6 +89,14 @@ nav.navbar {
   background-color: #E63C3C;
 }
 
+.btn-tool.secondary {
+  color: var(--text);
+}
+
+.btn-tool.secondary:hover {
+  background-color: var(--text);
+}
+
 .btn-tool:hover {
   color: #ffffff;
 }
@@ -119,6 +127,31 @@ nav.navbar {
 }
 
 .btn-outline-primary:hover {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
+
+.table thead {
+  color: var(--primary);
+}
+
+.table>:not(:first-child) {
+  border-top: 1px solid var(--light-gray);
+}
+
+.table tbody {
+  color: var(--text);
+}
+
+.pagination .page-link {
+  padding: 1rem;
+}
+
+.page-link:not(.disabled) {
+  color: var(--primary);
+}
+
+.page-item.active .page-link {
   border-color: var(--primary);
   background-color: var(--primary);
 }
