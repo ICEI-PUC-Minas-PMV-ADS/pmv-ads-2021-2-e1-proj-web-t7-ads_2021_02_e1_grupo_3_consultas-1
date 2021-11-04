@@ -1,7 +1,7 @@
 
   /* MAX MEDIUM Header*/
 @media (max-width: 991.98px) {
-  .btn-primary, .btn-secondary{
+  .btn-primary, .btn-secondary, .btn-light{
     width: 100%;
   }
 }
