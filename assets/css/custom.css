@@ -529,7 +529,18 @@ footer a:hover {
 
 /* tables */
 
-.table-doctor {
+.table-doctor-title {
     color:#479082;
-    border-color: #808080;
+    border-color: #DFDFDF;
 }
+
+.table-doctor-contrast {
+    color:#479082;
+    border-color: #DFDFDF;
+}
+.table-doctor {
+    color:#808080;
+    border-color: #DFDFDF;
+    font-weight: bold;
+}
+

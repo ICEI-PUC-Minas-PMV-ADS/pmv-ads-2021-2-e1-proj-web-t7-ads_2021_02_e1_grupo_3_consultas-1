@@ -81,12 +81,27 @@
 </header>
 
 <body>
-
+<!--Menu lateral-->
     <section class="container">
         <div class="row">
             <div class="col-3">
-                menu lateral
+                <div class="d-grid gap-2 mt-5">
+                    <button type="button" class="btn btn-sidebar">Perfil <span
+                            class="material-icons-outlined">monitor</span></button>
+                    <button type="button" class="btn btn-sidebar">Agenda <span
+                            class="material-icons-outlined">calendar_today</span></button>
+                    <button type="button" class="btn btn-sidebar">Notificações <span
+                            class="material-icons-outlined">notifications</span></button>
+                    <button type="button" class="btn btn-sidebar active">Agendamentos <span
+                            class="material-icons-outlined">edit_calendar</span></button>
+                    <button type="button" class="btn btn-sidebar">Especialistas <span
+                            class="material-icons-outlined">manage_accounts</span></button>
+                    <button type="button" class="btn btn-sidebar">Gerenciar Planos <span
+                            class="material-icons-outlined">settings</span></button>
+                </div>
             </div>
+
+<!--Formulário de atualização-->
             <div class="col">
                 <h2 class="h2-color-especial mb-5 mt-5 me-5 ms-0">Adicionar Especialista</h2>
                 <img class="rounded float-start me-4" src="assets/img/Default profile.svg">
@@ -135,15 +150,62 @@
         </div>
         </div>
     </section>
+
+<!--Filtro Lateral-->
     <section class="container">
         <div class="row">
-            <div class="col-3">
-                Filtros
+            <div class="col-3 mt-5">
+                <div class="container mt-5">
+                    <div class="row gx-5">
+                        <h3 class="text-primary mb-4 mt-5">Filtrar resultados por</h3>
+                        <div class="input-group input-search">
+                            <input id="specialty" type="text" placeholder="Qual especialidade"
+                                class="form-control text-uppercase" aria-label="Lupa">
+                            <label for="specialty" class="input-group-text"><img src="assets/img/search.svg"></label>
+                        </div>
+                        <div class="input-group input-search">
+                            <input id="specialty" type="text" placeholder="Nome" class="form-control text-uppercase"
+                                aria-label="Lupa">
+                            <label for="specialty" class="input-group-text"><img src="assets/img/search.svg"></label>
+                        </div>
+                        <div class="mb-3">
+                            <h3>Plano de saúde</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-1">
+                                <label class="form-check-label" for="plan-1">Unimed</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-2">
+                                <label class="form-check-label" for="plan-2">Bradesco Saúde</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-3">
+                                <label class="form-check-label" for="plan-3">Promed</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-4">
+                                <label class="form-check-label" for="plan-4">Allianz Saúde</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-5">
+                                <label class="form-check-label" for="plan-5">PortoSeguro Saúde</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-6">
+                                <label class="form-check-label" for="plan-6">Amil Saúde</label>
+                            </div>
+                            <button type="button" class="btn btn-primary mt-3">Filtrar</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+<!--Tabela de cadastrados-->
             <div class="col">
                 <h2 class="h2-color-especial mb-5 mt-5 me-5 ms-0">Cadastrados</h2>
-                 <table class="table align-middle table-doctor">
-                    <thead>
+
+                <table class="table align-middle">
+                    <thead class="table-doctor-title">
                         <tr>
                             <th scope="col">Nome</th>
                             <th scope="col">Especialidade</th>
@@ -151,10 +213,22 @@
                             <th scope="col">Gerenciar</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="table-doctor ">
+                        <tr class="table-doctor">
+                            <th scope="row"><img class="float-start mt-3 me-3 " src="assets/img/profile-doctor.svg">
+                                <p class="mt-3 table-doctor-contrast">Nome do médico</p>
+                                <p> CRM-XX:00000</p>
+                            </th>
+                            <td class="table.doctor">Especialidade</td>
+                            <td>(00) 00000-0000</td>
+                            <td><button span class="border-0 me-3"><img
+                                        src="assets/img/btn-view.svg"></span></button><button span
+                                    class="border-0 me-3"><img src="assets/img/btn-edit.svg"></span></button><button
+                                    span class="border-0"><img src="assets/img/btn-delete.svg"></span></button></td>
+                        </tr>
                         <tr>
                             <th scope="row"><img class="float-start mt-3 me-3 " src="assets/img/profile-doctor.svg">
-                                <p class="mt-3 ">Nome do médico</p>
+                                <p class="mt-3 table-doctor-contrast">Nome do médico</p>
                                 <p> CRM-XX:00000</p>
                             </th>
                             <td class="table.doctor">Especialidade</td>
@@ -162,11 +236,10 @@
                             <td><button span class="border-0 me-3"><img
                                         src="assets/img/btn-view.svg"></span></button><button span
                                     class="border-0 me-3"><img src="assets/img/btn-edit.svg"></span></button><button
-                                    span class="border-0"><img src="assets/img/btn-delete.svg"></span></button></td>                                    
-                        </tr>                      
+                                    span class="border-0"><img src="assets/img/btn-delete.svg"></span></button></td>
                         <tr>
                             <th scope="row"><img class="float-start mt-3 me-3 " src="assets/img/profile-doctor.svg">
-                                <p class="mt-3 ">Nome do médico</p>
+                                <p class="mt-3 table-doctor-contrast ">Nome do médico</p>
                                 <p> CRM-XX:00000</p>
                             </th>
                             <td class="table.doctor">Especialidade</td>
@@ -174,22 +247,11 @@
                             <td><button span class="border-0 me-3"><img
                                         src="assets/img/btn-view.svg"></span></button><button span
                                     class="border-0 me-3"><img src="assets/img/btn-edit.svg"></span></button><button
-                                    span class="border-0"><img src="assets/img/btn-delete.svg"></span></button></td>  
-                                     <tr>
-                            <th scope="row"><img class="float-start mt-3 me-3 " src="assets/img/profile-doctor.svg">
-                                <p class="mt-3 ">Nome do médico</p>
-                                <p> CRM-XX:00000</p>
-                            </th>
-                            <td class="table.doctor">Especialidade</td>
-                            <td>(00) 00000-0000</td>
-                            <td><button span class="border-0 me-3"><img
-                                        src="assets/img/btn-view.svg"></span></button><button span
-                                    class="border-0 me-3"><img src="assets/img/btn-edit.svg"></span></button><button
-                                    span class="border-0"><img src="assets/img/btn-delete.svg"></span></button></td>  
-                        </tr>      
+                                    span class="border-0"><img src="assets/img/btn-delete.svg"></span></button></td>
+                        </tr>
                         <tr>
                             <th scope="row"><img class="float-start mt-3 me-3 " src="assets/img/profile-doctor.svg">
-                                <p class="mt-3 ">Nome do médico</p>
+                                <p class="mt-3 table-doctor-contrast">Nome do médico</p>
                                 <p> CRM-XX:00000</p>
                             </th>
                             <td class="table.doctor">Especialidade</td>
@@ -197,11 +259,11 @@
                             <td><button span class="border-0 me-3"><img
                                         src="assets/img/btn-view.svg"></span></button><button span
                                     class="border-0 me-3"><img src="assets/img/btn-edit.svg"></span></button><button
-                                    span class="border-0"><img src="assets/img/btn-delete.svg"></span></button></td>                                    
-                        </tr>            
+                                    span class="border-0"><img src="assets/img/btn-delete.svg"></span></button></td>
+                        </tr>
                         <tr>
                             <th scope="row"><img class="float-start mt-3 me-3 " src="assets/img/profile-doctor.svg">
-                                <p class="mt-3 ">Nome do médico</p>
+                                <p class="mt-3 table-doctor-contrast">Nome do médico</p>
                                 <p> CRM-XX:00000</p>
                             </th>
                             <td class="table.doctor">Especialidade</td>
@@ -209,11 +271,11 @@
                             <td><button span class="border-0 me-3"><img
                                         src="assets/img/btn-view.svg"></span></button><button span
                                     class="border-0 me-3"><img src="assets/img/btn-edit.svg"></span></button><button
-                                    span class="border-0"><img src="assets/img/btn-delete.svg"></span></button></td>                                    
-                        </tr>            
+                                    span class="border-0"><img src="assets/img/btn-delete.svg"></span></button></td>
+                        </tr>
                         <tr>
                             <th scope="row"><img class="float-start mt-3 me-3 " src="assets/img/profile-doctor.svg">
-                                <p class="mt-3 ">Nome do médico</p>
+                                <p class="mt-3 table-doctor-contrast ">Nome do médico</p>
                                 <p> CRM-XX:00000</p>
                             </th>
                             <td class="table.doctor">Especialidade</td>
@@ -221,15 +283,15 @@
                             <td><button span class="border-0 me-3"><img
                                         src="assets/img/btn-view.svg"></span></button><button span
                                     class="border-0 me-3"><img src="assets/img/btn-edit.svg"></span></button><button
-                                    span class="border-0"><img src="assets/img/btn-delete.svg"></span></button></td>                                    
-                        </tr>                  
+                                    span class="border-0"><img src="assets/img/btn-delete.svg"></span></button></td>
+                        </tr>
                     </tbody>
-                </table>           
+                </table>
             </div>
         </div>
     </section>
-
 </body>
+
 <footer class="bg-white mt-3 pt-0 pb-4 text-center text-md-start">
 
     <div class="container">
