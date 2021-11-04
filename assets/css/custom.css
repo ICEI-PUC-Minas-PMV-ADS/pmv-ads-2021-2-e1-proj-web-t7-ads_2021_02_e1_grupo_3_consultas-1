@@ -13,7 +13,7 @@ body {
 }
 
 .text-tertiary {
-    color: var(--tertiary) !important;
+    color: var(--tertiary);
 }
 
 hr{
@@ -422,7 +422,7 @@ footer a:hover {
     object-fit: cover;
     max-width: 420px;
     border-radius: 8px;
-
+}
     
     
 
@@ -529,6 +529,6 @@ footer a:hover {
 
 /* tables */
 
-.table-doctor{
-    color:red;
+.table-doctor {
+    color:#6e8883;
 }
