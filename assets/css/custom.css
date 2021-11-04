@@ -315,7 +315,7 @@ footer a:hover {
     font-weight: 100;
 }
 
-.form-floating input {
+.form-floating input, .form-floating select {
     border-color: #EAEFEE;
     background: #EAEFEE;
 }
