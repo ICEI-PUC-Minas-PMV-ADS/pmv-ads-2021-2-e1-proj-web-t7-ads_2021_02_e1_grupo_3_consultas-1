@@ -1,6 +1,6 @@
-<header id="header">
-    <div class="container">
-        <nav class="navbar navbar-expand-md navbar-light">
+<div class="p-0 container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
             <a class="navbar-brand" href="./index.html">
                 <img src="assets/img/logo.svg" class = 'img-logo'>
             </a>
@@ -11,20 +11,17 @@
             </button>
 
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class='nav-link text-center d-none' id='id_especialista_paciente'>
-                        <a class='btn-link active btn-help'>ENCONTRE ESPECIALISTA</a>
-                    </li>
-                    <li class="nav-link text-center">
-                        <a class="btn-link active btn-help" aria-current="page" href="#">AJUDA</a>
+                <ul class="navbar-nav align-items-md-center">
+                    <li class="nav-link">
+                        <a class="btn-link active" aria-current="page" href="#">AJUDA</a>
                     </li>
                     <li class="nav-link">
                         <button class="btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal" type="button">Entrar</button>
                     </li>
                 </ul>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
     <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down">
             <div class="modal-content">
@@ -43,8 +40,8 @@
                                 <label for="floatingPassword">Senha</label>
                             </div>
                             <div class="row mb-3">
-                                <div class="col-7">
-                                    <a class="btn btn-link text-muted" aria-current="page" href="#">Esqueceu sua senha?</a>
+                                <div class="col-7 d-flex align-items-center">
+                                    <a class="text-muted" href="#"><small>Esqueceu sua senha?</small></a>
                                 </div>
                                 <div class="col-5">
                                     <div class="d-flex flex-row-reverse">
@@ -56,7 +53,7 @@
                                 <span class="text-muted text-center mb-2">Não tem cadastro?</span>
                                 <div class="col-12 d-flex justify-content-center">
                                     <a href="./cadastro-paciente.html">
-                                        <button class="btn btn-secondary" type="button">Cadastre-se</button>
+                                        <button class="btn btn-outline-primary" type="button">Cadastre-se</button>
                                     </a>
                                 </div>
                             </div>
@@ -78,4 +75,4 @@
         </div>
     </div>
     <script type="module" src="./assets/js/forms/login.js"></script>
-</header>
+</div>

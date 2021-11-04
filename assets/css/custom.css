@@ -5,8 +5,20 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
+    color: var(--text);
 }
 
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.text-tertiary {
+    color: var(--tertiary) !important;
+}
+
+hr{
+    color: var(--primary);
+}
 a, .btn-link {
     text-decoration: none;
 }
@@ -78,10 +90,9 @@ pre{
     width: auto;
 }
 
-.nav-link .btn-link, h4 {
+.nav-link .btn-link {
     font-size: 12px;
     color: var(--primary);
-    line-height: 40px;
 }
 
 .nav-collapse-button{
@@ -95,7 +106,27 @@ pre{
     letter-spacing: 0.04em;
 }
 
-/* Botões superiores */
+/* Botões */
+
+.text-center-header{
+    margin-top: 0;
+}
+
+.img-notification{
+    padding-top: 12px;
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+
+.btn-help-header,.btn-help-clinic{
+    font-weight: 700!important;
+    margin-top: 0;
+}
+
+.btn-help,.btn-notification,.btn-user,.btn-especialista{
+    margin-left: 0.5rem;
+    font-weight: 700;
+}
 
 .btn-secondary {
     color: var(--primary);
@@ -121,7 +152,6 @@ pre{
 /* Slider */
 
 main #slider-image {
-    height: 631px;
     background-image: url(../img/doctor.png);
     background-size: cover;
     background-position: center;
@@ -140,80 +170,14 @@ main .header-slider {
     margin-right: 5rem;
 }
 main #fields-search-container {
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
     background-color: rgba(153, 153, 153, 0.25);
     border-radius: 16px;
 }
 
-.in-button-spc, .in-button-loc, .in-button-dat {
-    background-color: white;
-    background-size: 16px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.in-button-spc {
-    background-image: url(../img/search.svg);
-}
-
-.in-button-loc {
-    background-image: url(../img/loc.svg);
-}
-
-.in-button-dat {
-    background-image: url(../img/dat.svg);
-}
-
-/* Cards Centrais */
-
-.text-center-title{
-    display:none
-}
-
-#border {
-    border-bottom: 0.4px #B6E7D6 solid;
-    margin-bottom: -40px;
-  }
-
-.text-card{
-    color:var(--tertiary);
-}
-
-#cards a.destaque{
-    display: block;
-    background: var(--light);
-    border-radius: 5px;
-    text-align: center;
-    padding: 20px;
-    color: #000;
-    text-decoration: none;
-    transition: all ease-out 0.2s;
-}
-#cards a.destaque:hover{
-    background: #fff;
-    box-shadow:  0px 0px 10px 0px #B6E7D6;
-    transform: scale(1.05);
-}
-#cards p {
-    color: #479082;
-}
-#cards a.destaque .img-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-}
-#cards a.destaque .img-container img {
-    max-height: 160px;
-}
-
-.paragrafo-card{
-    text-align: left;
-    padding-left: 8px;
-}
-
-.img-card{
-    border-radius: 16px;
+#fields-search-container input {
+    border: none;
 }
 
 /* Pré Footer */
@@ -253,7 +217,7 @@ main #fields-search-container {
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.04em;
-    text-transform:uppercase;
+    text-transform: uppercase;
     border: none;
     border-radius: 8px;
 }
@@ -269,20 +233,44 @@ main #fields-search-container {
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0.04em;
-    text-transform: none;
+    text-transform: uppercase;
     border: none;
     border-radius: 8px;
 }
 
 /* Footer */
 
-footer ul>li{
-    display: list-item;
-    list-style-type: disc !important;
+.img-logo-footer{
+    height: 48px;
 }
 
-.text-footer,.text-footer:hover{
-    color: var(--text-footer);
+.footer-container{
+    padding: 0;
+}
+
+.footer-promo{
+    padding: 0;
+}
+
+footer li {
+    list-style-type: none;
+    color: var(--text);
+    margin-bottom: .5rem;
+}
+
+footer li:not(.list-unstyled):before {
+    content:"·";
+    margin: 0 .5rem;
+    vertical-align:middle;
+    line-height:20px;
+}
+
+footer a {
+    color: var(--text);
+}
+
+footer a:hover {
+    color: var(--primary);
 }
 
 .text-secondary{
@@ -296,9 +284,6 @@ footer ul>li{
 .copyright-footer{
     padding-top: 0.2%;
 }
-footer h5 {
-    color: var(--primary);
-}
 
 #copyright {
     font-size: 12px;
@@ -306,19 +291,19 @@ footer h5 {
 }
 
 /* Cadastro */
+.presentation-paciente, .presentation-clinica {
+    width: 100%;
+    margin-right: 5rem;
+    height: 360px;
+    background-size: cover;
+}
 
 .presentation-paciente {
     background-image: url(../img/cad-paciente.png);
-    min-height: 360px;
-    margin-top: 10%;
-    margin-right: 5%;
 }
 
 .presentation-clinica{
     background-image: url(../img/cad-clinica.png);
-    min-height: 360px;
-    margin-top: 10%;
-    margin-right: 5%;
 }
 
 .form-header .link {
@@ -333,10 +318,6 @@ footer h5 {
 .form-floating input {
     border-color: #EAEFEE;
     background: #EAEFEE;
-}
-.form-floating input  {
-    border-color: #808080;
-    background:#f2f2f2
 }
 
 .form-floating label {
@@ -403,6 +384,87 @@ footer h5 {
 .btn-google:before {
     left: 8px;
     background: url(../img/google.svg);
+}
+
+/* Dropdown */
+
+.dropdown-menu>li>a{
+    color: var(--primary);
+}
+
+.dropdown-menu>li>a:hover{
+    background-color: var(--secondary);
+}
+
+.dropdown ul.dropdown-menu{
+    border-radius:8px;
+    box-shadow:none;
+    min-width: 200px;
+    transform: translate3d(-50%, 0px, 0px) !important;
+}
+
+.page-header {
+    background-color: var(--primary);
+    padding: 32px 0;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.page-header.header-search {
+    background-image: url(../img/header-bg.png);
+}
+
+.input-search {
+    margin-bottom: 2rem;
+}
+
+.input-search input:focus {
+    background: #F2F2F2;
+}
+
+.input-search input, .input-search .input-group-text {
+    background: #F2F2F2;
+}
+
+.form-check label {
+    line-height: 24px;
+}
+
+.card {
+    transition: all .3s ease-in-out;
+}
+
+.card:hover {
+    border-color: var(--primary);
+}
+
+/* Telas de usuário */
+
+.btn-sidebar {
+    border-radius: .5rem;
+    border-color: var(--text);
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-sidebar.active {
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+.btn-sidebar:not(.active):hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.card-patient {
+    border: solid transparent;
 }
 
 

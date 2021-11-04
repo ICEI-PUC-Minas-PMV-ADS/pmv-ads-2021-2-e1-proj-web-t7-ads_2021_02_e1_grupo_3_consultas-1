@@ -1,62 +1,124 @@
-
 /*Reset*/
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: 0;
-  }
-  
-  /*button-Header*/
-  .button {
-    text-transform: lowercase;
-    font-weight: 500;
-    padding-left: 1.4rem;
-    padding-right: 1.4rem;
-  }
-  
-  .button-primary {
-    background-color: var(--primary);
-    border-color: var(--primary);
-  }
-  
-  .button-primary:hover {
-    background-color: var(--primary-dark);
-    border-color: var(--primary-dark);
-  }
-  
-  .button-primary-outline {
-    border-color: var(--primary);
-    color: var(--primary);
-    
-  }
-  
-  .button-primary-outline:hover {
-    background-color: var(--primary-dark);
-    border-color: var(--primary-dark);
-  }
-  .border-linha {
-    border-bottom: 0.4px #B6E7D6 solid;
-    margin-bottom: -40px;
-  }
-  .clinica{
-    color: #479082;
-  }
-  .pacientes{
-   color: #479082;
-  }
-  .contatos{
-    color: #479082;
-  }
-  .img-fluid{
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /*Inicio Cards*/
-  
-  a{
-    color: var(--primary);
-  }
-  a:hover{
-    color: var(--primary-dark);
-  }
+  margin: 0;
+  padding: 0;
+}
+
+/*Inicio Cards*/
+
+a{
+  color: var(--primary);
+}
+
+a:hover{
+  color: var(--primary-light);
+}
+
+.rounded-5 {
+  border-radius: .5rem !important;
+}
+
+.rounded-10 {
+  border-radius: 1rem !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn {
+  border-radius: .5rem;
+  text-transform: uppercase;
+}
+
+.btn-link {
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: var(--primary);
+  display: block;
+}
+
+nav.navbar {
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.material-icons-outlined.md-18 {
+  font-size: 18px;
+}
+
+.material-icons-outlined.md-24 {
+  font-size: 24px;
+}
+
+.material-icons-outlined.md-36 {
+  font-size: 36px;
+}
+
+.material-icons-outlined.md-48 {
+  font-size: 48px;
+}
+
+.btn-tool {
+  line-height: 0;
+  padding: .5rem;
+  border-color: var(--light-gray);
+  background-color: var(--light-gray);
+  color: #2B5EAB;
+}
+
+.btn-tool:hover {
+  background-color: #2B5EAB;
+}
+
+.btn-tool.success {
+  color: #57BD90;
+}
+
+.btn-tool.success:hover {
+  background-color: #57BD90;
+}
+
+.btn-tool.danger {
+  color: #E63C3C;
+}
+
+.btn-tool.danger:hover {
+  background-color: #E63C3C;
+}
+
+.btn-tool:hover {
+  color: #ffffff;
+}
+
+.input-group input {
+  border-radius: .5rem 0 0 .5rem;
+  height: 4rem;
+}
+
+.input-group input:focus {
+  border: none;
+  box-shadow: none;
+}
+
+.input-group .input-group-text {
+  background-color: #ffffff;
+  border-radius: 0 .5rem .5rem 0;
+  color: var(--text);
+}
+
+.input-group input, .input-group .input-group-text {
+  border-width: 0;
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  border-color: var(--primary);
+  background-color: var(--primary);
+}
