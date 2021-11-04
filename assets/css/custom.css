@@ -439,3 +439,26 @@ footer h5 {
 .inputMetadeTela{
     max-width: 546px;
 }
+/* Telas de usuário */
+
+.btn-sidebar {
+    border-radius: .5rem;
+    border-color: var(--text);
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-sidebar.active {
+    border-color: var(--primary);
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+.btn-sidebar:not(.active):hover {
+    border-color: var(--primary);
+    color: var(--primary);
+}
