@@ -13,8 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap"
       rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
 
+    <!-- Icon -->
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" sizes="32x32">
 
     <title>Appoint | Marque a sua consulta</title>
   </head>
@@ -43,25 +46,22 @@
             <div id="fields-search-container" class="p-5 rounded-lg">
               <form class="form-inline" role="form">
                 <div class="row">
-                  <div class="form-group col-md-4">
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="QUAL A ESPECIALIDADE?"
-                        aria-label="especialidade" aria-describedby="button-addon2">
-                      <button class="btn in-button-spc" type="button"></button>
+                  <div class="col-12 col-lg-4 mb-3">
+                    <div class="input-group">
+                      <input id="specialty" type="text" placeholder="Qual especialidade" class="form-control text-uppercase" aria-label="Lupa">
+                      <label for="specialty" class="input-group-text"><span class="material-icons-outlined">search</span></label>
                     </div>
                   </div>
-                  <div class="form-group col-md-4">
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="ONDE?" aria-label="localização"
-                        aria-describedby="button-addon2">
-                      <button class="btn in-button-loc" type="button"></button>
+                  <div class="col-12 col-lg-4 mb-3">
+                    <div class="input-group">
+                      <input id="date" type="text" placeholder="Quando?" class="form-control text-uppercase" aria-label="Calendário">
+                      <label for="date" class="input-group-text"><span class="material-icons-outlined">edit_calendar</span></label>
                     </div>
                   </div>
-                  <div class="form-group col-md-4">
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="QUANDO?" aria-label="dia"
-                        aria-describedby="button-addon2">
-                      <button class="btn in-button-dat" type="button"></button>
+                  <div class="col-12 col-lg-4 mb-3">
+                    <div class="input-group">
+                      <input id="location" type="text" placeholder="Onde?" class="form-control text-uppercase" aria-label="Local">
+                      <label for="location" class="input-group-text"><span class="material-icons-outlined">location_on</span></label>
                     </div>
                   </div>
                   <div class="container">

@@ -93,7 +93,6 @@ pre{
 .nav-link .btn-link {
     font-size: 12px;
     color: var(--primary);
-    line-height: 40px;
 }
 
 .nav-collapse-button{
@@ -108,10 +107,6 @@ pre{
 }
 
 /* Botões */
-.text-center{
-    margin-top: 5px;
-    padding-right: 0!important;
-}
 
 .text-center-header{
     margin-top: 0;
@@ -185,25 +180,6 @@ main #fields-search-container {
     border: none;
 }
 
-.in-button-spc, .in-button-loc, .in-button-dat {
-    background-color: white;
-    background-size: 16px;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.in-button-spc {
-    background-image: url(../img/search.svg);
-}
-
-.in-button-loc {
-    background-image: url(../img/pin.svg);
-}
-
-.in-button-dat {
-    background-image: url(../img/dat.svg);
-}
-
 /* Pré Footer */
 
 .container-p-footer{
@@ -235,6 +211,7 @@ main #fields-search-container {
 .btn-card-bottom>p{
     margin: 0px;
 }
+
 .text-1{
     background-color: var(--primary);
     color: white;
@@ -339,7 +316,7 @@ footer a:hover {
     font-weight: 100;
 }
 
-.form-floating input {
+.form-floating input, .form-floating select {
     border-color: #EAEFEE;
     background: #EAEFEE;
 }
@@ -429,13 +406,18 @@ footer a:hover {
 
 .page-header {
     background-color: var(--primary);
-    padding: 32px 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     color: #ffffff;
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: center;
 }
 
-.page-header.header-search {
+.faq h3 {
+    margin-bottom: 2rem;
+}
+
+.page-header.header-bg {
     background-image: url(../img/header-bg.png);
 }
 
@@ -443,23 +425,11 @@ footer a:hover {
     margin-bottom: 2rem;
 }
 
-.input-search input {
-    border-radius: .5rem 0 0 .5rem;
-    height: 4rem;
-}
-
 .input-search input:focus {
-    border: none;
-    box-shadow: none;
     background: #F2F2F2;
 }
 
-.input-search .input-group-text {
-    border-radius: 0 .5rem .5rem 0;
-}
-
-.input-search input, .input-group-text {
-    border-width: 0;
+.input-search input, .input-search .input-group-text {
     background: #F2F2F2;
 }
 
@@ -503,11 +473,8 @@ footer a:hover {
     border: solid transparent;
 }
 
-/* Perfil publico médico */
-.btn-perfil-medico{
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    text-align: center;
+.faq .btn-light {
+    min-height: 3rem;
 }
 /* Dashboard */
 .card-titulo{
