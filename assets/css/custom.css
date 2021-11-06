@@ -484,7 +484,16 @@ footer a:hover {
     max-width: 20rem;
     max-height: 17.5rem;
 }
-/* Aba pacientes */
-.medic-painel-patient>pre{
-    line-height: 20px;
+
+.title{
+    background-color: var(--primary);
+    color: #ffffff;
+    border: 2px solid var(--primary)!important;
+    border-radius: 8px 8px 0px 0px !important;
+    font-weight: 700;
+}
+
+.conteudo-dash{
+    border-color: var(--primary)!important;
+    border-radius: 0px 0px 8px 8px!important;
 }
