@@ -65,6 +65,11 @@ input:not(.form-floating input, .form-check-input) {
   color: var(--text);
 }
 
+.btn-tertiary {
+  background-color: var(--tertiary);
+  color: #ffffff;
+}
+
 .list-group {
   border-radius: .5rem;
 }
