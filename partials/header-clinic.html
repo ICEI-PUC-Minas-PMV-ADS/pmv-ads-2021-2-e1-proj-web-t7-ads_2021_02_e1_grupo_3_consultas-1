@@ -20,12 +20,27 @@
                aria-current="page" href="#"><span class="material-icons-outlined md-36">notifications</span></a>
           </li>
           <li class="nav-link dropdown">
-            <a class="btn-link active btn-user d-none d-md-block" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false"
-               href="#"><img class="rounded-circle" width="48" src="./media/profile/default.png" alt=""></a>
-            <ul class="dropdown-menu" aria-labelledby="profileDropdown">
-              <li class="dropdown-item-text" data-username></li>
-              <li><a class="dropdown-item d-flex align-items-center" href="#"><span class="material-icons-outlined me-2">settings</span> <span>Configurações</span></a></li>
-              <li data-logout><a class="dropdown-item d-flex align-items-center" href="#"><span class="material-icons-outlined me-2">logout</span> <span>Sair</span></a></li>
+            <a class="btn-link active btn-user d-none d-md-block" id="profileDropdown" data-bs-toggle="dropdown"
+              aria-expanded="false" href="#"><img class="rounded-circle" width="48" src="./media/profile/default.png"
+                alt=""></a>
+            <ul class="dropdown-menu p-3" aria-labelledby="profileDropdown">
+              <li class="dropdown-item-text">
+                <div class="row">
+                  <div class="col-4 pe-0">
+                    <img class='rounded-circle img-fluid p-1' src="./media/profile/default.png" alt="">
+                  </div>
+                  <div class="col ps-1 pt-2">
+                    <small class='text-primary' data-username></small>
+                    <small>Especialidade</small>
+                  </div>
+                </div>
+              </li>
+              <li class='pt-2'><a class="dropdown-item d-flex align-items-center" href="#"><small
+                    class='ps-2'>Perfil</small></a></li>
+              <li class='pt-2'><a class="dropdown-item d-flex align-items-center" href="#"><small
+                    class='ps-2'>Configurações</small></a></li>
+              <li class='pt-2 pb-4' data-logout><a class="dropdown-item d-flex align-items-center" href="#"><small
+                    class='ps-2 text-tertiary'>Sair</small></a></li>
             </ul>
           </li>
           <li class="nav-link text-center">
