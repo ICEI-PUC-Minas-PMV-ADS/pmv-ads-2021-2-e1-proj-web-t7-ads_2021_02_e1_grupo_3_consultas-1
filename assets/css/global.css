@@ -184,3 +184,22 @@ input:not(.form-floating input, .form-check-input) {
   border-color: var(--primary);
   background-color: var(--primary);
 }
+
+.page-subheader {
+  padding: .5rem;
+  border-radius: .5rem;
+  text-align: center;
+  background-color: var(--primary-light);
+  color: var(--primary);
+}
+
+.btn-categories .btn {
+  padding: 1.5rem;
+  width: 100%;
+  height: auto;
+}
+
+.btn-categories .btn.active {
+  background-color: var(--primary-light);
+  color: var(--primary);
+}
