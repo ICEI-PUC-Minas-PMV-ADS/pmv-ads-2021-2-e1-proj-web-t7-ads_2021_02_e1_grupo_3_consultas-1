@@ -1,4 +1,4 @@
-<div class="p-0 container-fluid" id = 'header-paciente'>
+<div class="p-0 container-fluid" id='header-paciente'>
   <nav class="navbar navbar-expand-md navbar-light">
     <div class="container">
       <a class="navbar-brand" href="./index.html">
@@ -6,7 +6,7 @@
       </a>
 
       <button class="navbar-toggler nav-collapse-button" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -19,33 +19,44 @@
             <a class="btn-link active btn-help" aria-current="page" href="#">AJUDA</a>
           </li>
           <li class="nav-link img-notification ms-2">
-            <a class="btn-link active btn-notification d-none d-md-block"
-               aria-current="page" href="#"><span class="material-icons-outlined md-36">notifications</span></a>
+            <a class="btn-link active btn-notification d-none d-md-block" aria-current="page" href="#"><span
+                class="material-icons-outlined md-36">notifications</span></a>
           </li>
           <li class="nav-link dropdown">
-            <a class="btn-link active btn-user d-none d-md-block" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false"
-               href="#"><img class="rounded-circle" width="48" src="./media/profile/default.png" alt=""></a>
-               <ul class="dropdown-menu" aria-labelledby="profileDropdown">
-                <li class="dropdown-item-text" data-username></li>
-                <li><a class="dropdown-item d-flex align-items-center" href="#"><span class="material-icons-outlined me-2">settings</span> <span>Configurações</span></a></li>
-                <li data-logout><a class="dropdown-item d-flex align-items-center" href="#"><span class="material-icons-outlined me-2">logout</span> <span>Sair</span></a></li>
-              </ul>
+            <a class="btn-link active btn-user d-none d-md-block" id="profileDropdown" data-bs-toggle="dropdown"
+              aria-expanded="false" href="#"><img class="rounded-circle" width="48" src="./media/profile/default.png"
+                alt=""></a>
+            <ul class="dropdown-menu p-3" aria-labelledby="profileDropdown">
+              <li class="dropdown-item-text">
+                <div class="row">
+                  <div class="col-4 pe-0">
+                    <img class='rounded-circle img-fluid p-1' src="./media/profile/default.png" alt="">
+                  </div>
+                  <div class="col ps-1 pt-2">
+                    <small class='text-primary' data-username></small>
+                  </div>
+                </div>
+              </li>
+              <li class='pt-2'><a class="dropdown-item d-flex align-items-center" href="#"><small
+                    class='ps-2'>Perfil</small></a></li>
+              <li class='pt-2'><a class="dropdown-item d-flex align-items-center" href="#"><small
+                    class='ps-2'>Configurações</small></a></li>
+              <li class='pt-2 pb-4' data-logout><a class="dropdown-item d-flex align-items-center" href="#"><small
+                    class='ps-2 text-tertiary'>Sair</small></a></li>
+            </ul>
           </li>
           <li class="nav-link text-center">
-            <a class="btn-link active user-colapse d-block d-md-none mt-0"
-               aria-current="page" href="#">
+            <a class="btn-link active user-colapse d-block d-md-none mt-0" aria-current="page" href="#">
               <p class='text-uppercase'>Configurações</p>
             </a>
           </li>
           <li class="nav-link text-center">
-            <a class="btn-link active notification-colapse d-block d-md-none mt-0"
-               aria-current="page" href="#">
+            <a class="btn-link active notification-colapse d-block d-md-none mt-0" aria-current="page" href="#">
               <p class='text-uppercase'>Notificações</p>
             </a>
           </li>
           <li class="nav-link text-center">
-            <a class="btn-link active notification-colapse d-block d-md-none mt-0"
-               aria-current="page" href="#">
+            <a class="btn-link active notification-colapse d-block d-md-none mt-0" aria-current="page" href="#">
               <p class='text-uppercase'>Sair</p>
             </a>
           </li>
