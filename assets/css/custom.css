@@ -482,3 +482,8 @@ footer a:hover {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
+#floatingTextarea2{
+    height: 96px;
+    width: 100%;
+}
