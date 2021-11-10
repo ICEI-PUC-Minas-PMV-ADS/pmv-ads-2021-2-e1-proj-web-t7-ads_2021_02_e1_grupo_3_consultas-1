@@ -203,3 +203,11 @@ input:not(.form-floating input, .form-check-input) {
   background-color: var(--primary-light);
   color: var(--primary);
 }
+
+.breadcrumb-item a {
+  color: var(--text);
+}
+
+.breadcrumb-item a:hover {
+  color: var(--primary);
+}
