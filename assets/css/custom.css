@@ -496,4 +496,9 @@ footer a:hover {
 .conteudo-dash{
     border-color: var(--primary)!important;
     border-radius: 0px 0px 8px 8px!important;
+   
+}
+
+.graf-01,.graf-02{
+    margin-bottom: 8rem;
 }
