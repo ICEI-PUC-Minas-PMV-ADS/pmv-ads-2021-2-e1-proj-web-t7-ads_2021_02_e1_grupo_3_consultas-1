@@ -483,3 +483,8 @@ footer a:hover {
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
+
+.card-promo {
+    border: .20rem solid #ffffff;
+    background: transparent;
+}

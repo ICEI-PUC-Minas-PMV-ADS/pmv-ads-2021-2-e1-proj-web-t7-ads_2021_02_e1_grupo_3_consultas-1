@@ -65,6 +65,11 @@ input:not(.form-floating input, .form-check-input) {
   color: var(--text);
 }
 
+.btn-tertiary {
+  background-color: var(--tertiary);
+  color: #ffffff;
+}
+
 .list-group {
   border-radius: .5rem;
 }
@@ -178,4 +183,23 @@ input:not(.form-floating input, .form-check-input) {
 .page-item.active .page-link {
   border-color: var(--primary);
   background-color: var(--primary);
+}
+
+.page-subheader {
+  padding: .5rem;
+  border-radius: .5rem;
+  text-align: center;
+  background-color: var(--primary-light);
+  color: var(--primary);
+}
+
+.btn-categories .btn {
+  padding: 1.5rem;
+  width: 100%;
+  height: auto;
+}
+
+.btn-categories .btn.active {
+  background-color: var(--primary-light);
+  color: var(--primary);
 }
