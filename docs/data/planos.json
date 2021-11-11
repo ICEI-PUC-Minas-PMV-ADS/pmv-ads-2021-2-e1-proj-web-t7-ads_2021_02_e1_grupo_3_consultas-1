@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Básico",
+    "price": "99.00",
+    "description": "Lorem..."
+  },
+  {
+    "id": 2,
+    "name": "Intermediário",
+    "price": "130.00",
+    "description": "Lorem..."
+  },
+  {
+    "id": 3,
+    "name": "Avançado",
+    "price": "199.00",
+    "description": "Lorem..."
+  }
+]
