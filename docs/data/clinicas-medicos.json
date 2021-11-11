@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "clinicId": 2,
+    "doctorId": 3,
+    "gender": "m",
+    "specialtyId": 2
+  },
+  {
+    "id": 2,
+    "clinicId": 2,
+    "doctorId": 4,
+    "gender": "f",
+    "specialtyId": 1
+  }
+]
