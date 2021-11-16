@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "doctorId": 3,
+    "date": "Y-m-d",
+    "schedule": [
+      {
+        "hour": "07:00",
+        "appointmentId": null
+      },
+      {
+        "hour": "11:00",
+        "appointmentId": 1
+      }
+    ]
+  }
+]
