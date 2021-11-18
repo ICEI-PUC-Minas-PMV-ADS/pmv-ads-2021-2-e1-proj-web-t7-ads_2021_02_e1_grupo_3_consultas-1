@@ -15,14 +15,17 @@
             rel="stylesheet">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
+        <!-- Icon -->
+        <link rel="icon" type="image/png" href="./assets/img/favicon.png" sizes="32x32">
 
         <title>Appoint | Marque a sua consulta</title>
     </head>
-    <div class='mb-0' data-partial="header-clinic"></div>
 
     <body>
 
-
+        <!-- Navbar -->
+        <div data-partial="header" data-patient="header-patient" data-clinic="header-clinic"></div>
+        <!-- //Navbar -->
         <!-- Breadcrumb -->
         <hr class='mt-0'>
         <div data-partial="breadcrumb"></div>
@@ -33,292 +36,60 @@
             <div class="container">
                 <div class="row mt-5">
                     <!-- Sidebar -->
-                    <div class="d-none d-md-block col-12 col-md-12 col-lg-3 mt-3 me-5">
+                    <div class="d-none d-md-block col-12 col-md-4 col-lg-3">
                         <div data-partial="sidebar-medic"></div>
                     </div>
                     <!-- //Sidebar -->
-                    <div class="col-8 mb-5">
-                        <div class="row">
-                            <!-- Card -->
-                            <div class="col-12 col-lg-6 mt-3">
-                                <div class="p-3 border border-2 rounded-10">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img class="img-fluid rounded-5" src="./media/profile/default.png"
-                                                    alt="">
-                                        </div>
-                                        <div class="col-8">
-                                            <b class="text-primary">Nome do paciente</b>
-                                            <div class="row mt-2">
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">star_border</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1'>00 anos, gênero</pre>
-                                                </div>
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">location_on</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1 '>cidade - UF</pre>
-                                                </div>
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">phone</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1'>(00) 0 0000-0000</pre>
-                                                </div>
+                    <div class="col-12 col-md-8 col-lg-9">
+                        <div class="row mb-3">
+                            <h2 class="text-primary mb-3">Pacientes</h2>
+                            <div class="input-group input-search">
+                                <input id="search" type="text" placeholder="Buscar" class="form-control text-uppercase" aria-label="Lupa">
+                                <label for="search" class="input-group-text"><span class="material-icons-outlined">search</span></label>
+                            </div>
+                            <table class="table align-middle">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Telefone</th>
+                                    <th scope="col">E-mail</th>
+                                    <th scope="col">Gerenciar</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <div class="d-flex flex-column flex-lg-row align-items-center">
+                                            <img width="48" class="rounded-circle me-3" src="./media/profile/default.png">
+                                            <div class="d-flex flex-column justify-content-center">
+                                                <b class="text-primary">Nome do paciente</b>
+                                                <small>Idade</small>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //Card -->
-                            <!-- Card -->
-                            <div class="col-12 col-lg-6 mt-3">
-                                <div class="p-3 border border-2 rounded-10">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img class="img-fluid rounded-5" src="./media/profile/default.png"
-                                                    alt="">
-                                        </div>
-                                        <div class="col-8">
-                                            <b class="text-primary">Nome do paciente</b>
-                                            <div class="row mt-2">
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">star_border</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1'>00 anos, gênero</pre>
-                                                </div>
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">location_on</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1 '>cidade - UF</pre>
-                                                </div>
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">phone</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1'>(00) 0 0000-0000</pre>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //Card -->
-                            <!-- Card -->
-                            <div class="col-12 col-lg-6 mt-3">
-                                <div class="p-3 border border-2 rounded-10">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img class="img-fluid rounded-5" src="./media/profile/default.png"
-                                                    alt="">
-                                        </div>
-                                        <div class="col-8">
-                                            <b class="text-primary">Nome do paciente</b>
-                                            <div class="row mt-2">
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">star_border</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1'>00 anos, gênero</pre>
-                                                </div>
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">location_on</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1 '>cidade - UF</pre>
-                                                </div>
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">phone</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1'>(00) 0 0000-0000</pre>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //Card -->
-                            <!-- Card -->
-                            <div class="col-12 col-lg-6 mt-3">
-                                <div class="p-3 border border-2 rounded-10">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img class="img-fluid rounded-5" src="./media/profile/default.png"
-                                                    alt="">
-                                        </div>
-                                        <div class="col-8">
-                                            <b class="text-primary">Nome do paciente</b>
-                                            <div class="row mt-2">
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">star_border</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1'>00 anos, gênero</pre>
-                                                </div>
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">location_on</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1 '>cidade - UF</pre>
-                                                </div>
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">phone</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1'>(00) 0 0000-0000</pre>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //Card -->
-                            <!-- Card -->
-                            <div class="col-12 col-lg-6 mt-3">
-                                <div class="p-3 border border-2 rounded-10">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img class="img-fluid rounded-5" src="./media/profile/default.png"
-                                                    alt="">
-                                        </div>
-                                        <div class="col-8">
-                                            <b class="text-primary">Nome do paciente</b>
-                                            <div class="row mt-2">
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">star_border</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1'>00 anos, gênero</pre>
-                                                </div>
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">location_on</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1 '>cidade - UF</pre>
-                                                </div>
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">phone</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1'>(00) 0 0000-0000</pre>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //Card -->
-                            <!-- Card -->
-                            <div class="col-12 col-lg-6 mt-3">
-                                <div class="p-3 border border-2 rounded-10">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img class="img-fluid rounded-5" src="./media/profile/default.png"
-                                                    alt="">
-                                        </div>
-                                        <div class="col-8">
-                                            <b class="text-primary">Nome do paciente</b>
-                                            <div class="row mt-2">
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">star_border</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1'>00 anos, gênero</pre>
-                                                </div>
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">location_on</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1 '>cidade - UF</pre>
-                                                </div>
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">phone</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1'>(00) 0 0000-0000</pre>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //Card -->
-                            <!-- Card -->
-                            <div class="col-12 col-lg-6 mt-3">
-                                <div class="p-3 border border-2 rounded-10">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img class="img-fluid rounded-5" src="./media/profile/default.png"
-                                                    alt="">
-                                        </div>
-                                        <div class="col-8">
-                                            <b class="text-primary">Nome do paciente</b>
-                                            <div class="row mt-2">
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">star_border</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1'>00 anos, gênero</pre>
-                                                </div>
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">location_on</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1 '>cidade - UF</pre>
-                                                </div>
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">phone</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1'>(00) 0 0000-0000</pre>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //Card -->
-                            <!-- Card -->
-                            <div class="col-12 col-lg-6 mt-3">
-                                <div class="p-3 border border-2 rounded-10">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            <img class="img-fluid rounded-5" src="./media/profile/default.png"
-                                                    alt="">
-                                        </div>
-                                        <div class="col-8">
-                                            <b class="text-primary">Nome do paciente</b>
-                                            <div class="row mt-2">
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">star_border</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1'>00 anos, gênero</pre>
-                                                </div>
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">location_on</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1 '>cidade - UF</pre>
-                                                </div>
-                                                <div class="col-1 ps-2">
-                                                    <span class="material-icons-outlined md-18">phone</span>
-                                                </div>
-                                                <div class="col-11">
-                                                    <pre class='m-0 ps-1'>(00) 0 0000-0000</pre>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- //Card -->
+                                    </th>
+                                    <td>(00) 0000-0000</td>
+                                    <td>paciente@email.com</td>
+                                    <td>
+                                        <button type="button" class="btn btn-tool rounded-1"><span class="material-icons-outlined md-18">visibility</span></button>
+                                        <button type="button" class="btn btn-tool rounded-1 secondary"><span class="material-icons-outlined md-18">edit</span></button>
+                                        <button type="button" class="btn btn-tool rounded-1 danger"><span class="material-icons-outlined md-18">cancel</span></button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link">Anterior</a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Próxima</a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
                 </div>
