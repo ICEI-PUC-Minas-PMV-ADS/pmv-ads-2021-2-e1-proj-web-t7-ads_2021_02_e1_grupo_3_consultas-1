@@ -76,6 +76,7 @@ small{
 
 
 pre{
+    font-family: "Montserrat";
     font-size: 12px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
@@ -390,7 +391,7 @@ footer a:hover {
 /* Dropdown */
 
 .dropdown-menu>li>a{
-    color: var(--primary);
+    color: var(--text);
 }
 
 .dropdown-menu>li>a:hover{
@@ -400,8 +401,8 @@ footer a:hover {
 .dropdown ul.dropdown-menu{
     border-radius:8px;
     box-shadow:none;
-    min-width: 200px;
-    transform: translate3d(-50%, 0px, 0px) !important;
+    min-width: 15rem;
+    transform: translate3d(-75%, 10px, 0px) !important;
 }
 
 .page-header {
@@ -477,10 +478,13 @@ footer a:hover {
     min-height: 3rem;
 }
 
-.faq .list-group-item {
-    color: var(--primary);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.card-promo {
+    border: .20rem solid #ffffff;
+    background: transparent;
+}
+
+.card-dashboard {
+    border-color: var(--primary);
 }
 
 #floatingTextarea2{

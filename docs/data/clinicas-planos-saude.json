@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "clinicId": 2,
+    "medicalPlanId": 1
+  },
+  {
+    "id": 2,
+    "clinicId": 2,
+    "medicalPlanId": 2
+  }
+]
