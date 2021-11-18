@@ -24,7 +24,7 @@
 
 <header>
     <!-- Navbar -->
-    <div data-partial="header"></div>
+    <div data-partial="header" data-patient="header-patient"></div>
     <!-- //Navbar -->
 
     <!-- Breadcrumb -->
@@ -36,16 +36,16 @@
 
 
 <body>
-<div class="container mt-5">
+<div class="container mt-3">
     <div class="row">
-        <div class="col-3">
+        <div class="d-none d-md-block col-12 col-md-4 col-lg-3">
              <!-- Sidebar -->
-             <div data-partial="sidebar-clinic"></div>
+             <div data-partial="sidebar-patient"></div>
              <!-- //Sidebar -->
         </div>
-        <div class="col">
+        <div class="col-12 col-md-8 col-lg-9">
             <div class="row mb-3">
-                <h2 class="text-primary mb-5">Consultas</h2>                    
+                <h2 class="text-primary mb-3">Consultas</h2>
                 <table class="table align-middle">
                     <thead>
                         <tr>
