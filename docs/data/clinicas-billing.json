@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "clinicId": 2,
+    "planId": 1,
+    "zipcode": "",
+    "address": "",
+    "addressType": "street",
+    "addressNumber": 99,
+    "addressComp": "",
+    "neigh": "",
+    "city": "",
+    "state": ""
+  }
+]

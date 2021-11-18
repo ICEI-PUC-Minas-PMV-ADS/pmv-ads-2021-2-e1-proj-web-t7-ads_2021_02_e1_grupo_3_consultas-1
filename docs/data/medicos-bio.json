@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "doctorId": 3,
+    "university": "",
+    "degree": "grad/master/doctor/phd",
+    "field": "",
+    "bio": "Lorem..."
+  }
+]
