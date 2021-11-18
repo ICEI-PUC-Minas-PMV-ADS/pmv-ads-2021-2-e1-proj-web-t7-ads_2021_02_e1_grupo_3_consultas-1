@@ -486,8 +486,3 @@ footer a:hover {
 .card-dashboard {
     border-color: var(--primary);
 }
-
-#floatingTextarea2{
-    height: 96px;
-    width: 100%;
-}
