@@ -211,3 +211,13 @@ input:not(.form-floating input, .form-check-input) {
 .breadcrumb-item a:hover {
   color: var(--primary);
 }
+
+.card-header {
+  border-color: var(--primary);
+  background-color: var(--primary);
+  color: var(--bs-white);
+}
+
+.card.rounded-5 .card-header {
+  border-radius: calc(.5rem - 1px) calc(.5rem - 1px) 0 0;
+}
