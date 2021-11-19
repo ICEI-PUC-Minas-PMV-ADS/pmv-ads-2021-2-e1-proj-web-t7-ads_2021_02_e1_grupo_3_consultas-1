@@ -6,8 +6,10 @@ let perguntasElemento = document.getElementById('perguntas');
 function selecionarCategoria({ target }) {
     categoriasElemento.querySelectorAll('button').forEach(button => button.classList.remove('active'));
     target.classList.add('active');
-    document.getElementById('categoria-titulo').innerText = faqs.pegarNomeDeCategoria(target.dataset.category);
-    // Alterar perguntas
+    let titulo = document.getElementById('categoria-titulo');
+    titulo.innerText = faqs.pegarNomeDeCategoria(target.dataset.category);
+    titulo.parentElement.classList.add('d-md-block');
+    inserirPerguntas(target.dataset.category);
 }
 
 function inserirCategorias() {
@@ -18,9 +20,17 @@ function inserirCategorias() {
 
 }
 
-function inserirPerguntas() {
+function inserirPerguntasMaisFrequentes() {
+    let perguntas = faqs.listarPerguntasMaisFrequentes();
+    perguntas.map(pergunta => {
+        document.getElementById('perguntasmaisfrequentes').insertAdjacentHTML('beforeend', `<a href="#" class="list-group-item list-group-item-action">${pergunta.title}</a>`)
+    });
+
+}
+
+function inserirPerguntas(idCategoria = null) {
     perguntasElemento.innerHTML = '';
-    let perguntas = faqs.listarPerguntas();
+    let perguntas = idCategoria ? faqs.listarPerguntasPorCategoria(idCategoria) : faqs.listarPerguntas();
     perguntas.map(pergunta => {
         let perguntaCard = ` 
         <div class="card rounded-5 my-3">
@@ -45,6 +55,7 @@ function inserirPerguntas() {
 
 inserirCategorias();
 inserirPerguntas();
+inserirPerguntasMaisFrequentes();
 
 let buttons = categoriasElemento.querySelectorAll('button');
 

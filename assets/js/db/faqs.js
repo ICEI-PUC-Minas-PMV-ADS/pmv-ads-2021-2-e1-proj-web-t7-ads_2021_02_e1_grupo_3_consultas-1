@@ -14,6 +14,15 @@ const faqs = {
     },
     listarPerguntas: () => {
         return perguntas;
+    },
+    listarPerguntasPorCategoria: idCategoria => {
+        idCategoria = parseInt(idCategoria);
+        return perguntas.filter(pergunta => {
+            return pergunta.categoryId === idCategoria;
+        });
+    },
+    listarPerguntasMaisFrequentes: () => {
+        return perguntas.slice(0,5);        
     }
 };
 
