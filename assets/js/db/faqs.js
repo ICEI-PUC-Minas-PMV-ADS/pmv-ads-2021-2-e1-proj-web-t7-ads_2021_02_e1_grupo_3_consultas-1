@@ -1,4 +1,5 @@
 import categorias from "./static/faqs/categorias.js";
+import perguntas from "./static/faqs/perguntas.js";
 
 const faqs = {
     pegarNomeDeCategoria: (id) => {
@@ -10,6 +11,9 @@ const faqs = {
     },
     listarCategorias: () => {
         return categorias;
+    },
+    listarPerguntas: () => {
+        return perguntas;
     }
 };
 
