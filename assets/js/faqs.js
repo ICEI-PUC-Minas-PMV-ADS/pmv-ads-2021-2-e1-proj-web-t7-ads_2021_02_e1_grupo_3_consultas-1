@@ -2,6 +2,8 @@ import faqs from './db/faqs.js';
 
 let categoriasElemento = document.getElementById('categorias-faq');
 let perguntasElemento = document.getElementById('perguntas');
+let ulField = document.getElementById('sugestoes');
+let search = document.getElementById('buscaInput');
 
 function selecionarCategoria({ target }) {
     categoriasElemento.querySelectorAll('button').forEach(button => button.classList.remove('active'));
@@ -30,32 +32,61 @@ function inserirPerguntasMaisFrequentes() {
 
 function inserirPerguntas(idCategoria = null) {
     perguntasElemento.innerHTML = '';
-    let perguntas = idCategoria ? faqs.listarPerguntasPorCategoria(idCategoria) : faqs.listarPerguntas();
+    let perguntas = idCategoria ? faqs.listarPerguntasPorCategoria(idCategoria) : faqs.listarPerguntasMaisFrequentes();
     perguntas.map(pergunta => {
         let perguntaCard = ` 
         <div class="card rounded-5 my-3">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <h4 class="text-primary">${pergunta.title}</h4>
-                                        <p class="card-text text-truncate">
-                                            ${pergunta.answer}
-                                        </p>
-                                        <div class="d-flex flex-row-reverse">
-                                            <button class="btn btn-primary" type="button">Continuar leitura</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="text-primary">${pergunta.title}</h4>
+                        <p class="card-text text-truncate">
+                            ${pergunta.answer}
+                        </p>
+                        <div class="d-flex flex-row-reverse">
+                            <a class="btn btn-primary data-toggle="collapse" href="#collapse1"" type="button">Continuar leitura</a>
                         </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
         `;
         perguntasElemento.insertAdjacentHTML('beforeend', perguntaCard);
     })
 }
 
+function listaTitulos() {
+    let perguntas = faqs.listarPerguntas();
+    let lista = [];
+    perguntas.map(pergunta => {
+        lista.push(pergunta.title);
+    });
+    return lista;
+}
+
+function showTitulos(dados){
+    const html = !dados.length ? '': dados.join('');
+    ulField.innerHTML = html;
+}
+
+const perguntaInput = listaTitulos();
+
 inserirCategorias();
 inserirPerguntas();
 inserirPerguntasMaisFrequentes();
+
+search.addEventListener('input', (e) => {
+    
+    let perguntasArray = [];
+
+    if (e.target.value) {
+        perguntasArray = perguntaInput.filter(titulos => titulos.toLowerCase().includes(e.target.value)); 
+        perguntasArray = perguntasArray.map(titulo => `<a href="#" class="list-group-item list-group-item-action">${titulo}</a>`)
+    }
+
+    showTitulos(perguntasArray);
+})
 
 let buttons = categoriasElemento.querySelectorAll('button');
 
