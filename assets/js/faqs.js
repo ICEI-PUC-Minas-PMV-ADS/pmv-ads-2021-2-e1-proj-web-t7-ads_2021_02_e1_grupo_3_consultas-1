@@ -82,7 +82,7 @@ search.addEventListener('input', (e) => {
 
     if (e.target.value) {
         perguntasArray = perguntaInput.filter(titulos => titulos.toLowerCase().includes(e.target.value)); 
-        perguntasArray = perguntasArray.map(titulo => `<a href="#" class="list-group-item list-group-item-action">${titulo}</a>`)
+        perguntasArray = perguntasArray.map(titulo => `<a href="#" class="list-group-item list-group-item-action menu-autocompletar">${titulo}</a>`)
     }
 
     showTitulos(perguntasArray);
