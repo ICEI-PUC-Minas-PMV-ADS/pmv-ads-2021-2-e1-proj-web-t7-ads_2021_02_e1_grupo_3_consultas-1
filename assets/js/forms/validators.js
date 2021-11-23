@@ -101,7 +101,7 @@ const Validate = (function () {
                 }
                 break;
             case 'crm':
-                const re = /[A-Z]{2}\s[0-9]{4}/;
+                const re = /^(AC|AL|AP|AM|BA|CE|ES|GO|MA|MT|MS|MG|PA|PB|PR|PE|PI|RJ|RN|RS|RO|RR|SC|SP|SE|TO)\s\d{4}$/;
                 if (!re.test(String(fieldValue).toUpperCase())) {
                     error(message ?? 'CRM Inválido');
                 }

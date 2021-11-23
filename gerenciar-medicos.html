@@ -1,169 +1,187 @@
 <!doctype html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
-    <!-- Icon -->
-    <link rel="icon" type="image/png" href="./assets/img/favicon.png" sizes="32x32">
+        <!-- Icon -->
+        <link rel="icon" type="image/png" href="./assets/img/favicon.png" sizes="32x32">
 
-    <title>Appoint | Gerenciar médicos</title>
-</head>
+        <title>Appoint | Gerenciar médicos</title>
+    </head>
 
-<body>
-    <!-- Navbar -->
-    <div data-partial="header" data-patient="header-patient" data-clinic="header-clinic"></div>
-    <!-- //Navbar -->
+    <body>
+        <!-- Navbar -->
+        <div data-partial="header" data-patient="header-patient" data-clinic="header-clinic"></div>
+        <!-- //Navbar -->
 
-    <!-- Breadcrumb -->
-    <hr class='mt-0'>
-    <div data-partial="breadcrumb"></div>
-    <hr class='mb-0'>
-    <!-- //Breadcrumb -->
+        <!-- Breadcrumb -->
+        <hr class='mt-0'>
+        <div data-partial="breadcrumb"></div>
+        <hr class='mb-0'>
+        <!-- //Breadcrumb -->
 
-    <!-- Meio -->
-    <main>
-        <div class="container mt-3">
-            <div class="row">
-                <div class="d-none d-md-block col-12 col-md-4 col-lg-3">
-                    <!-- Sidebar -->
-                    <div data-partial="sidebar-clinic"></div>
-                    <!-- //Sidebar -->
-                </div>
-                <div class="col-12 col-md-8 col-lg-9">
-                    <!--Formulário de atualização-->
-                    <div class="row mb-3">
-                        <h2 class="text-primary mb-3">Adicionar Especialista</h2>
-                        <form data-register="doctor">
-                            <div class="row mb-3">
-                                <div data-partial="profile-upload"></div>
-                            </div>
-                            <div class="row mb-3">
-                                <div class="col-12 col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input name="name" type="text" class="form-control" id="floatingInputName" placeholder="Nome">
-                                        <label for="floatingInputName">Nome</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input name="email" type="email" class="form-control" id="floatingInputEmail" placeholder="E-mail">
-                                        <label for="floatingInputEmail">E-mail</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input name="specialty" type="text" class="form-control" id="floatingInputSpecialty" placeholder="Especialidade">
-                                        <label for="floatingInputSpecialty">Especialidade</label>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input name="document" type="text" class="form-control" id="floatingInputDocument" placeholder="CRM">
-                                        <label for="floatingInputDocument">CRM</label>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input name="rqe" type="text" class="form-control" id="floatingInputRqe" placeholder="RQE">
-                                        <label for="floatingInputRqe">RQE</label>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-6">
-                                    <div class="form-floating mb-3">
-                                        <input name="document" type="text" class="form-control" id="floatingInputDocument" placeholder="Formação">
-                                        <label for="floatingInputDocument">Formação</label>
-                                    </div>
-                                </div>
-                                <div class="d-flex flex-row-reverse">
-                                    <button class="btn btn-primary">Adicionar</button>
-                                </div>
-                            </div>
-                        </form>
+        <!-- Meio -->
+        <main>
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="d-none d-md-block col-12 col-md-4 col-lg-3">
+                        <!-- Sidebar -->
+                        <div data-partial="sidebar-clinic"></div>
+                        <!-- //Sidebar -->
                     </div>
-                    <!--Tabela de cadastrados-->
-                    <div class="row mb-3">
-                        <h2 class="text-primary mb-3">Especialistas</h2>
-                        <div class="input-group input-search">
-                            <input id="search" type="text" placeholder="Buscar" class="form-control text-uppercase" aria-label="Lupa">
-                            <label for="search" class="input-group-text"><span class="material-icons-outlined">search</span></label>
-                        </div>
-                        <table class="table align-middle">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Nome</th>
-                                    <th scope="col">Especialidade</th>
-                                    <th scope="col">E-mail</th>
-                                    <th scope="col">Gerenciar</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">
-                                        <div class="d-flex flex-column flex-lg-row align-items-center">
-                                            <img width="48" class="rounded-circle me-3" src="./media/profile/default.png">
-                                            <div class="d-flex flex-column justify-content-center">
-                                                <b class="text-primary">Nome do médico</b>
-                                                <small>CRM-XX:00000</small>
-                                            </div>
+                    <div class="col-12 col-md-8 col-lg-9">
+                        <!--Formulário de atualização-->
+                        <div class="row mb-3">
+                            <h2 class="text-primary mb-3">Adicionar Especialista</h2>
+                            <form data-register="doctor">
+                                <div class="row mb-3">
+                                    <div data-partial="profile-upload"></div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input name="name" type="text" class="form-control" id="floatingInputName"
+                                                placeholder="Nome">
+                                            <label for="floatingInputName">Nome</label>
                                         </div>
-                                    </th>
-                                    <td>Especialidade</td>
-                                    <td>medico@email.com</td>
-                                    <td>
-                                        <button type="button" class="btn btn-tool rounded-1"><span class="material-icons-outlined md-18">visibility</span></button>
-                                        <button type="button" class="btn btn-tool rounded-1 secondary"><span class="material-icons-outlined md-18">edit</span></button>
-                                        <button type="button" class="btn btn-tool rounded-1 danger"><span class="material-icons-outlined md-18">cancel</span></button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination justify-content-center">
-                                <li class="page-item disabled">
-                                    <a class="page-link">Anterior</a>
-                                </li>
-                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#">Próxima</a>
-                                </li>
-                            </ul>
-                        </nav>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input name="email" type="email" class="form-control"
+                                                id="floatingInputEmail" placeholder="E-mail">
+                                            <label for="floatingInputEmail">E-mail</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <select class="form-select" name="specialty"
+                                                aria-label="Default select example" id="floatingInputSpecialty"
+                                                placeholder="Especialidade">
+                                                <option value="1">One</option>
+                                            </select>
+                                            <label for="floatingInputSpecialty">Especialidade médica</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input name="document" type="text" class="form-control"
+                                                id="floatingInputDocument" placeholder="CRM">
+                                            <label for="floatingInputDocument">CRM</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input name="rqe" type="text" class="form-control" id="floatingInputRqe"
+                                                placeholder="RQE">
+                                            <label for="floatingInputRqe">RQE</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input name="document" type="text" class="form-control"
+                                                id="floatingInputDocument" placeholder="Formação">
+                                            <label for="floatingInputDocument">Formação</label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex flex-row-reverse">
+                                        <button class="btn btn-primary">Adicionar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!--Tabela de cadastrados-->
+                        <div class="row mb-3">
+                            <h2 class="text-primary mb-3">Especialistas</h2>
+                            <div class="input-group input-search">
+                                <input id="search" type="text" placeholder="Buscar" class="form-control text-uppercase"
+                                    aria-label="Lupa">
+                                <label for="search" class="input-group-text"><span
+                                        class="material-icons-outlined">search</span></label>
+                            </div>
+                            <table class="table align-middle">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Nome</th>
+                                        <th scope="col">Especialidade</th>
+                                        <th scope="col">E-mail</th>
+                                        <th scope="col">Gerenciar</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class="d-flex flex-column flex-lg-row align-items-center">
+                                                <img width="48" class="rounded-circle me-3"
+                                                    src="./media/profile/default.png">
+                                                <div class="d-flex flex-column justify-content-center">
+                                                    <b class="text-primary">Nome do médico</b>
+                                                    <small>CRM-XX:00000</small>
+                                                </div>
+                                            </div>
+                                        </th>
+                                        <td>Especialidade</td>
+                                        <td>medico@email.com</td>
+                                        <td>
+                                            <button type="button" class="btn btn-tool rounded-1"><span
+                                                    class="material-icons-outlined md-18">visibility</span></button>
+                                            <button type="button" class="btn btn-tool rounded-1 secondary"><span
+                                                    class="material-icons-outlined md-18">edit</span></button>
+                                            <button type="button" class="btn btn-tool rounded-1 danger"><span
+                                                    class="material-icons-outlined md-18">cancel</span></button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item disabled">
+                                        <a class="page-link">Anterior</a>
+                                    </li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Próxima</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </main>
-    <!-- //Meio -->
-</body>
+        </main>
+        <!-- //Meio -->
+    </body>
 
-<!-- Footer -->
-<div data-partial="footer"></div>
-<!-- //Footer -->
+    <!-- Footer -->
+    <div data-partial="footer"></div>
+    <!-- //Footer -->
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
         crossorigin="anonymous"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="https://unpkg.com/imask"></script>
-<script type="module" src="assets/js/layout.js"></script>
-<script type="module" src="assets/js/forms/register.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</body>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script type="module" src="assets/js/layout.js"></script>
+    <script type="module" src="assets/js/forms/register.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+        integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </body>
+
 </html>
