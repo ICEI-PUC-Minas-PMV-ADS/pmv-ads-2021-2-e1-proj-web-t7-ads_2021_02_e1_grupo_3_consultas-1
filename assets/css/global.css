@@ -150,7 +150,7 @@ input:not(.form-floating input, .form-check-input) {
   border-width: 0;
 }
 
-.btn-outline-primary {
+.btn-outline-primary, .btn-outline-primary.disabled {
   color: var(--primary);
   border-color: var(--primary);
 }
@@ -257,4 +257,10 @@ input:not(.form-floating input, .form-check-input) {
 
 .offcanvas-body li:hover {
   border-color: var(--primary);
+}
+
+/* Fullcalendar */
+
+.fc-theme-standard .fc-scrollgrid, .fc-theme-standard td, .fc-theme-standard th  {
+  border: none;
 }

@@ -18,7 +18,7 @@
         <!-- Icon -->
         <link rel="icon" type="image/png" href="./assets/img/favicon.png" sizes="32x32">
 
-        <title>Appoint | Perfil Médico</title>
+        <title>Appoint | Agenda Médico</title>
     </head>
 
     <body>
@@ -47,7 +47,7 @@
                                             <i class="d-block">Tel: 00000-0000</i>
                                         </p>
                                         <div class="d-flex flex-row-reverse">
-                                            <a href="perfil-medico-agenda.html" class="btn btn-primary">Consultar a agenda</a>
+                                            <button class="btn btn-primary" type="button">Ver perfil</button>
                                         </div>
                                     </div>
                                 </div>
@@ -55,23 +55,42 @@
                         </div>
                     </div>
                 </div>
-                <div class="row p-3">
-                    <h3 class="text-primary">Formação</h3>
-                    <p>Graduação:</p>
-                    <p>Especialização:</p>
-
-                    <h3 class="text-primary">Experiência</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, possimus dolore. Id optio esse
-                        recusandae ratione deleniti ex molestiae nemo. Dolores quo accusamus magnam mollitia amet
-                        voluptas, corrupti dignissimos minus.</p>
-
-                    <h3 class="text-primary">Planos</h3>
-                    <ul class='list-unstyled'>
-                        <li>Unimed</li>
-                        <li>Amil</li>
-                        <li>Bradesco Saúde</li>
-                        <li>Promed</li>
-                    </ul>
+                <div class="row flex-column-reverse flex-lg-row">
+                    <div class="col-12 col-lg-8">
+                        <div class="card rounded-10 mb-3">
+                            <div class="card-body">
+                                <div id="calendar"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card rounded-10 mb-3">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <h3 class="text-primary" id="calendarDate"></h3>
+                                    <pre id="calendarWeekDay"></pre>
+                                    <b class="text-primary">Horários</b>
+                                </div>
+                                <div class="row g-2">
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-primary w-100">07:00</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-primary w-100">08:00</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-primary w-100">09:00</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-outline-primary w-100 disabled">10:00</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-primary w-100">11:00</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
@@ -88,7 +107,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
             integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/locales/pt-br.js"></script>
         <script type="module" src="assets/js/layout.js"></script>
+        <script type="module" src="assets/js/schedule.js"></script>
     </body>
 
 </html>
