@@ -1,5 +1,6 @@
 import { Validate, setFieldError } from './validators.js';
 import auth from '../db/auth.js';
+import specialty from '../db/specialty.js';
 
 if (auth.getUser()) {
     window.location.href = './index.html';
@@ -18,7 +19,11 @@ if (formType === 'patient') {
 } else if (formType === 'clinic') {
     documentMask = IMask(registerForm.querySelector('input[name=document]'), { mask: '000.000.000/0000-00' });
 } else {
+    let specialtySelect = registerForm.querySelector('select[name=specialty]');
     documentMask = IMask(registerForm.querySelector('input[name=document]'), { mask: 'aa{ }0000', prepare: str => str.toUpperCase() });
+    specialty.listSpecialties().map(specialty => {
+        specialtySelect.insertAdjacentHTML('beforeend',`<option value="${specialty.id}">${specialty.name}</option>`)
+    })
 }
 
 let rqeMask = IMask(registerForm.querySelector('input[name=rqe]'), { mask: '0000' });
