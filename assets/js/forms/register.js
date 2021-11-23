@@ -1,4 +1,4 @@
-import {Validate, setFieldError} from './validators.js';
+import { Validate, setFieldError } from './validators.js';
 import auth from '../db/auth.js';
 
 if (auth.getUser()) {
@@ -9,11 +9,16 @@ let registerForm = document.querySelector("[data-register]");
 
 const formType = registerForm.getAttribute('data-register');
 
-let phoneMask = IMask(registerForm.querySelector('input[name=phone]'), {mask: '(00) 00000-0000'});
+let phoneMask = registerForm.querySelector('input[name=phone]') ? IMask(registerForm.querySelector('input[name=phone]'), { mask: '(00) 00000-0000' }) : null;
 let documentMask = formType === 'patient' ?
-    IMask(registerForm.querySelector('input[name=document]'), {mask: '000.000.000-00'}) :
-    IMask(registerForm.querySelector('input[name=document]'), {mask: '000.000.000/0000-00'})
-;
+    IMask(registerForm.querySelector('input[name=document]'), { mask: '000.000.000-00' }) :
+    IMask(registerForm.querySelector('input[name=document]'), { mask: '000.000.000/0000-00' });
+
+if (formType === 'doctor') {
+    documentMask = IMask(registerForm.querySelector('input[name=document]'), { mask: '0000' });
+}
+
+let rqeMask = IMask(registerForm.querySelector('input[name=rqe]'), { mask: '0000' });
 
 const patientSchema = (field) => {
     switch (field.getAttribute('name').toLowerCase()) {
@@ -53,12 +58,33 @@ const clinicSchema = (field) => {
     }
 }
 
+const doctorSchema = (field) => {
+    switch (field.getAttribute('name').toLowerCase()) {
+        case 'name':
+            return new Validate(field).required().min(5).max(50);
+        case 'email':
+            return new Validate(field).required().email();
+        case 'especialidade':
+            return new Validate(field).required().min(5).max(50);
+        case 'document':
+            return new Validate(field).required().transform(() => documentMask.unmaskedValue.toUpperCase()).document('crm');
+        case 'rqe':
+            return new Validate(field).required().transform(() => rqeMask.unmaskedValue).digits(4, 'RQE Inválido');
+        case 'formacao':
+            new Validate(field).required().min(5).max(100);
+        default:
+            return;
+    }
+}
 registerForm.addEventListener("submit", (e) => {
     e.preventDefault();
     let inputs = registerForm.querySelectorAll('input[name]');
     let errors = false;
     let validatedInputs = {};
-    const validationSchema = formType === 'patient' ? patientSchema : clinicSchema;
+    let validationSchema = formType === 'patient' ? patientSchema : clinicSchema;
+    if (formType === 'doctor') {
+        validationSchema = doctorSchema;
+    }
     inputs.forEach((input) => {
         try {
             let inputName = input.getAttribute('name');

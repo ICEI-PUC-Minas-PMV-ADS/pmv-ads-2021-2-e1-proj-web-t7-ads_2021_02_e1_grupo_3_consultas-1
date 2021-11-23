@@ -13,7 +13,7 @@ const Validate = (function () {
 
     function error(message) {
         setFieldError(field, message);
-        throw new Error(JSON.stringify({field: field.getAttribute('name'), message}));
+        throw new Error(JSON.stringify({ field: field.getAttribute('name'), message }));
     }
 
     function Validate(fieldToValidate) {
@@ -100,11 +100,24 @@ const Validate = (function () {
                     errors = true;
                 }
                 break;
+            case 'crm':
+                const re = /[A-Z]{2}\s[0-9]{4}/;
+                if (!re.test(String(fieldValue).toUpperCase())) {
+                    error(message ?? 'CRM Inválido');
+                }
+                break;
             default:
                 errors = true;
         }
         if (errors) {
             error(message ?? `Documento inválido.`);
+        }
+        return this;
+    }
+
+    Validate.prototype.regex = function (regex, message = null) {
+        if(!regex.test(fieldValue)){
+            error(message ?? `Campo inválido`);
         }
         return this;
     }
@@ -140,4 +153,4 @@ const Validate = (function () {
 
 }());
 
-export {Validate, setFieldError};
+export { Validate, setFieldError };
