@@ -72,21 +72,21 @@ const doctorSchema = (field) => {
             return new Validate(field).required().min(5).max(50);
         case 'email':
             return new Validate(field).required().email();
-        case 'especialidade':
-            return new Validate(field).required().min(5).max(50);
+        case 'specialty':
+            return new Validate(field).required().ensure(id => specialty.getSpecialty(id), 'Selecione uma especialidade válida.');
         case 'document':
             return new Validate(field).required().transform(() => documentMask.unmaskedValue.toUpperCase()).document('crm');
         case 'rqe':
             return new Validate(field).required().transform(() => rqeMask.unmaskedValue).digits(4, 'RQE Inválido');
-        case 'formacao':
-            new Validate(field).required().min(5).max(100);
+        case 'degree':
+            return new Validate(field).required().min(5).max(100);
         default:
             return;
     }
 }
 registerForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    let inputs = registerForm.querySelectorAll('input[name]');
+    let inputs = registerForm.querySelectorAll('input[name], select[name]');
     let errors = false;
     let validatedInputs = {};
     let validationSchema = formType === 'patient' ? patientSchema : clinicSchema;

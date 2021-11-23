@@ -143,6 +143,14 @@ const Validate = (function () {
         return this;
     }
 
+    Validate.prototype.ensure = function (testFunction, message) {
+        let test = Boolean(testFunction(fieldValue));
+        if (!test) {
+            error(message ?? `Campo inválido.`);
+        }
+        return this;
+    }
+
     Validate.prototype.getField = function () {
         let validatedField = {};
         validatedField[field.getAttribute('name')] = fieldValue;
