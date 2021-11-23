@@ -10,12 +10,15 @@ let registerForm = document.querySelector("[data-register]");
 const formType = registerForm.getAttribute('data-register');
 
 let phoneMask = registerForm.querySelector('input[name=phone]') ? IMask(registerForm.querySelector('input[name=phone]'), { mask: '(00) 00000-0000' }) : null;
-let documentMask = formType === 'patient' ?
-    IMask(registerForm.querySelector('input[name=document]'), { mask: '000.000.000-00' }) :
-    IMask(registerForm.querySelector('input[name=document]'), { mask: '000.000.000/0000-00' });
 
-if (formType === 'doctor') {
-    documentMask = IMask(registerForm.querySelector('input[name=document]'), { mask: '0000' });
+let documentMask;
+
+if (formType === 'patient') {
+    documentMask = IMask(registerForm.querySelector('input[name=document]'), { mask: '000.000.000-00' });
+} else if (formType === 'clinic') {
+    documentMask = IMask(registerForm.querySelector('input[name=document]'), { mask: '000.000.000/0000-00' });
+} else {
+    documentMask = IMask(registerForm.querySelector('input[name=document]'), { mask: 'aa{ }0000', prepare: str => str.toUpperCase() });
 }
 
 let rqeMask = IMask(registerForm.querySelector('input[name=rqe]'), { mask: '0000' });
