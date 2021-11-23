@@ -212,6 +212,10 @@ input:not(.form-floating input, .form-check-input) {
   color: var(--primary);
 }
 
+.card {
+  position: initial;
+}
+
 .card-header {
   border-color: var(--primary);
   background-color: var(--primary);
@@ -220,4 +224,37 @@ input:not(.form-floating input, .form-check-input) {
 
 .card.rounded-5 .card-header {
   border-radius: calc(.5rem - 1px) calc(.5rem - 1px) 0 0;
+}
+
+.offcanvas {
+  border-radius: 1rem 1rem 0 0;
+  padding: 0 .5rem;
+}
+
+.offcanvas-bottom {
+  height: 95vh;
+}
+
+.offcanvas-header input {
+  height: 4.5rem !important;
+  margin-right: 1rem;
+  background: #F2F2F2;
+}
+
+.offcanvas-body li {
+  border-radius: .5rem;
+  border: 1px solid var(--light-gray);
+  padding: 1rem;
+}
+
+.offcanvas-body a li {
+  color: var(--text);
+}
+
+.offcanvas-body a li:hover {
+  color: var(--primary);
+}
+
+.offcanvas-body li:hover {
+  border-color: var(--primary);
 }

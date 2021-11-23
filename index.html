@@ -44,13 +44,10 @@
           </div>
           <div class="row">
             <div id="fields-search-container" class="p-5 rounded-lg">
-              <form class="form-inline" role="form">
+              <form action="./busca.html" class="form-inline" role="form">
                 <div class="row">
                   <div class="col-12 col-lg-4 mb-3">
-                    <div class="input-group">
-                      <input id="specialty" type="text" placeholder="Qual especialidade" class="form-control text-uppercase" aria-label="Lupa">
-                      <label for="specialty" class="input-group-text"><span class="material-icons-outlined">search</span></label>
-                    </div>
+                    <div data-partial="input-specialty"></div>
                   </div>
                   <div class="col-12 col-lg-4 mb-3">
                     <div class="input-group">
@@ -66,7 +63,7 @@
                   </div>
                   <div class="container">
                     <div class="d-flex justify-content-end">
-                      <button class="btn-sm btn-primary" id="btn-primary" type="button">Procurar</button>
+                      <button class="btn-sm btn-primary" type="submit">Procurar</button>
                     </div>
                   </div>
                 </div>
