@@ -36,17 +36,14 @@
     </div>
     <div class="container">
         <div class="row gx-5">
-            <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <div class="col-12 col-md-4 mb-3 mb-md-0 input-search">
                 <h3 class="text-primary mb-4">Filtrar resultados por</h3>
-                <div class="input-group input-search">
-                    <input id="specialty" type="text" placeholder="Qual especialidade" class="form-control text-uppercase" aria-label="Lupa">
-                    <label for="specialty" class="input-group-text"><span class="material-icons-outlined">search</span></label>
-                </div>
-                <div class="input-group input-search w-75">
+                <div data-partial="input-specialty"></div>
+                <div class="input-group w-75">
                     <input id="date" type="text" placeholder="Quando?" class="form-control text-uppercase" aria-label="Calendário">
                     <label for="date" class="input-group-text"><span class="material-icons-outlined">edit_calendar</span></label>
                 </div>
-                <div class="input-group input-search w-75">
+                <div class="input-group w-75">
                     <input id="location" type="text" placeholder="Onde?" class="form-control text-uppercase" aria-label="Local">
                     <label for="location" class="input-group-text"><span class="material-icons-outlined">location_on</span></label>
                 </div>
@@ -240,6 +237,7 @@
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script type="module" src="assets/js/layout.js"></script>
+<script type="module" src="assets/js/forms/search.js"></script>
 </body>
 
 </html>

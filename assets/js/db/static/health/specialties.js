@@ -1,4 +1,4 @@
-[
+const specialties = [
   {
     "id": 1,
     "name": "Acupuntura"
@@ -219,4 +219,6 @@
     "id": 55,
     "name": "Urologia"
   }
-]
+];
+
+export default specialties;

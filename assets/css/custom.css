@@ -422,7 +422,7 @@ footer a:hover {
     background-image: url(../img/header-bg.png);
 }
 
-.input-search {
+.input-search .input-group {
     margin-bottom: 2rem;
 }
 
