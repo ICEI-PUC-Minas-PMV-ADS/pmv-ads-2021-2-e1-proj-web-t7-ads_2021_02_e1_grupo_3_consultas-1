@@ -16,9 +16,9 @@ const calendar = (elementId, onDateChange) => {
     let calendar = new FullCalendar.Calendar(calendarElement, {
         initialView: 'dayGridMonth',
         headerToolbar: {
-            start: 'title', // will normally be on the left. if RTL, will be on the right
-            center: '',
-            end: 'prev today next' // will normally be on the right. if RTL, will be on the left
+            start: 'prev', // will normally be on the left. if RTL, will be on the right
+            center: 'title',
+            end: 'next' // will normally be on the right. if RTL, will be on the left
         },
         locale: 'pt-br',
         dateClick: handleDateClick,
