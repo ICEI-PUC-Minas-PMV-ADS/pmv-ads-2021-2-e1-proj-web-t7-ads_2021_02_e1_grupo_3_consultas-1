@@ -264,3 +264,57 @@ input:not(.form-floating input, .form-check-input) {
 .fc-theme-standard .fc-scrollgrid, .fc-theme-standard td, .fc-theme-standard th  {
   border: none;
 }
+
+.fc-daygrid-day-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fc-daygrid-day-events {
+  display: none;
+}
+
+.fc-col-header-cell-cushion {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.fc-day-today {
+  background: transparent !important;
+}
+
+.fc-today-button {
+  text-transform: uppercase !important;
+}
+
+.fc-daygrid-day-number {
+  width: 3rem;
+  height: 3rem;
+  line-height: 2.5rem;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  color: black;
+  cursor: pointer;
+}
+
+.fc-daygrid-day-number:hover {
+  color: var(--primary);
+}
+
+.fc-day-today .fc-daygrid-day-number {
+  color: var(--primary);
+}
+
+.fc td.disabled .fc-daygrid-day-number {
+  color: var(--text);
+  cursor: default;
+}
+
+.fc td.selected .fc-daygrid-day-number {
+  color: white;
+  background: var(--primary);
+  border-radius: 3rem;
+}
