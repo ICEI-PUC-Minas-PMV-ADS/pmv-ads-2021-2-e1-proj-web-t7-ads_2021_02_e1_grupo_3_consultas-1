@@ -9,7 +9,7 @@ const perguntas = [
         "id": 2,
         "categoryId": 2,
         "title": "Posso ligar diretamente para minha unidade e marcar a minha consulta?",
-        "answer": "Lorem ipsum dolor..."
+        "answer": "Lorem ipsum dolor teste tes teste..."
     },
     {
         "id": 3,
