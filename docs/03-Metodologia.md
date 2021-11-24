@@ -21,8 +21,8 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 
 Para gestão do código fonte do software desenvolvido pela equipe, o grupo utiliza um processo baseado no Git Flow abordado por Vietro (2015), mostrado na Figura a seguir. Desta forma, todas as manutenções no código são realizadas em branches separados, identificados como Hotfix, Release, Develop e Feature. Uma explicação rápida sobre este processo é apresentada no vídeo "The gitflow workflow - in less than 5 mins".
 
-Figura 1 - Fluxo de controle do código fonte no repositório git
-![Fluxo-de-controle](img/Fluxo-de-controle.png)
+*Figura 1 - Fluxo de controle do código fonte no repositório git*
+![Figura1-Fluxo-de-controle](img/Fluxo-de-controle.png)
 
 ## Gerenciamento de Projeto
 
@@ -31,14 +31,14 @@ A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para def
 ### Divisão de Papéis
 
 A equipe está organizada da seguinte maneira:
-- Scrum Master: Mateus Cunha Melo
-- Product Owner: Davison Cavalcante Barros
-- Equipe de Desenvolvimento:
+- **Scrum Master:** Mateus Cunha Melo
+- **Product Owner:** Davison Cavalcante Barros
+- **Equipe de Desenvolvimento:**
     - Brunna Alves Lage Silva
     - Davison Cavalcante Barros
     - Mateus Cunha Melo
     - Pedro Thiago Rodrigues Santos
-- Equipe de Design
+- **Equipe de Design**
     - Brunna Alves Lage Silva
     - Pedro Thiago Rodrigues Santos
 
@@ -52,4 +52,16 @@ Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle
 
 O quadro kanban do grupo no Trello está disponível através da URL https://trello.com/b/zpusdWXw/telas-consultas-m%C3%A9dicas e é apresentado, no estado atual, na Figura 2. A definição desta estrutura se baseou na proposta feita por Littlefield (2016).
 
-Figura 2 - Tela do Kanban utilizada pelo grupo
+*Figura 2 - Tela do Kanban utilizada pelo grupo*
+![Figura2-Tela-Kanban](img/Figura2-Tela-Kanban.png)
+
+A tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:
+- **Done**: Tarefa realizada;
+- **WIP** (Work in Progress): Tarefa em realização;
+- **Test**: Tarefa em teste para validação do usuário;
+- **Unstarted**: Não iniciado.
+
+*Figura 3 - Etiquetas do Trello*
+![Figura3-Etiquetas-do-trello](img/Figura3-Etiquetas-do-trello.png)
+
+
