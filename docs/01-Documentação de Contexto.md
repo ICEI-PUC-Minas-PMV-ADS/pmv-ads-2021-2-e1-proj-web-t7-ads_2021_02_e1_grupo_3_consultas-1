@@ -23,7 +23,7 @@ Conforme observado, o problema consiste na limitação de infraestrutura na comu
 
 ## Objetivos
 
-O objetivo geral deste trabalho é de intermediar o agendamento de consultas entre paciente e clínica, por meio de um website que otimize e traga mais comodidade a esse processo.
+O objetivo geral deste trabalho é intermediar o agendamento de consultas entre paciente e clínica, por meio de um website que otimize e traga mais comodidade a esse processo.
 Como objetivos específicos, podemos ressaltar:
 -	Criar um site responsivo que possibilite o paciente fazer um agendamento em clínica médica de onde estiver e quando quiser.
 -	Possibilitar que clínicas médicas tenham uma agenda virtual que integre pacientes da plataforma e seus pacientes tradicionais.
@@ -31,24 +31,10 @@ Como objetivos específicos, podemos ressaltar:
 
 ## Justificativa
 
-Teste de git fetch.
+A baixa infraestrutura de alguns estabelecimentos pode provocar problemas de marcações erradas e ou perda das informações durante as atividades laborais. Assim, disponibilizar essas informações em um meio digital possibilita que o usuário e os clientes possuam menores frustrações ao realizar suas marcações de consulta, permitindo o acesso, basicamente, em qualquer meio informático, como: Computador pessoal, Smartphones ou Tablets.
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
-
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+Estabeleceu-se como público-alvo desta solução, os pacientes que buscam atendimento das mais diversas especialidades médicas — usuários da plataforma —, bem como as clínicas, consultórios e seus médicos — clientes de negócio da plataforma.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
