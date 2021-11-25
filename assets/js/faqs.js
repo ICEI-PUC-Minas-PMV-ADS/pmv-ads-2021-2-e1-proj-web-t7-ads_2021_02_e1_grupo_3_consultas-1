@@ -2,7 +2,6 @@ import faqs from './db/faqs.js';
 
 let categoriasElemento = document.getElementById('categorias-faq');
 let perguntasElemento = document.getElementById('perguntas');
-let ulField = document.getElementById('sugestoes');
 let search = document.getElementById('buscaInput');
 
 function selecionarCategoria({ target }) {
@@ -25,7 +24,7 @@ function inserirCategorias() {
 function inserirPerguntasMaisFrequentes() {
     let perguntas = faqs.listarPerguntasMaisFrequentes();
     perguntas.map(pergunta => {
-        document.getElementById('perguntasmaisfrequentes').insertAdjacentHTML('beforeend', `<a href="#" class="list-group-item list-group-item-action">${pergunta.title}</a>`)
+        document.getElementById('perguntasmaisfrequentes').insertAdjacentHTML('beforeend', `<a href="./faq-pergunta.html?id=${pergunta.id}" class="list-group-item list-group-item-action">${pergunta.title}</a>`)
     });
 
 }
@@ -41,10 +40,10 @@ function inserirPerguntas(idCategoria = null) {
                     <div class="col-12">
                         <h4 class="text-primary">${pergunta.title}</h4>
                         <p class="card-text text-truncate">
-                            ${pergunta.answer}
+                            ${pergunta.answer.slice(0, 50)}...
                         </p>
                         <div class="d-flex flex-row-reverse">
-                            <a class="btn btn-primary data-toggle="collapse" href="#collapse1"" type="button">Continuar leitura</a>
+                            <a href="./faq-pergunta.html?id=${pergunta.id}"><button class="btn btn-primary id="btn-leitura" type="button">Continuar leitura</button></a>
                         </div>
                         
                     </div>
@@ -58,16 +57,89 @@ function inserirPerguntas(idCategoria = null) {
 
 function listaTitulos() {
     let perguntas = faqs.listarPerguntas();
-    let lista = [];
+    let titulos = [];
     perguntas.map(pergunta => {
-        lista.push(pergunta.title);
+        titulos.push(pergunta.title);
     });
-    return lista;
+    return titulos;
 }
 
-function showTitulos(dados){
-    const html = !dados.length ? '': dados.join('');
-    ulField.innerHTML = html;
+function autocomplete(inp, arr) {
+    var currentFocus;
+    inp.addEventListener("input", function (e) {
+        let a, b, val = this.value, lista = [];
+        closeAllLists();
+        if (!val) { return false; }
+        currentFocus = -1;
+        a = document.createElement("DIV");
+        a.setAttribute("id", this.id + "autocomplete-list");
+        a.setAttribute("class", "autocomplete-items");
+        this.parentNode.appendChild(a);
+        lista = arr.filter(titulos => titulos.toLowerCase().includes(val));
+        lista.map(titulo => {
+            b = document.createElement("DIV");
+            b.innerHTML = `<a class="list-group-item list-group-item-action menu-autocompletar">${titulo}</a>`
+            b.innerHTML += "<input type='hidden' value='" + titulo + "'>";
+            b.addEventListener("click", function (e) {
+                inp.value = this.getElementsByTagName("input")[0].value;
+                closeAllLists();
+            });
+            a.appendChild(b);
+        });
+    });
+    inp.addEventListener("keydown", function (e) {
+        let x = document.getElementById(this.id + "autocomplete-list");
+        if (x) x = x.getElementsByTagName("div");
+        if (e.keyCode == 40) {
+            currentFocus++;
+            addActive(x);
+        } else if (e.keyCode == 38) {
+            currentFocus--;
+            addActive(x);
+        } else if (e.keyCode == 13) {
+            e.preventDefault();
+            if (currentFocus > -1) {
+                if (x) x[currentFocus].click();
+            }
+        }
+    });
+    function addActive(x) {
+        if (!x) return false;
+        removeActive(x);
+        if (currentFocus >= x.length) currentFocus = 0;
+        if (currentFocus < 0) currentFocus = (x.length - 1);
+        x[currentFocus].classList.add("autocomplete-active");
+    }
+    function removeActive(x) {
+        for (var i = 0; i < x.length; i++) {
+            x[i].classList.remove("autocomplete-active");
+        }
+    }
+    function closeAllLists(elmnt) {
+        var x = document.getElementsByClassName("autocomplete-items");
+        for (var i = 0; i < x.length; i++) {
+            if (elmnt != x[i] && elmnt != inp) {
+                x[i].parentNode.removeChild(x[i]);
+            }
+        }
+    }
+    document.addEventListener("click", function (e) {
+        closeAllLists(e.target);
+    });
+}
+
+function enviarPergunta(){
+    let index, lista = listaTitulos(), inputPergunta = search;
+    index = lista.findIndex(i => {
+        return inputPergunta.value === i;
+    })
+    if(index === -1){
+        window.location.href = "./faq.html"
+    }
+    else{
+        window.location.href = `./faq-pergunta.html?id=${index+1}`
+    }
+    
 }
 
 const perguntaInput = listaTitulos();
@@ -76,21 +148,13 @@ inserirCategorias();
 inserirPerguntas();
 inserirPerguntasMaisFrequentes();
 
-search.addEventListener('input', (e) => {
-    
-    let perguntasArray = [];
-
-    if (e.target.value) {
-        perguntasArray = perguntaInput.filter(titulos => titulos.toLowerCase().includes(e.target.value)); 
-        perguntasArray = perguntasArray.map(titulo => `<a href="#" class="list-group-item list-group-item-action menu-autocompletar">${titulo}</a>`)
-    }
-
-    showTitulos(perguntasArray);
-})
+autocomplete(search, perguntaInput);
 
 let buttons = categoriasElemento.querySelectorAll('button');
+let searchButton = document.getElementById('search-button');
 
 buttons.forEach(button => {
     button.addEventListener('click', selecionarCategoria);
 });
 
+searchButton.addEventListener('click',enviarPergunta)

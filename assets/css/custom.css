@@ -489,3 +489,12 @@ footer a:hover {
 
 /* FAQ */
 
+.autocomplete-items{
+    position: absolute;
+    width: 35%;
+}
+
+.menu-autocompletar:hover{
+    font-weight: bold;
+    background-color: var(--secondary)!important;
+}

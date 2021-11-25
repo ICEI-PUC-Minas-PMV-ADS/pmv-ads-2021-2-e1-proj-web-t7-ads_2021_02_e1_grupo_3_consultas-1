@@ -22,8 +22,8 @@ const faqs = {
         });
     },
     listarPerguntasMaisFrequentes: () => {
-        return perguntas.slice(0,5);        
-    }
+        return perguntas.slice(0, 5);
+    },
     //criar uma função para retornar o nome da categoria
 };
 
