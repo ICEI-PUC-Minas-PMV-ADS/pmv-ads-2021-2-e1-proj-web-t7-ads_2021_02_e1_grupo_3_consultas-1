@@ -24,6 +24,14 @@ const faqs = {
     listarPerguntasMaisFrequentes: () => {
         return perguntas.slice(0, 5);
     },
+    listarCategoriaID: (id) => {
+        id = parseInt(id);
+        return perguntas.filter(data => {
+            if(data.id === id){
+                return data;
+            }
+        })
+    }
     //criar uma função para retornar o nome da categoria
 };
 

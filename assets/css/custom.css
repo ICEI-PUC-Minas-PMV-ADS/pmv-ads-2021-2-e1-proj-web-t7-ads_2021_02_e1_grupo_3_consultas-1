@@ -498,3 +498,8 @@ footer a:hover {
     font-weight: bold;
     background-color: var(--secondary)!important;
 }
+
+.texto-faq{
+    text-align: justify;
+    line-height: 1.15rem;
+}
