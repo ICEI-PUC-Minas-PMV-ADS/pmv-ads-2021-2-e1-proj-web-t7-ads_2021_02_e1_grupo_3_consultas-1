@@ -6,5 +6,5 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('calendarDate').innerText = `${date.getDate()} de ${getLocaleMonth(date.getMonth()).toLowerCase()} de ${date.getFullYear()}`;
         document.getElementById('calendarWeekDay').innerText = getLocaleWeekDay(date.getDay());
     }
-    calendar('calendar', getSchedule);
+    calendar('calendar', getSchedule, getSchedule);
 });

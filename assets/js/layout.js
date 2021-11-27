@@ -1,6 +1,11 @@
+import seeder from './db/seeder.js';
 import auth from './db/auth.js';
+import {doctorBootstrap} from './db/doctor.js' //@TODO: remove
+
+console.log(doctorBootstrap());
 
 const handleLayout = async () => {
+    seeder.seed();
     let loggedUser = auth.getUser();
     const partials = document.querySelectorAll('[data-partial]');
     let urls = [];

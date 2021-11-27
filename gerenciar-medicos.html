@@ -60,6 +60,18 @@
 
                                     <div class="col-12 col-md-6">
                                         <div class="form-floating mb-3">
+                                            <select class="form-control form-select" name="gender" id="floatingInputGender">
+                                                <option value="">Selecione</option>
+                                                <option value="f">Feminino</option>
+                                                <option value="m">Masculino</option>
+                                                <option value="o">Outros</option>
+                                            </select>
+                                            <label for="floatingInputGender">Gênero</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-floating mb-3">
                                             <input name="email" type="email" class="form-control"
                                                 id="floatingInputEmail" placeholder="E-mail">
                                             <label for="floatingInputEmail">E-mail</label>
@@ -68,7 +80,8 @@
 
                                     <div class="col-12 col-md-6">
                                         <div class="form-floating mb-3">
-                                            <select class="form-control form-select" name="specialty" id="floatingInputSpecialty" placeholder="Especialidade">
+                                            <select class="form-control form-select" name="specialty" id="floatingInputSpecialty">
+                                                <option value="">Selecione</option>
                                             </select>
                                             <label for="floatingInputSpecialty">Especialidade médica</label>
                                         </div>
@@ -175,7 +188,7 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/imask"></script>
     <script type="module" src="assets/js/layout.js"></script>
-    <script type="module" src="assets/js/forms/register.js"></script>
+    <script type="module" src="assets/js/forms/register-doctor.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
         integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

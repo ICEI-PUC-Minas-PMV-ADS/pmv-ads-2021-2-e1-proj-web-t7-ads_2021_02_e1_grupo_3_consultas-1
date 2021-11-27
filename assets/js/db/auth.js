@@ -1,12 +1,13 @@
 import db from './db.js';
+import defaultUsers from './static/bootstrap/defaultUsers.js';
 
 const auth = {
     registeredUsers: () => {
-        return db.get('registeredUsers', true) ?? db.set('registeredUsers', [], true);
+        return db.get('registeredUsers', true);
     },
     userExists: (email, doc) => {
         let filteredUsers = auth.registeredUsers().filter((user) => {
-            return user.email === email || user.document === doc;
+            return user.email === email.toLowerCase() || user.document === doc;
         });
         return !!filteredUsers.length;
     },
@@ -40,6 +41,10 @@ const auth = {
     signOut: () => {
         db.remove('loggedUser');
     }
+};
+
+export const authBootstrap = () => {
+    db.set('registeredUsers', defaultUsers, true);
 };
 
 export default auth;

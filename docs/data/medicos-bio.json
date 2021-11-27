@@ -2,9 +2,9 @@
   {
     "id": 1,
     "doctorId": 3,
+    "rqe": "",
     "university": "",
-    "degree": "grad/master/doctor/phd",
-    "field": "",
+    "degree": "Universidade - grau",
     "bio": "Lorem..."
   }
 ]

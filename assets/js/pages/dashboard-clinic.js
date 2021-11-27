@@ -1,6 +1,9 @@
+import {redirectIfRoleIsNot} from '../helpers/redirect.js';
+
+redirectIfRoleIsNot('clinic');
 
 function newDataset(n, min, max) {
-    dataset = new Array(n)
+    let dataset = new Array(n)
     min = Math.ceil(min)
     max = Math.floor(max)
     for (let i = 0; i < n; i++) {

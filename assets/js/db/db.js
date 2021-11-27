@@ -12,6 +12,9 @@ const db = {
     },
     remove: (key) => {
         return localStorage.removeItem(key);
+    },
+    clearAll: () => {
+        localStorage.clear();
     }
 }
 
