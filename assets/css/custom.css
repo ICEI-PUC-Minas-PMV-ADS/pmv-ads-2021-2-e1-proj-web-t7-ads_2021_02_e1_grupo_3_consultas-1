@@ -509,3 +509,24 @@ footer a:hover {
 .card-btn-busca{
     border: solid var(--primary) 1px;
 }
+/* Modal Confirmação */
+.modal-title{
+    text-align: center!important;
+}
+.modal-confimacao{
+    height: 500px;
+    width: 500px;
+}
+.btn-confirmacao{
+    padding-left: 25%;
+    margin-bottom: 5%;
+}
+.titulo-modal{
+    color: var(--primary);
+}
+.data-modal{
+    font-weight: bold;
+}
+.text-titulo-modal{
+    color:#000;
+}

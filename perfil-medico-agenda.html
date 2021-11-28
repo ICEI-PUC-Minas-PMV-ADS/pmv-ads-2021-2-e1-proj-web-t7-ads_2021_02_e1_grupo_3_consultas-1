@@ -34,7 +34,8 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-12 col-md-3 pe-sm-0 pe-md-4 my-auto">
-                                        <img class="img-fluid rounded-5 mx-auto mx-md-0 d-block" src="./media/profile/default.png">
+                                        <img class="img-fluid rounded-5 mx-auto mx-md-0 d-block"
+                                            src="./media/profile/default.png">
                                     </div>
                                     <div class="col-12 col-md-9">
                                         <p class="card-text">
@@ -75,21 +76,93 @@
                                 </div>
                                 <div class="row g-2">
                                     <div class="col-3">
-                                        <button type="button" class="btn btn-primary w-100">07:00</button>
+                                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">07:00</button>
                                     </div>
                                     <div class="col-3">
-                                        <button type="button" class="btn btn-primary w-100">08:00</button>
+                                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">07:30</button>
                                     </div>
                                     <div class="col-3">
-                                        <button type="button" class="btn btn-primary w-100">09:00</button>
+                                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">08:00</button>
                                     </div>
                                     <div class="col-3">
-                                        <button type="button" class="btn btn-outline-primary w-100 disabled">10:00</button>
+                                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">08:30</button>
                                     </div>
                                     <div class="col-3">
-                                        <button type="button" class="btn btn-primary w-100">11:00</button>
+                                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">09:00</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">09:30</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">10:00</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">10:30</button>
+                                    </div>
+                                    <div class="col-3">
+                                        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">11:00</button>
                                     </div>
                                 </div>
+
+                                <!-- Modal -->
+                                <div class="modal fade bd-example-modal-xl" id="staticBackdrop" tabindex="-1"
+                                    role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                                        <div class="modal-content">
+                                            <div class="container">
+                                                <h3 class="text-center m-4 text-titulo-modal">Confirmar agendamento?</h3>
+                                                <div class="row">
+                                                    <div class="col-3"></div>
+                                                    <div class="col-2">
+                                                        <img class="img-fluid rounded-5 mx-auto mx-md-0 d-block"
+                                                            src="./media/profile/default.png">
+                                                    </div>
+                                                    <div class="col">
+                                                        <h3 class="m-0 titulo-modal">Nome do médico</h3>
+                                                        <div class="row">
+                                                            <div class="col-1">
+                                                                <span class="material-icons-outlined">star_border</span>
+                                                            </div>
+                                                            <div class="col">
+                                                                <small class="data-modal">Especialidade</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-1">
+                                                                <span class="material-icons-outlined">location_on</span>
+                                                            </div>
+                                                            <div class="col">
+                                                                <small class="data-modal">Endereço da clínica</small>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-5">
+                                                            <div class="col-1">
+                                                                <span class="material-icons-outlined">schedule</span>
+                                                            </div>
+                                                            <div class="col">
+                                                                <small class="data-modal">00 Mês 0000, 00:00</small>
+                                                            </div>
+                                                        </div>                                                        
+                                                    </div>
+                                                    <div class="btn-confirmacao">
+                                                        <button class="btn btn-primary w-75">Confirmar Agendamento</button>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //Modal -->
                             </div>
                         </div>
                     </div>
