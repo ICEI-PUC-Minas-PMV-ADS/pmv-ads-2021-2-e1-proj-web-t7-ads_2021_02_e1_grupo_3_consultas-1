@@ -77,19 +77,35 @@ const generateDoctor = (id, specialtyId) => {
     for (let days = 0; days <= 30; days++) {
         let today = new Date();
         let schedule = [];
-        // {
-        //     "hour": "20:00",
-        //     "appointmentId": null
-        // },
-        // {
-        //     "hour": "11:00",
-        //     "appointmentId": 1
-        // }
-        doctorSchedule.push({
-            "doctorId": id,
-            "date": new Date(today.setDate(today.getDate() + days)).toISOString().substring(0, 10),
-            "schedule": schedule
-        })
+        let aux = 8
+        for (let hour = 0; hour <= 20; hour++){
+            if(hour%2 === 0){
+                schedule.push({
+                    'hour':`${aux}:00`,
+                    'appointmentId':null
+                });
+            }else{
+                schedule.push({
+                    'hour':`${aux}:30`,
+                    'appointmentId':null
+                });
+                aux++;
+            }
+        };
+
+            // {
+            //     "hour": "20:00",
+            //     "appointmentId": null
+            // },
+            // {
+            //     "hour": "11:00",
+            //     "appointmentId": 1
+            // }
+            doctorSchedule.push({
+                "doctorId": id,
+                "date": new Date(today.setDate(today.getDate() + days)).toISOString().substring(0, 10),
+                "schedule": schedule
+            })
     }
     return {
         doctorUser,
