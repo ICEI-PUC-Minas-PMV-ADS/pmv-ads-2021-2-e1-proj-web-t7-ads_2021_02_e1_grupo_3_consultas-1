@@ -503,3 +503,9 @@ footer a:hover {
     text-align: justify;
     line-height: 1.15rem;
 }
+
+/* Busca médico */
+
+.card-btn-busca{
+    border: solid var(--primary) 1px;
+}

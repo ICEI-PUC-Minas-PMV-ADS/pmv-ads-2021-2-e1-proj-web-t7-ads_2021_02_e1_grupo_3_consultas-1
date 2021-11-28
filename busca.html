@@ -1,243 +1,347 @@
 <!doctype html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/main.css">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
-    <!-- Icon -->
-    <link rel="icon" type="image/png" href="./assets/img/favicon.png" sizes="32x32">
+        <!-- Icon -->
+        <link rel="icon" type="image/png" href="./assets/img/favicon.png" sizes="32x32">
 
-    <title>Appoint | Marque a sua consulta</title>
-</head>
+        <title>Appoint | Marque a sua consulta</title>
+    </head>
 
-<body>
-<!-- Navbar -->
-<div data-partial="header" data-patient="header-patient"></div>
-<!-- //Navbar -->
+    <body>
+        <!-- Navbar -->
+        <div data-partial="header" data-patient="header-patient"></div>
+        <!-- //Navbar -->
 
-<!-- Meio -->
-<main>
-    <div class="container-fluid page-header header-bg mb-3 mb-md-5">
-        <div class="container">
-            <h2>Encontre um especialista</h2>
-            <i class="text-uppercase">Home / Busca</i>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row gx-5">
-            <div class="col-12 col-md-4 mb-3 mb-md-0 input-search">
-                <h3 class="text-primary mb-4">Filtrar resultados por</h3>
-                <div data-partial="input-specialty"></div>
-                <div class="input-group w-75">
-                    <input id="date" type="text" placeholder="Quando?" class="form-control text-uppercase" aria-label="Calendário">
-                    <label for="date" class="input-group-text"><span class="material-icons-outlined">edit_calendar</span></label>
-                </div>
-                <div class="input-group w-75">
-                    <input id="location" type="text" placeholder="Onde?" class="form-control text-uppercase" aria-label="Local">
-                    <label for="location" class="input-group-text"><span class="material-icons-outlined">location_on</span></label>
-                </div>
-                <div class="mb-4">
-                    <h3>Gênero</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="f" id="gender-f">
-                        <label class="form-check-label" for="gender-f">Feminino</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="m" id="gender-m">
-                        <label class="form-check-label" for="gender-m">Masculino</label>
-                    </div>
-                </div>
-                <div class="mb-4">
-                    <h3>Turno</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="m" id="shift-m">
-                        <label class="form-check-label" for="shift-m">Manhã</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="m" id="shift-a">
-                        <label class="form-check-label" for="shift-a">Tarde</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="m" id="shift-n">
-                        <label class="form-check-label" for="shift-n">Noite</label>
-                    </div>
-                </div>
-                <div class="mb-4">
-                    <h3>Plano de saúde</h3>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="m" id="plan-1">
-                        <label class="form-check-label" for="plan-1">Unimed</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="m" id="plan-2">
-                        <label class="form-check-label" for="plan-2">Bradesco Saúde</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="m" id="plan-3">
-                        <label class="form-check-label" for="plan-3">Promed</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="m" id="plan-4">
-                        <label class="form-check-label" for="plan-4">Allianz Saúde</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="m" id="plan-5">
-                        <label class="form-check-label" for="plan-5">PortoSeguro Saúde</label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="m" id="plan-6">
-                        <label class="form-check-label" for="plan-6">Amil Saúde</label>
-                    </div>
-                </div>
-                <button type="button" class="btn btn-primary">Pesquisar</button>
-            </div>
-            <div class="col-12 col-md-8">
-                <a href="./perfil-medico.html" class="card rounded-10 mb-3">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12 col-md-3 pe-sm-0 pe-md-4 my-auto">
-                                <img class="img-fluid rounded-5 mx-auto mx-md-0 d-block" src="./media/profile/default.png">
-                            </div>
-                            <div class="col-12 col-md-9">
-                                <p class="card-text">
-                                    <h4 class="text-primary mb-0">Nome do médico</h4>
-                                    <small>CRM: 00000</small>
-                                </p>
-                                <p class="card-text">
-                                    <b class="d-block mb-2">Cidade, Estado</b>
-                                    <i class="d-block mb-1">Endereço completo, nº, bairro, cep</i>
-                                    <i class="d-block">Tel: 00000-0000</i>
-                                </p>
-                                <div class="d-flex flex-row-reverse">
-                                    <button class="btn btn-primary" type="button">Agendar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <div class="card rounded-10 mb-3">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12 col-md-3 pe-sm-0 pe-md-4 my-auto">
-                                <img class="img-fluid rounded-5 mx-auto mx-md-0 d-block" src="./media/profile/default.png">
-                            </div>
-                            <div class="col-12 col-md-9">
-                                <p class="card-text">
-                                <h4 class="text-primary mb-0">Nome do médico</h4>
-                                <small>CRM: 00000</small>
-                                </p>
-                                <p class="card-text">
-                                    <b class="d-block mb-2">Cidade, Estado</b>
-                                    <i class="d-block mb-1">Endereço completo, nº, bairro, cep</i>
-                                    <i class="d-block">Tel: 00000-0000</i>
-                                </p>
-                                <div class="d-flex flex-row-reverse">
-                                    <button class="btn btn-primary" type="button">Agendar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card rounded-10 mb-3">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12 col-md-3 pe-sm-0 pe-md-4 my-auto">
-                                <img class="img-fluid rounded-5 mx-auto mx-md-0 d-block" src="./media/profile/default.png">
-                            </div>
-                            <div class="col-12 col-md-9">
-                                <p class="card-text">
-                                <h4 class="text-primary mb-0">Nome do médico</h4>
-                                <small>CRM: 00000</small>
-                                </p>
-                                <p class="card-text">
-                                    <b class="d-block mb-2">Cidade, Estado</b>
-                                    <i class="d-block mb-1">Endereço completo, nº, bairro, cep</i>
-                                    <i class="d-block">Tel: 00000-0000</i>
-                                </p>
-                                <div class="d-flex flex-row-reverse">
-                                    <button class="btn btn-primary" type="button">Agendar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card rounded-10 mb-3">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12 col-md-3 pe-sm-0 pe-md-4 my-auto">
-                                <img class="img-fluid rounded-5 mx-auto mx-md-0 d-block" src="./media/profile/default.png">
-                            </div>
-                            <div class="col-12 col-md-9">
-                                <p class="card-text">
-                                <h4 class="text-primary mb-0">Nome do médico</h4>
-                                <small>CRM: 00000</small>
-                                </p>
-                                <p class="card-text">
-                                    <b class="d-block mb-2">Cidade, Estado</b>
-                                    <i class="d-block mb-1">Endereço completo, nº, bairro, cep</i>
-                                    <i class="d-block">Tel: 00000-0000</i>
-                                </p>
-                                <div class="d-flex flex-row-reverse">
-                                    <button class="btn btn-primary" type="button">Agendar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card rounded-10 mb-3">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-12 col-md-3 pe-sm-0 pe-md-4 my-auto">
-                                <img class="img-fluid rounded-5 mx-auto mx-md-0 d-block" src="./media/profile/default.png">
-                            </div>
-                            <div class="col-12 col-md-9">
-                                <p class="card-text">
-                                <h4 class="text-primary mb-0">Nome do médico</h4>
-                                <small>CRM: 00000</small>
-                                </p>
-                                <p class="card-text">
-                                    <b class="d-block mb-2">Cidade, Estado</b>
-                                    <i class="d-block mb-1">Endereço completo, nº, bairro, cep</i>
-                                    <i class="d-block">Tel: 00000-0000</i>
-                                </p>
-                                <div class="d-flex flex-row-reverse">
-                                    <button class="btn btn-primary" type="button">Agendar</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-link">Mostrar mais</button>
+        <!-- Meio -->
+        <main>
+            <div class="container-fluid page-header header-bg mb-3 mb-md-5">
+                <div class="container">
+                    <h2>Encontre um especialista</h2>
+                    <i class="text-uppercase">Home / Busca</i>
                 </div>
             </div>
-        </div>
-    </div>
-</main>
-<!-- //Meio -->
+            <div class="container">
+                <div class="card card-body d-md-none d-block mb-3 card-btn-busca">
+                    <a class="d-md-none d-block btn-filters" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        <div class="row">
+                            <div class="col-2">
+                                <span class="material-icons-outlined">
+                                    playlist_add
+                                </span>
+                            </div>
+                            <div class="col">
+                                <h3>Filtrar resultados por</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="container collapse" id="collapseExample">
+                <div class="card card-body mb-3">
+                    <div class="col-12 col-md-4 mb-3 mb-md-0 input-search">
+                        <h3 class="text-primary mb-4 d-none d-md-block">Filtrar resultados por</h3>
+                        <div data-partial="input-specialty"></div>
+                        <div class="input-group w-75">
+                            <input id="date" type="text" placeholder="Quando?" class="form-control text-uppercase"
+                                aria-label="Calendário">
+                            <label for="date" class="input-group-text"><span
+                                    class="material-icons-outlined">edit_calendar</span></label>
+                        </div>
+                        <div class="input-group w-75">
+                            <input id="location" type="text" placeholder="Onde?" class="form-control text-uppercase"
+                                aria-label="Local">
+                            <label for="location" class="input-group-text"><span
+                                    class="material-icons-outlined">location_on</span></label>
+                        </div>
+                        <div class="mb-4">
+                            <h3>Gênero</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="f" id="gender-f">
+                                <label class="form-check-label" for="gender-f">Feminino</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="gender-m">
+                                <label class="form-check-label" for="gender-m">Masculino</label>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h3>Turno</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="shift-m">
+                                <label class="form-check-label" for="shift-m">Manhã</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="shift-a">
+                                <label class="form-check-label" for="shift-a">Tarde</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="shift-n">
+                                <label class="form-check-label" for="shift-n">Noite</label>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h3>Plano de saúde</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-1">
+                                <label class="form-check-label" for="plan-1">Unimed</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-2">
+                                <label class="form-check-label" for="plan-2">Bradesco Saúde</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-3">
+                                <label class="form-check-label" for="plan-3">Promed</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-4">
+                                <label class="form-check-label" for="plan-4">Allianz Saúde</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-5">
+                                <label class="form-check-label" for="plan-5">PortoSeguro Saúde</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-6">
+                                <label class="form-check-label" for="plan-6">Amil Saúde</label>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary">Pesquisar</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="container">
+                <div class="row gx-5">
+                    <div class="col-12 col-md-4 mb-3 mb-md-0  d-lg-block d-md-block d-none input-search">
+                        <h3 class="text-primary mb-4">Filtrar resultados por</h3>
+                        <div data-partial="input-specialty"></div>
+                        <div class="input-group w-75">
+                            <input id="date" type="text" placeholder="Quando?" class="form-control text-uppercase"
+                                aria-label="Calendário">
+                            <label for="date" class="input-group-text"><span
+                                    class="material-icons-outlined">edit_calendar</span></label>
+                        </div>
+                        <div class="input-group w-75">
+                            <input id="location" type="text" placeholder="Onde?" class="form-control text-uppercase"
+                                aria-label="Local">
+                            <label for="location" class="input-group-text"><span
+                                    class="material-icons-outlined">location_on</span></label>
+                        </div>
+                        <div class="mb-4">
+                            <h3>Gênero</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="f" id="gender-f">
+                                <label class="form-check-label" for="gender-f">Feminino</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="gender-m">
+                                <label class="form-check-label" for="gender-m">Masculino</label>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h3>Turno</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="shift-m">
+                                <label class="form-check-label" for="shift-m">Manhã</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="shift-a">
+                                <label class="form-check-label" for="shift-a">Tarde</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="shift-n">
+                                <label class="form-check-label" for="shift-n">Noite</label>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h3>Plano de saúde</h3>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-1">
+                                <label class="form-check-label" for="plan-1">Unimed</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-2">
+                                <label class="form-check-label" for="plan-2">Bradesco Saúde</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-3">
+                                <label class="form-check-label" for="plan-3">Promed</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-4">
+                                <label class="form-check-label" for="plan-4">Allianz Saúde</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-5">
+                                <label class="form-check-label" for="plan-5">PortoSeguro Saúde</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="m" id="plan-6">
+                                <label class="form-check-label" for="plan-6">Amil Saúde</label>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary">Pesquisar</button>
+                    </div>
 
-<!-- Footer -->
-<div data-partial="footer"></div>
+                    <div class="col-12 col-md-8">
+                        <a href="./perfil-medico.html" class="card rounded-10 mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 col-md-3 pe-sm-0 pe-md-4 my-auto">
+                                        <img class="img-fluid rounded-5 mx-auto mx-md-0 d-block"
+                                            src="./media/profile/default.png">
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <p class="card-text">
+                                        <h4 class="text-primary mb-0">Nome do médico</h4>
+                                        <small>CRM: 00000</small>
+                                        </p>
+                                        <p class="card-text">
+                                            <b class="d-block mb-2">Cidade, Estado</b>
+                                            <i class="d-block mb-1">Endereço completo, nº, bairro, cep</i>
+                                            <i class="d-block">Tel: 00000-0000</i>
+                                        </p>
+                                        <div class="d-flex flex-row-reverse">
+                                            <button class="btn btn-primary" type="button">Agendar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="card rounded-10 mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 col-md-3 pe-sm-0 pe-md-4 my-auto">
+                                        <img class="img-fluid rounded-5 mx-auto mx-md-0 d-block"
+                                            src="./media/profile/default.png">
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <p class="card-text">
+                                        <h4 class="text-primary mb-0">Nome do médico</h4>
+                                        <small>CRM: 00000</small>
+                                        </p>
+                                        <p class="card-text">
+                                            <b class="d-block mb-2">Cidade, Estado</b>
+                                            <i class="d-block mb-1">Endereço completo, nº, bairro, cep</i>
+                                            <i class="d-block">Tel: 00000-0000</i>
+                                        </p>
+                                        <div class="d-flex flex-row-reverse">
+                                            <button class="btn btn-primary" type="button">Agendar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card rounded-10 mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 col-md-3 pe-sm-0 pe-md-4 my-auto">
+                                        <img class="img-fluid rounded-5 mx-auto mx-md-0 d-block"
+                                            src="./media/profile/default.png">
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <p class="card-text">
+                                        <h4 class="text-primary mb-0">Nome do médico</h4>
+                                        <small>CRM: 00000</small>
+                                        </p>
+                                        <p class="card-text">
+                                            <b class="d-block mb-2">Cidade, Estado</b>
+                                            <i class="d-block mb-1">Endereço completo, nº, bairro, cep</i>
+                                            <i class="d-block">Tel: 00000-0000</i>
+                                        </p>
+                                        <div class="d-flex flex-row-reverse">
+                                            <button class="btn btn-primary" type="button">Agendar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card rounded-10 mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 col-md-3 pe-sm-0 pe-md-4 my-auto">
+                                        <img class="img-fluid rounded-5 mx-auto mx-md-0 d-block"
+                                            src="./media/profile/default.png">
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <p class="card-text">
+                                        <h4 class="text-primary mb-0">Nome do médico</h4>
+                                        <small>CRM: 00000</small>
+                                        </p>
+                                        <p class="card-text">
+                                            <b class="d-block mb-2">Cidade, Estado</b>
+                                            <i class="d-block mb-1">Endereço completo, nº, bairro, cep</i>
+                                            <i class="d-block">Tel: 00000-0000</i>
+                                        </p>
+                                        <div class="d-flex flex-row-reverse">
+                                            <button class="btn btn-primary" type="button">Agendar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card rounded-10 mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 col-md-3 pe-sm-0 pe-md-4 my-auto">
+                                        <img class="img-fluid rounded-5 mx-auto mx-md-0 d-block"
+                                            src="./media/profile/default.png">
+                                    </div>
+                                    <div class="col-12 col-md-9">
+                                        <p class="card-text">
+                                        <h4 class="text-primary mb-0">Nome do médico</h4>
+                                        <small>CRM: 00000</small>
+                                        </p>
+                                        <p class="card-text">
+                                            <b class="d-block mb-2">Cidade, Estado</b>
+                                            <i class="d-block mb-1">Endereço completo, nº, bairro, cep</i>
+                                            <i class="d-block">Tel: 00000-0000</i>
+                                        </p>
+                                        <div class="d-flex flex-row-reverse">
+                                            <button class="btn btn-primary" type="button">Agendar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-link">Mostrar mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- //Meio -->
 
-<!-- //Footer -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-        crossorigin="anonymous"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script type="module" src="assets/js/layout.js"></script>
-<script type="module" src="assets/js/forms/search.js"></script>
-</body>
+        <!-- Footer -->
+        <div data-partial="footer"></div>
+
+        <!-- //Footer -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+            integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script type="module" src="assets/js/layout.js"></script>
+        <script type="module" src="assets/js/forms/search.js"></script>
+    </body>
 
 </html>
