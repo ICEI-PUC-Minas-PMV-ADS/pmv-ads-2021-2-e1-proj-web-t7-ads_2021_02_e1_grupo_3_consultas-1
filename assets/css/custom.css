@@ -184,7 +184,9 @@ main #fields-search-container {
 /* Pré Footer */
 
 .container-p-footer{
-    background-color: var(--secondary)
+    background: url(../img/banner-pre-footer.png); 
+    background-size: 50%;
+    background-position: center;   
 }
 
 .container-card-bottom{
