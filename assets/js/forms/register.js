@@ -2,7 +2,9 @@ import { Validate, setFieldError } from './validators.js';
 import auth from '../db/auth.js';
 import {redirectIfLogged} from '../helpers/redirect.js';
 
-redirectIfLogged();
+document.addEventListener('DOMContentLoaded', async () => {
+    await redirectIfLogged();
+});
 
 let registerForm = document.querySelector("[data-register]");
 
@@ -50,7 +52,7 @@ const clinicSchema = (field) => {
     }
 }
 
-registerForm.addEventListener("submit", (e) => {
+registerForm.addEventListener("submit", async (e) => {
     e.preventDefault();
     let inputs = registerForm.querySelectorAll('input[name], select[name]');
     let errors = false;
@@ -68,11 +70,16 @@ registerForm.addEventListener("submit", (e) => {
         }
     });
     if (!errors) {
-        if (auth.userExists(validatedInputs.email, validatedInputs.document)) {
-            return setFieldError(registerForm.querySelector('input[name=email]'), 'Já existe uma conta cadastrada com este e-mail ou documento.');
+        try {
+            const user = await auth.userExists(validatedInputs.email, validatedInputs.document);
+            if (user) {
+                return setFieldError(registerForm.querySelector('input[name=email]'), 'Já existe uma conta cadastrada com este e-mail ou documento.');
+            }
+            let newUser = await auth.registerUser(validatedInputs, formType === 'clinic' ? 'clinic' : 'patient');
+            auth.signIn({id: newUser});
+            document.location.reload(true);
+        } catch (e) {
+            return setFieldError(registerForm.querySelector('input[name=email]'), 'Um erro ocorreu ao registrar.');
         }
-        let newUser = auth.registerUser(validatedInputs, formType === 'clinic' ? 'clinic' : 'patient');
-        auth.signIn(newUser);
-        document.location.reload(true);
     }
 })

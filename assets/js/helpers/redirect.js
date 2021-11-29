@@ -1,33 +1,35 @@
 import auth from '../db/auth.js';
 
-let user = auth.getUser();
-
 export const redirectTo = (path = './index.html') => {
     window.location.href = path;
 }
 
-export const redirectIfLogged = (path = './index.html') => {
+export const redirectIfLogged = async (path = './index.html') => {
+    const user = await auth.getUser();
     if (!user) {
         return;
     }
     redirectTo(path);
 }
 
-export const redirectIfNotLogged = (path = './index.html') => {
+export const redirectIfNotLogged = async (path = './index.html') => {
+    const user = await auth.getUser();
     if (user) {
         return;
     }
     redirectTo(path);
 }
 
-export const redirectIfRoleIs = (role, path = './index.html') => {
+export const redirectIfRoleIs = async (role, path = './index.html') => {
+    const user = await auth.getUser();
     if (user && user.role !== role) {
         return;
     }
     redirectTo(path);
 }
 
-export const redirectIfRoleIsNot = (role, path = './index.html') => {
+export const redirectIfRoleIsNot = async (role, path = './index.html') => {
+    const user = await auth.getUser();
     if (user && user.role === role) {
         return;
     }
