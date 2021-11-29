@@ -184,9 +184,9 @@ main #fields-search-container {
 /* Pré Footer */
 
 .container-p-footer{
-    background: url(../img/banner-pre-footer.png); 
+    background: url(../img/banner-pre-footer.png);
     background-size: 50%;
-    background-position: center;   
+    background-position: center;
 }
 
 .container-card-bottom{
@@ -421,6 +421,10 @@ footer a:hover {
 }
 
 .page-header.header-bg {
+    background-image: url(../img/header-bg.png);
+}
+
+.page-header.pre-footer {
     background-image: url(../img/preFooter-bg.png);
 }
 
