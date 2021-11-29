@@ -13,7 +13,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap"
       rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 
+
+    <!-- Icon -->
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png" sizes="32x32">
 
     <title>Appoint | Marque a sua consulta</title>
   </head>
@@ -42,25 +46,22 @@
             <div id="fields-search-container" class="p-5 rounded-lg">
               <form class="form-inline" role="form">
                 <div class="row">
-                  <div class="form-group col-md-4">
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="QUAL A ESPECIALIDADE?"
-                        aria-label="especialidade" aria-describedby="button-addon2">
-                      <button class="btn in-button-spc" type="button"></button>
+                  <div class="col-12 col-lg-4 mb-3">
+                    <div class="input-group">
+                      <input id="specialty" type="text" placeholder="Qual especialidade" class="form-control text-uppercase" aria-label="Lupa">
+                      <label for="specialty" class="input-group-text"><span class="material-icons-outlined">search</span></label>
                     </div>
                   </div>
-                  <div class="form-group col-md-4">
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="ONDE?" aria-label="localização"
-                        aria-describedby="button-addon2">
-                      <button class="btn in-button-loc" type="button"></button>
+                  <div class="col-12 col-lg-4 mb-3">
+                    <div class="input-group">
+                      <input id="date" type="text" placeholder="Quando?" class="form-control text-uppercase" aria-label="Calendário">
+                      <label for="date" class="input-group-text"><span class="material-icons-outlined">edit_calendar</span></label>
                     </div>
                   </div>
-                  <div class="form-group col-md-4">
-                    <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="QUANDO?" aria-label="dia"
-                        aria-describedby="button-addon2">
-                      <button class="btn in-button-dat" type="button"></button>
+                  <div class="col-12 col-lg-4 mb-3">
+                    <div class="input-group">
+                      <input id="location" type="text" placeholder="Onde?" class="form-control text-uppercase" aria-label="Local">
+                      <label for="location" class="input-group-text"><span class="material-icons-outlined">location_on</span></label>
                     </div>
                   </div>
                   <div class="container">
@@ -77,76 +78,60 @@
       <!-- //Slider -->
 
       <!-- Cards Centrais -->
-      <div id="cards" class="block m-5">
-        <div class="container">
-          <div class="row">
-            <div class='col-1'></div>
-            <div class="col-auto header-slider mb-1 text-white text-center-title">
-              <h1>Do jeito que você quer</h1>
-            </div>
-          </div>
-          <h4 class="subtitle text-center mb-4">
-          </h4>
-          <div class="row">
-            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-              <a href="#" class="destaque">
 
-                <div class="img-container mb-3">
-                  <img src="assets/img/CARD 1.svg" class="fluid img-card">
-                </div>
-                <h6 class="text-uppercase text-card"> Especialidades Médicas</h6>
-                <p class="paragrafo-card m-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut,
-                  sequi! Voluptas, facere
-                  eos repudiandae fuga magni doloribus fugit enim.</p>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-              <a href="#" class="destaque">
-                <div class="img-container mb-3">
-                  <img src="assets/img/CARD 2.svg" class="fluid img-card">
-                </div>
-                <h6 class="text-uppercase text-card">Aonde você estiver</h6>
-                <p class=" paragrafo-card m-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Libero, nam? Iure delectus
-                  saepe molestiae. Ut quod facere facilis nostrum?</p>
-              </a>
-            </div>
-            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-              <a href="#" class="destaque">
-                <div class="img-container mb-3">
-                  <img src="assets/img/CARD 3.svg" class="fluid img-card">
-                </div>
-                <h6 class="text-uppercase text-card">Na data que você quiser</h6>
-                <p class="paragrafo-card card-text m-lg-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Debitis quo ad fuga perferendis
-                  similique, ipsam eaque ex voluptate corrupti.</p>
-              </a>
+      <div class="container my-2 my-md-5">
+        <div class="row">
+
+          <div class="col-12 col-md-4 my-0 mb-3 my-md-5">
+            <div class="card text-center rounded-10">
+              <div class="card-body">
+                <img src="assets/img/CARD 1.svg" class="img-fluid rounded-10" alt="">
+                <h4 class="text-tertiary my-4">Várias especialidades</h4>
+                <p class="mb-0">Oferecemos as mais diversas especialidades médicas, odontológicas e fisioterápicas para você.</p>
+              </div>
             </div>
           </div>
+
+          <div class="col-12 col-md-4 my-0 mb-3 my-md-5">
+            <div class="card text-center rounded-10">
+              <div class="card-body">
+                <img src="assets/img/CARD 2.svg" class="img-fluid rounded-10" alt="">
+                <h4 class="text-tertiary my-4">Onde você estiver</h4>
+                <p class="mb-0">Especialistas de todo país ao seu alcance. Sem precisar telefonar ou sair de casa.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 my-0 mb-3 my-md-5">
+            <div class="card text-center rounded-10">
+              <div class="card-body">
+                <img src="assets/img/CARD 3.svg" class="img-fluid rounded-10" alt="">
+                <h4 class="text-tertiary my-4">Na data que você quiser</h4>
+                <p class="mb-0">Você pode agendar a sua consulta nas datas e horários que quiser (de acordo com a disponibilidade do especialista).</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
+
       <!-- //Cards Centrais -->
 
       <!-- Pré footer -->
-      <div class="container-fluid container-p-footer pt-5 pb-5">
-        <div class="container pt-5 pb-5 container-card-bottom">
+      <div class="container-fluid page-header header-bg">
+        <div class="container">
           <div class="row">
-
-            <div class="text-1 ms-lg-4 mb-2 p-2 col-lg-4 col-md-7 mt-sm-2 ms-md-5">
-              <h3>cadastre sua clínica</h3>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card card-promo rounded-10 my-3 my-md-5">
+                <div class="card-body text-center">
+                  <h3 class="text-uppercase">Seja um Especialista APPOINT</h3>
+                  <p>Cadastre sua clínica ou consultório e aproveite os nossos benefícios, como: agendamento automatizado de consultas, controle de múltiplas agendas, relatórios mensais, entre outros. Além de estar disponível para pacientes
+                    de todo país.</p>
+                  <button type="button" class="btn btn-tertiary w-100">Cadastre sua clínica</button>
+                </div>
+              </div>
             </div>
-            <div class="w-100"></div>
-            <div class="text-2 mb-2 ms-lg-4 col-lg-4 col-md-7 ms-md-5 p-2">
-              <p class="mb-0 text-monospace">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore
-                et
-                dolore magna aliqua.</p>
-            </div>
-            <div class="w-100"></div>
-            <button class="btn-card-bottom mb-2 p-2 ms-lg-4 col-lg-4 col-md-7 ms-md-5" type="button">
-              <p>Conheça nossos planos</p>
-            </button>
-
           </div>
         </div>
       </div>
@@ -163,7 +148,9 @@
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
       crossorigin="anonymous"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+      integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="module" src="assets/js/layout.js"></script>
   </body>
 

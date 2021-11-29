@@ -1,51 +1,68 @@
-<header id="header">
-  <div class="container">
-    <nav class="navbar navbar-expand-md navbar-light">
+<div class="p-0 container-fluid" id='header-paciente'>
+  <nav class="navbar navbar-expand-md navbar-light">
+    <div class="container">
       <a class="navbar-brand" href="./index.html">
         <img src="./assets/img/logo.svg" class='img-logo'>
       </a>
 
       <button class="navbar-toggler nav-collapse-button" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class='nav-link text-center' id='id_especialista_paciente'>
-            <a class="btn-link active btn-help ms-3" aria-current="page" href="#">ENCONTRAR ESPECIALISTA</a>
+        <ul class="navbar-nav align-items-md-center">
+          <li class='nav-link text-center btn-especialista' id='id_especialista_paciente'>
+            <a class="btn-link active btn-help" aria-current="page" href="#">ENCONTRAR ESPECIALISTA</a>
           </li>
           <li class="nav-link text-center">
-            <a class="btn-link active btn-help ms-3" aria-current="page" href="#">AJUDA</a>
+            <a class="btn-link active btn-help" aria-current="page" href="#">AJUDA</a>
           </li>
-          <li class="nav-link">
-            <a class="btn-link active btn-notification ms-3 d-none d-md-block d-lg-block d-xl-block"
-               aria-current="page" href="#"><img src="./assets/img/notificacao.svg" alt=""></a>
+          <li class="nav-link img-notification ms-2">
+            <a class="btn-link active btn-notification d-none d-md-block" aria-current="page" href="#"><span
+                class="material-icons-outlined md-36">notifications</span></a>
           </li>
           <li class="nav-link dropdown">
-            <a class="btn-link active btn-user ms-3 d-none d-md-block d-lg-block d-xl-block" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false"
-               href="#"><img src="./assets/img/icone-paciente.svg" alt=""></a>
-            <ul class="dropdown-menu" aria-labelledby="profileDropdown">
-              <li class="dropdown-item-text" data-username></li>
-              <li data-logout><a class="dropdown-item" href="#">Sair</a></li>
+            <a class="btn-link active btn-user d-none d-md-block" id="profileDropdown" data-bs-toggle="dropdown"
+              aria-expanded="false" href="#"><img class="rounded-circle" width="48" src="./media/profile/default.png"
+                alt=""></a>
+            <ul class="dropdown-menu p-3" aria-labelledby="profileDropdown">
+              <li class="dropdown-item-text">
+                <div class="row">
+                  <div class="col-4 pe-0">
+                    <img class='rounded-circle img-fluid p-1' src="./media/profile/default.png" alt="">
+                  </div>
+                  <div class="col ps-1 pt-2">
+                    <small class='text-primary' data-username></small>
+                  </div>
+                </div>
+              </li>
+              <li class='pt-2'><a class="dropdown-item d-flex align-items-center" href="#"><small
+                    class='ps-2'>Perfil</small></a></li>
+              <li class='pt-2'><a class="dropdown-item d-flex align-items-center" href="#"><small
+                    class='ps-2'>Configurações</small></a></li>
+              <li class='pt-2 pb-4' data-logout><a class="dropdown-item d-flex align-items-center" href="#"><small
+                    class='ps-2 text-tertiary'>Sair</small></a></li>
             </ul>
           </li>
           <li class="nav-link text-center">
-            <a class="btn-link active user-colapse d-md-none d-lg-none d-xl-none d-sm-block mt-0"
-               aria-current="page" href="#">
+            <a class="btn-link active user-colapse d-block d-md-none mt-0" aria-current="page" href="#">
               <p class='text-uppercase'>Configurações</p>
             </a>
           </li>
           <li class="nav-link text-center">
-            <a class="btn-link active notification-colapse d-md-none d-lg-none d-xl-none d-sm-block mt-0"
-               aria-current="page" href="#">
+            <a class="btn-link active notification-colapse d-block d-md-none mt-0" aria-current="page" href="#">
               <p class='text-uppercase'>Notificações</p>
             </a>
           </li>
-
+          <li class="nav-link text-center">
+            <a class="btn-link active notification-colapse d-block d-md-none mt-0" aria-current="page" href="#">
+              <p class='text-uppercase'>Sair</p>
+            </a>
+          </li>
         </ul>
       </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
   <script type="module" src="./assets/js/logged.js"></script>
-</header>
+</div>

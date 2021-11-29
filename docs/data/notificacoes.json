@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "recipientId": 2,
+    "senderId": 3,
+    "action": "Recebeu um pedido de consulta...",
+    "timestamp": "Y-m-d H:i:s"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "clinicId": 2,
+    "workingDays": [
+      {
+        "day": 0,
+        "opening": "H:i",
+        "closing": "H:i"
+      },
+      {
+        "day": 1,
+        "opening": "H:i",
+        "closing": "H:i"
+      },
+      {
+        "day": 6,
+        "opening": "H:i",
+        "closing": "H:i"
+      }
+    ]
+  }
+]
