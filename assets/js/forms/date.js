@@ -7,8 +7,16 @@ let bsDateOffCanvas = new bootstrap.Offcanvas(dateOffCanvas);
 let dateInput = document.querySelector('input[name=date]');
 let dateInputTrigger = document.getElementById('date');
 
+const parseDateToInput = date => {
+    date = date.split('-');
+    if (date.length !== 3) {
+        return;
+    }
+    dateInputTrigger.value = date[2] + '/' + date[1] + '/' + date[0];
+}
+
 if (qs.get('date')) {
-    console.log(qs.get('date'));
+    parseDateToInput(qs.get('date'));
 }
 
 dateInputTrigger.addEventListener('focus', () => {
@@ -16,6 +24,8 @@ dateInputTrigger.addEventListener('focus', () => {
 });
 
 const selectDate = (date) => {
-    console.log(date);
+    dateInput.value = date.toISOString().substring(0, 10);
+    parseDateToInput(dateInput.value);
+    bsDateOffCanvas.hide();
 }
 calendar('calendar-date', selectDate);

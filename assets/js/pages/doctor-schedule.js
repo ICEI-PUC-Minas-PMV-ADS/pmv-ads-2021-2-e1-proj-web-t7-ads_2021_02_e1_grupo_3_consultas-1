@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         workingHours.schedule.map(hour => {
             let hourElement = document.createElement('div');
             hourElement.classList.add('col-3');
-            hourElement.innerHTML = `<button type="button" class="btn btn-primary w-100">${hour.hour}</button>`
+            hourElement.innerHTML = `<button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#staticBackdrop">${hour.hour}</button>`
             workingHoursElement.insertAdjacentElement('beforeend', hourElement);
         })
     }
