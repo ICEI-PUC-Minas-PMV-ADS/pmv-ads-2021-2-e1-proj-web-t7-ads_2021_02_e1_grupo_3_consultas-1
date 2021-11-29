@@ -543,5 +543,27 @@ footer a:hover {
 .img-spinner{
     padding-left: 5%;
     width: 25%;
-    
+}
+
+/* botões agendamento */
+
+.btn-approved{
+    color: var(--primary);
+    border: solid var(--primary) 1px;
+}
+.btn-cancel{
+    color: var(--tertiary);
+    border: solid var(--tertiary) 1px;
+}
+.img-task{
+    align-items: center;
+}
+.btn-approved:hover{
+    border: solid var(--secondary) 1px;
+    background-color: var(--secondary);
+}
+.btn-cancel:hover{
+    color: var(--tertiary);
+    border: solid #ffb9b9 1px;
+    background-color:#ffb9b9
 }
