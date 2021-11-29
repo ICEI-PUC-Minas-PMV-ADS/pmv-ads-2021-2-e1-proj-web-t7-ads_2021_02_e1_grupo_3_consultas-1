@@ -21,7 +21,7 @@ O sistema terá cadastros separados para clínicas e pacientes, tendo campos sem
 *Figura 40 – Tela de cadastro de clínica*
 ![Figura40-Tela-cadastro-clinica](img/Figura40-Tela-cadastro-clinica.png)
 
-## Tela Log-in de usuários (RF-03)
+Tela Log-in de usuários (RF-03)
 A tela poderá ser acessada através do botão LOG-IN na página inicial, nesta tela será solicitado a inserção das informações do usuário, que podem ser email e senha ou métodos de acesso via Facebook ou Google (apenas para usuários do tipo pacientes), e após a autenticação dos dados o usuário é direcionado para o ambiente interno de navegação da plataforma. 
 
 *Figura 41 – Tela de Login*
