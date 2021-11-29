@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Mateus Melo",
+    "document": "CPF",
+    "role": "patient",
+    "picture": null,
+    "phone": "31998805697",
+    "email": "mateus@teste.com",
+    "password": "SHA-256"
+  },
+  {
+    "id": 2,
+    "name": "Clínica",
+    "document": "CNPJ",
+    "role": "clinic",
+    "picture": null,
+    "phone": "31998805695",
+    "email": "clinica@teste.com",
+    "password": "SHA-256"
+  },
+  {
+    "id": 3,
+    "name": "Médico",
+    "document": "CRM",
+    "role": "doctor",
+    "picture": null,
+    "phone": "31998805696",
+    "email": "medico@teste.com",
+    "password": "SHA-256"
+  },
+  {
+    "id": 4,
+    "name": "Médico 2",
+    "document": "CRM",
+    "role": "doctor",
+    "picture": null,
+    "phone": "31998805699",
+    "email": "medico2@teste.com",
+    "password": "SHA-256"
+  }
+]

@@ -150,7 +150,7 @@ input:not(.form-floating input, .form-check-input) {
   border-width: 0;
 }
 
-.btn-outline-primary {
+.btn-outline-primary, .btn-outline-primary.disabled {
   color: var(--primary);
   border-color: var(--primary);
 }
@@ -202,4 +202,127 @@ input:not(.form-floating input, .form-check-input) {
 .btn-categories .btn.active {
   background-color: var(--primary-light);
   color: var(--primary);
+}
+
+.breadcrumb-item a {
+  color: var(--text);
+}
+
+.breadcrumb-item a:hover {
+  color: var(--primary);
+}
+
+.card {
+  position: initial;
+}
+
+.card-header {
+  border-color: var(--primary);
+  background-color: var(--primary);
+  color: var(--bs-white);
+}
+
+.card.rounded-5 .card-header {
+  border-radius: calc(.5rem - 1px) calc(.5rem - 1px) 0 0;
+}
+
+.offcanvas {
+  border-radius: 1rem 1rem 0 0;
+  padding: 0 .5rem;
+}
+
+.offcanvas-bottom {
+  height: 95vh;
+}
+
+.offcanvas-header input {
+  height: 4.5rem !important;
+  margin-right: 1rem;
+  background: #F2F2F2;
+}
+
+.offcanvas-body li {
+  border-radius: .5rem;
+  border: 1px solid var(--light-gray);
+  padding: 1rem;
+}
+
+.offcanvas-body a li {
+  color: var(--text);
+}
+
+.offcanvas-body a li:hover {
+  color: var(--primary);
+}
+
+.offcanvas-body li:hover {
+  border-color: var(--primary);
+}
+
+/* Fullcalendar */
+
+.fc-header-toolbar {
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+.fc-toolbar-title {
+  font-size: 2.5rem !important;
+}
+
+.fc-theme-standard .fc-scrollgrid, .fc-theme-standard td, .fc-theme-standard th  {
+  border: none;
+}
+
+.fc-daygrid-day-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fc-daygrid-day-events {
+  display: none;
+}
+
+.fc-col-header-cell-cushion {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.fc-day-today {
+  background: transparent !important;
+}
+
+.fc-today-button {
+  text-transform: uppercase !important;
+}
+
+.fc-daygrid-day-number {
+  width: 3rem;
+  height: 3rem;
+  line-height: 2.5rem;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: -0.02em;
+  color: black;
+  cursor: pointer;
+}
+
+.fc-daygrid-day-number:hover {
+  color: var(--primary);
+}
+
+.fc-day-today .fc-daygrid-day-number {
+  color: var(--primary);
+}
+
+.fc td.disabled .fc-daygrid-day-number {
+  color: var(--text);
+  cursor: default;
+}
+
+.fc td.selected .fc-daygrid-day-number {
+  color: white;
+  background: var(--primary);
+  border-radius: 3rem;
 }

@@ -29,31 +29,35 @@
         <main>
             <div class="container my-5">
                 <div class="row mb-3">
-                    <div class="card rounded-10 mb-3">
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-12 col-md-3 pe-sm-0 pe-md-4 my-auto">
-                                    <img class="img-fluid rounded-5 mx-auto mx-md-0 d-block" src="./media/profile/default.png">
-                                </div>
-                                <div class="col-12 col-md-9">
-                                    <p class="card-text">
-                                    <h4 class="text-primary mb-0">Nome do médico</h4>
-                                    <small>CRM: 00000</small>
-                                    </p>
-                                    <p class="card-text">
-                                        <b class="d-block mb-2">Cidade, Estado</b>
-                                        <i class="d-block mb-1">Endereço completo, nº, bairro, cep</i>
-                                        <i class="d-block">Tel: 00000-0000</i>
-                                    </p>
-                                    <div class="d-flex flex-row-reverse">
-                                        <button class="btn btn-primary" type="button">Consultar a agenda</button>
+                    <div class="col-12">
+                        <div class="card rounded-10 mb-3">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 col-md-3 pe-sm-0 pe-md-4 my-auto">
+                                        <img class="img-fluid rounded-5 mx-auto mx-md-0 d-block" src="./media/profile/default.png">
+                                    </div>
+                                    <div class="col-12 col-md-9" id="doctorProfile">
+                                        <p class="card-text">
+                                        <h4 class="text-primary mb-0">Nome do médico</h4>
+                                        <small>CRM: 00000</small>
+                                        </p>
+                                        <p class="card-text">
+                                            <b class="d-block mb-2">Cidade, Estado</b>
+                                            <i class="d-block mb-1">Endereço completo, nº, bairro, cep</i>
+                                            <i class="d-block">Tel: 00000-0000</i>
+                                        </p>
+                                        <div class="d-flex flex-row-reverse">
+                                            <a href="perfil-medico-agenda.html">
+                                                <button class="btn btn-primary" type="button">Consultar a agenda</button>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row p-3">
+                <div class="row p-3" id="doctorBio">
                     <h3 class="text-primary">Formação</h3>
                     <p>Graduação:</p>
                     <p>Especialização:</p>
@@ -87,6 +91,7 @@
             integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script type="module" src="assets/js/layout.js"></script>
+        <script type="module" src="assets/js/pages/doctor-profile.js"></script>
     </body>
 
 </html>
