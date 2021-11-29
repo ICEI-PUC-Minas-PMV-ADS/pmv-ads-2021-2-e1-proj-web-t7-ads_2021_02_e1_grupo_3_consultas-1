@@ -505,3 +505,67 @@ footer a:hover {
     text-align: justify;
     line-height: 1.15rem;
 }
+
+/* Busca médico */
+
+.card-btn-busca{
+    border: solid var(--primary) 1px;
+}
+/* Modal Confirmação */
+
+.modal-confimacao{
+    height: 500px;
+    width: 500px;
+}
+.btn-confirmacao{
+    padding-left: 25%;
+    margin-bottom: 5%;
+}
+.titulo-modal{
+    color: var(--primary);
+}
+.data-modal{
+    font-weight: bold;
+}
+.text-titulo-modal{
+    color:#000;
+}
+
+/* spinner */
+
+.texto-spinner{
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.spinner-ani{
+    color: var(--primary);
+}
+
+.img-spinner{
+    padding-left: 5%;
+    width: 25%;
+}
+
+/* botões agendamento */
+
+.btn-approved{
+    color: var(--primary);
+    border: solid var(--primary) 1px;
+}
+.btn-cancel{
+    color: var(--tertiary);
+    border: solid var(--tertiary) 1px;
+}
+.img-task{
+    align-items: center;
+}
+.btn-approved:hover{
+    border: solid var(--secondary) 1px;
+    background-color: var(--secondary);
+}
+.btn-cancel:hover{
+    color: var(--tertiary);
+    border: solid #ffb9b9 1px;
+    background-color:#ffb9b9
+}

@@ -46,20 +46,11 @@
             <div id="fields-search-container" class="p-5 rounded-lg">
               <form action="./busca.html" class="form-inline" role="form">
                 <div class="row">
-                  <div class="col-12 col-lg-4 mb-3">
+                  <div class="col-12 col-lg-6 mb-3">
                     <div data-partial="input-specialty"></div>
                   </div>
-                  <div class="col-12 col-lg-4 mb-3">
-                    <div class="input-group">
-                      <input id="date" type="date" placeholder="Quando?" class="form-control text-uppercase" aria-label="Calendário">
-                      <label for="date" class="input-group-text"><span class="material-icons-outlined">edit_calendar</span></label>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-4 mb-3">
-                    <div class="input-group">
-                      <input id="location" type="text" placeholder="Onde?" class="form-control text-uppercase" aria-label="Local">
-                      <label for="location" class="input-group-text"><span class="material-icons-outlined">location_on</span></label>
-                    </div>
+                  <div class="col-12 col-lg-6 mb-3">
+                    <div data-partial="input-date"></div>
                   </div>
                   <div class="container">
                     <div class="d-flex justify-content-end">
@@ -140,6 +131,9 @@
     <!-- Footer -->
     <div data-partial="footer"></div>
 
+    <div data-partial="input-specialty-modal"></div>
+    <div data-partial="input-date-modal"></div>
+
     <!-- //Footer -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -148,6 +142,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
       integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
       crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/locales/pt-br.js"></script>
     <script type="module" src="assets/js/layout.js"></script>
   </body>
 

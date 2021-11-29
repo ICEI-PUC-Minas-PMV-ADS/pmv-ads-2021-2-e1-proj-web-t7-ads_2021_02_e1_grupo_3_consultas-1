@@ -7,7 +7,6 @@
     "picture": null,
     "phone": "31998805697",
     "email": "mateus@teste.com",
-    "birthDate": "Y-m-d",
     "password": "SHA-256"
   },
   {
@@ -18,7 +17,6 @@
     "picture": null,
     "phone": "31998805695",
     "email": "clinica@teste.com",
-    "birthDate": "Y-m-d",
     "password": "SHA-256"
   },
   {
@@ -29,7 +27,6 @@
     "picture": null,
     "phone": "31998805696",
     "email": "medico@teste.com",
-    "birthDate": "Y-m-d",
     "password": "SHA-256"
   },
   {
@@ -40,7 +37,6 @@
     "picture": null,
     "phone": "31998805699",
     "email": "medico2@teste.com",
-    "birthDate": "Y-m-d",
     "password": "SHA-256"
   }
 ]

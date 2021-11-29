@@ -14,7 +14,7 @@ const loginSchema = (field) => {
     }
 }
 
-loginForm.addEventListener('submit', (e) => {
+loginForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     let inputs = loginForm.querySelectorAll('input[name]');
     let errors = false;
@@ -28,11 +28,15 @@ loginForm.addEventListener('submit', (e) => {
         }
     });
     if (!errors) {
-        let checkUser = auth.validateUser(validatedInputs.email, CryptoJS.SHA256(validatedInputs.password).toString());
-        if (!checkUser) {
-            return setFieldError(loginForm.querySelector('input[name=email]'), 'E-mail ou senha incorretos.');
+        try {
+            const checkUser = await auth.validateUser(validatedInputs.email, CryptoJS.SHA256(validatedInputs.password).toString());
+            if (!checkUser) {
+                return setFieldError(loginForm.querySelector('input[name=email]'), 'E-mail ou senha incorretos.');
+            }
+            auth.signIn(checkUser);
+            document.location.reload(true);
+        } catch (e) {
+            return setFieldError(loginForm.querySelector('input[name=email]'), 'Ocorreu um erro ao fazer login.');
         }
-        auth.signIn(checkUser);
-        document.location.reload(true);
     }
 })

@@ -1,4 +1,4 @@
-const calendar = (elementId, onDateChange) => {
+const calendar = (elementId, onDateChange, onFirstLoad = null) => {
     let today = new Date().setHours(0, 0, 0, 0);
     let currentDate = today;
     const handleDateClick = info => {
@@ -34,7 +34,9 @@ const calendar = (elementId, onDateChange) => {
         },
     });
     calendar.render();
-    onDateChange(new Date());
+    if (onFirstLoad) {
+        onFirstLoad(new Date());
+    }
 }
 
 export default calendar;

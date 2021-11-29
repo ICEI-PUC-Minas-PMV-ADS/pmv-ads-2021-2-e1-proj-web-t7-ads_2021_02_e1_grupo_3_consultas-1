@@ -1,7 +1,12 @@
 import auth from './db/auth.js';
 
+if (!window.indexedDB) {
+    alert('Seu navegador não suporta o IndexedDB, não será possível navegar pelo site.');
+    window.stop();
+}
+
 const handleLayout = async () => {
-    let loggedUser = auth.getUser();
+    let loggedUser = await auth.getUser();
     const partials = document.querySelectorAll('[data-partial]');
     let urls = [];
     partials.forEach((partial) => {
