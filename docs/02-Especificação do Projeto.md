@@ -1,78 +1,74 @@
-# Especificações do Projeto
+# Especificação do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+A definição exata do problema e os pontos mais relevantes a serem tratados neste projeto foi consolidada com a participação de usuários e possíveis clientes, por meio de entrevistas. Os detalhes levantados nesse processo foram consolidados na forma de personas e histórias de usuários.
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+As personas levantadas durante o processo de entendimento do problema são baseadas em entrevistas com pessoas reais e apresentadas nas Figuras que se seguem.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+![Persona1](img/Persona1.png)
+![Persona2](img/Persona2.png)
+![Persona3](img/Persona3.png)
+![Persona4](img/Persona4.png)
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+A partir da compreensão do dia a dia das personas identificadas para o projeto, foram registradas as seguintes histórias de usuários.
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+![historia-de-usuario](img/historia-usuario.png)
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
 
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+## Requisitos do Projeto
 
-## Requisitos
-
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+O escopo funcional do projeto é definido por meio dos requisitos funcionais, que descrevem as possibilidades de interação dos usuários, bem como os requisitos não funcionais, que descrevem os aspectos que o sistema deverá apresentar de maneira geral. Estes requisitos são apresentados a seguir.
 
 ### Requisitos Funcionais
 
+A tabela a seguir apresenta os requisitos do projeto, identificando a prioridade em que os mesmos devem ser entregues.
+
+
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-01| O sistema deve oferecer um formulário de cadastro com campos exclusivos para clínicas e médicos.| ALTA | 
+|RF-02| O sistema deve oferecer um formulário de cadastro para pacientes.   | ALTA |
+|RF-03| O sistema deve oferecer um formulário de login direcionado a clínicas, médicos e pacientes.   | ALTA |
+|RF-04| O sistema deve oferecer um dashboard para gerenciamento de médicos de uma clínica, bem como listar os próximos pacientes na agenda.   | ALTA |
+|RF-05| O sistema deve oferecer uma landing page voltada para pacientes com slides informativos.   | ALTA |
+|RF-06| A landing page terá um campo de busca com listagem de especialidades, data de consulta e localização.   | ALTA |
+|RF-07| O sistema deve oferecer um perfil público do médico ao clicar em seu card na listagem, que mostre suas informações e agenda.   | ALTA |
+|RF-08| O sistema deve oferecer um fluxo de agendamento de consultas por parte de pacientes.   | ALTA |
+|RF-09| O sistema deve oferecer um fluxo de agendamento de consultas.   | ALTA |
+|RF-10| O sistema deve oferecer notificações de status (pendente, aprovado, recusado) de agendamento para clínicas e pacientes.   | MÉDIA |
+|RF-11| O sistema deve oferecer filtros de busca de cobertura de plano, proximidade e disponibilidade de datas.   | MÉDIA |
+|RF-12| O sistema deve oferecer a visualização de histórico de consultas agendadas pelo paciente   | MÉDIA |
+|RF-13| O sistema deve oferecer ferramentas de acessibilidade: alterar esquema de cores para daltonismo.   | MÉDIA |
+|RF-14| O sistema deve oferecer opção de confirmação de presença ou cancelamento de consulta agendada pelo paciente.   | MÉDIA |
+|RF-15| O sistema deve oferecer uma landing page voltada para clínicas, com preços e planos da plataforma.   | BAIXA |
+|RF-16| O sistema deve oferecer formulário de recuperação de senha.   | BAIXA |
+|RF-17| O sistema deve oferecer formulário de alteração de dados cadastrais e perfil.   | BAIXA |
+|RF-18| O sistema deve ter uma área de suporte ao usuário e perguntas frequentes sobre a utilização plataforma.   | BAIXA |
+|RF-19| O sistema deve oferecer uma área de tutoriais de utilização por parte de clínicas ou pacientes.   | BAIXA |
+|RF-20| O sistema deve oferecer gerenciamento de assinatura de planos para clínicas médicas.   | BAIXA |
+|RF-21| O sistema deve oferecer checkout de planos para clínicas médicas.   | BAIXA |
+|RF-22| O sistema deve oferecer uma página contendo termos de utilização da plataforma.   | BAIXA |
+|RF-23| O sistema deve oferecer uma página contendo a política de privacidade da plataforma.   | BAIXA |
 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-01| O website deverá atender os requisitos de compatibilidades com o Google Chrome. | ALTA | 
+|RNF-02| Uso de Design responsivo nas telas do padrão Mobile S (320px) do Google Chrome |  ALTA | 
+|RNF-03| O site website deverá oferecer proteção de navegação (utilizar o certificado SSL). |  ALTA | 
+|RNF-04| Escolher um serviço de hospedagem de boa qualidade para otimizar e aumentar a performance do website.|  ALTA | 
+|RNF-05| Tempo limite para expiração de sessão ao agendar uma consulta, que deve ser reservada por 15 minutos para que outros usuários não marquem o mesmo horário.|  MÉDIA | 
+|RNF-06| Os horários disponíveis para agendamento são de 2 horas a partir da próxima hora comercial. Exemplo: usuário que marca consulta às 23h do dia anterior só poderá escolher horários a partir das 9h do dia seguinte (se a clínica começar a funcionar a partir das 7h).|  MÉDIA | 
+|RNF-07| As clínicas têm um prazo de 1 hora para aceitar uma solicitação de agendamento online, dentro de seu horário comercial.|  MÉDIA | 
+|RNF-08| O website deve utilizar aceleradores como CDNs e sprites de imagens para otimizar o carregamento em dispositivos móveis e em conexões instáveis de internet.|  MÉDIA | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
@@ -80,12 +76,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|RE-01| O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 06/12/2021 |
+|RE-02| A plataforma deve se restringir às tecnologias da Web no Frontend (HTML, CSS e JS)        |
+|RE-03| A equipe não pode subcontratar o desenvolvimento do trabalho |
 
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)

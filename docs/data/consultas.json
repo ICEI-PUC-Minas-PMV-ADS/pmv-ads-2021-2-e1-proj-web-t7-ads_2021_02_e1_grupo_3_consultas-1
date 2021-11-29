@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "patientId": 1,
+    "clinicId": 2,
+    "doctorId": 3,
+    "medicalPlanId": 1,
+    "status": "pending/approved/cancelled/finished",
+    "timestamp": "Y-m-d H:i:s"
+  }
+]
