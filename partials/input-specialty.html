@@ -1,0 +1,17 @@
+<div>
+    <div class="input-group">
+        <input id="specialty" type="text" placeholder="Qual especialidade" class="form-control text-uppercase" aria-label="Lupa">
+        <label for="specialty" class="input-group-text"><span class="material-icons-outlined">search</span></label>
+    </div>
+    <input name="specialty" type="hidden" value="0" />
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasSpecialty">
+        <div class="offcanvas-header">
+            <input type="text" placeholder="Qual especialidade" class="form-control text-uppercase">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <ul class="list-unstyled" id="specialties"></ul>
+        </div>
+    </div>
+    <script type="module" src="./assets/js/forms/specialties.js"></script>
+</div>

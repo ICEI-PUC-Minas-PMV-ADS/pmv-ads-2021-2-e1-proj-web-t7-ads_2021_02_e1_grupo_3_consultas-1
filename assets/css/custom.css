@@ -424,7 +424,7 @@ footer a:hover {
     background-image: url(../img/preFooter-bg.png);
 }
 
-.input-search {
+.input-search .input-group {
     margin-bottom: 2rem;
 }
 
@@ -487,4 +487,21 @@ footer a:hover {
 
 .card-dashboard {
     border-color: var(--primary);
+}
+
+/* FAQ */
+
+.autocomplete-items{
+    position: absolute;
+    width: 35%;
+}
+
+.menu-autocompletar:hover{
+    font-weight: bold;
+    background-color: var(--secondary)!important;
+}
+
+.texto-faq{
+    text-align: justify;
+    line-height: 1.15rem;
 }
