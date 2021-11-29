@@ -510,9 +510,7 @@ footer a:hover {
     border: solid var(--primary) 1px;
 }
 /* Modal Confirmação */
-.modal-title{
-    text-align: center!important;
-}
+
 .modal-confimacao{
     height: 500px;
     width: 500px;
@@ -529,4 +527,21 @@ footer a:hover {
 }
 .text-titulo-modal{
     color:#000;
+}
+
+/* spinner */
+
+.texto-spinner{
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.spinner-ani{
+    color: var(--primary);
+}
+
+.img-spinner{
+    padding-left: 5%;
+    width: 25%;
+    
 }
